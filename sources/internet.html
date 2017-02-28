@@ -3,26 +3,36 @@
 
     <head>
      <title>WebSystemsTechnology</title>
-     <link rel="stylesheet" type="text/css">
+     <link rel="stylesheet" type="text/css" href="../style/style.css">
     </head>
 
     <body>
 
-      <ul class="menu"> 
-        <li><a href="index.html" target="_self">Home</a></li> 
-
-        <li>Prelims topics</li>
-        <li><a href="internet.html" target="_self">What is Internet?</a></li>
-        <li><a href="www.html" target="_self">World Wide Web</a></li>
-        <li><a href="http.html" target="_self">HTTP</a></li>
-
-        <li>Midterms Topics</li>
-
-        <li>Finals Topics</li>
-
-        <li><a href="glossary.html" target="_self">Glossary</a></li>
-        <li><a href="sources.html" target="_self">Sources</a></li>
-      </ul>
+      <header>
+			<div class="nav">
+				<a href="index.html" target="_self" class="navtext">Home</a>	  
+			
+			<!--<li>Prelims topics</li>-->
+				<div class="drpdwn">
+					<button class="drpdwn-button">Prelim Topics</button>
+					<div class="drpdwn-content">
+						<a href="internet.html" target="_self" class="navtext">What is Internet?</a>
+						<a href="www.html" target="_self" class="navtext">World Wide Web</a>
+						<a href="http.html" target="_self" class="navtext">HTTP</a>
+					</div>
+				</div>
+			<!--<li>Midterms Topics</li>-->
+				<div class="drpdwn">
+					<button class="drpdwn-button">Midterm Topics</button>
+				</div>
+			<!--<li>Finals Topics</li>-->
+				<div class="drpdwn">
+					<button class="drpdwn-button">Finals Topics</button>
+				</div>
+			<a href="glossary.html" target="_self" class="navtext">Glossary</a>
+			<a href="sources.html" target="_self" class="navtext">Sources</a>
+			</div>
+		</header>
   
 
       <div class="course">
