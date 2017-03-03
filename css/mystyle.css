@@ -1,32 +1,52 @@
 body{
-	font-family: Helvetica,Roboto,Arial,sans-serif;
-	background-color: #e6e6e6;
-	margin:0%;
+	font-family: "Segoe UI", Courier, monospace;
+	background-color: white;
+	margin: 0;
+	margin-top: 40px;
 }
 .nav{
-	height: 55px;
-	background:white;
+	height: 50px;
+	background:#595959;
 	width: 100%;
 	text-align: right;
 	font-size: 20px;
 	padding-top: 20px;
+	border: 1px solid #e6e6e6;
 }
 .course{
 	margin: 100px;
 }
 .navtext{
-	color: black;
+	color: white;
 	text-decoration: none;
 	margin-right: 15px;
+	height: 55px;
+	width: 100%;
+	padding-top: 20px;
+	padding-bottom: 22px;
+	padding-left:25px;
+	padding-right:25px;
 }
 .menu{
-	display: inline-block;
+	display:inline;
+	margin: 0;
+	padding; 0;
 }
 a:hover{
-	text-decoration:underline;
-	
+	background-color: black;
+}
+#int{
+	background-color:white;
+	margin: 0 auto;
+	padding: 1px;
+	margin-left: 20%;
 }
 #www{
+	background-color:#e6e6e6;
+	margin: 0 auto;
+	padding: 1px;
+}
+#http{
 	background-color:white;
 	margin: 0 auto;
 	padding: 1px;
@@ -35,4 +55,37 @@ a:hover{
 	margin: 0;
 	position: absolute;
 	padding:0px;
+}
+div.tab {
+	float: left;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    width: 20%;
+    height: 508px;
+}
+div.tab a {
+    display: block;
+    color: black;
+    padding: 22px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 18px;
+}
+div.tab a:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+div.tab a:focus, .active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    float: left;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    width: 70%;
+    border-left: none;
+    height: 300px;
 }

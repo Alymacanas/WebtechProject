@@ -12,11 +12,11 @@
 			
 			<!--<li>Midterms Topics</li>-->
 				<div class="menu">
-					<a href="" target="_self" class="navtext">Midterm Topics</a>
+					<a href="" target="_self" class="navtext">Midterms</a>
 				</div>
 			<!--<li>Finals Topics</li>-->
 				<div class="menu">
-					<a href="" target="_self" class="navtext">Finals Topics</a>
+					<a href="" target="_self" class="navtext">Finals</a>
 				</div>
 				<div class="menu">	
 					<a href="glossary.html" target="_self" class="navtext">Glossary</a>
@@ -26,6 +26,27 @@
 				</div>
 			</div>
 		</header>
+<div class="tab">
+  <a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">Internet</a>
+  <a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Paris')">WWW</a>
+  <a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Tokyo')">HTTP</a>
+</div>
+
+<div id="Internet" class="tabcontent">
+  <h3>Internet</h3>
+  <p>What is Internet</p>
+</div>
+
+<div id="WWW" class="tabcontent">
+  <h3>WWW</h3>
+  <p>The World Wide Web</p> 
+</div>
+
+<div id="Tokyo" class="tabcontent">
+  <h3>HTTP</h3>
+  <p>Hypertext Transfer Protocol</p>
+</div>
+
 
 <div id="int">
 	<div class="course">
@@ -252,6 +273,24 @@
       </div>
 </div>
 </div>
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
 </head>
 </body>
 </html>
