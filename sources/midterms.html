@@ -2,66 +2,656 @@
 
 <html lang="en">
 <head>
-  <title>WebSystemsTechnology</title>
+  <title>Midterm Topics</title>
+  <link href="../css/mystyle.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-  &lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD =======
-  <link href="styles/styles.css" rel="stylesheet" type="text/css">&gt;&gt;&gt;&gt;&gt;&gt;&gt; 99dff15a3a721c7a45a925d36daf18fc02f7ccd3
+  <div id="pre">
+    <header>
+      <div class="nav">
+        <a class="navtext" href="index.html" target="_self">Home</a>
 
-  <header>
-    <div class="nav">
-      <a class="navtext" href="index.html" target="_self">Home</a> <!--<li>Prelims topics</li>-->
+        <div class="menu">
+          <a class="navtext" href="prelims.html" target="_self">Prelims</a>
+        </div>
+         <!--<li>Midterms Topics</li>-->
 
 
-      <div class="drpdwn">
-        <button class="drpdwn-button">Prelim Topics</button>
+        <div class="menu">
+          <a class="navtext" href="midterms.html" target="_self">Midterms</a>
+        </div>
+        <!--<li>Finals Topics</li>-->
 
-        <div class="drpdwn-content">
-          <a class="navtext" href="internet.html" target="_self">What is Internet?</a> <a class="navtext" href="www.html" target="_self">World Wide Web</a> <a class="navtext" href="http.html" target="_self">HTTP</a>
+
+        <div class="menu">
+          <a class="navtext" href="" target="_self">Finals</a>
+        </div>
+
+
+        <div class="menu">
+          <a class="navtext" href="glossary.html" target="_self">Glossary</a>
+        </div>
+
+
+        <div class="menu">
+          <a class="navtext" href="sources.html" target="_self">Sources</a>
         </div>
       </div>
-      <!--<li>Midterms Topics</li>-->
+    </header>
 
 
-      <div class="drpdwn">
-        <button class="drpdwn-button">Midterm Topics</button>
-      </div>
-      <!--<li>Finals Topics</li>-->
-
-
-      <div class="drpdwn">
-        <button class="drpdwn-button">Finals Topics</button>
-      </div>
-      <a class="navtext" href="glossary.html" target="_self">Glossary</a> <a class="navtext" href="sources.html" target="_self">Sources</a>
+    <div class="tab">
+      <a class="tablinks" href="javascript:void(0)" id="defaultOpen" onclick="openCity(event, 'London')">HTML</a> <a class="tablinks" href="javascript:void(0)" onclick="openCity(event, 'Paris')">CSS</a> <a class="tablinks" href="javascript:void(0)" onclick="openCity(event, 'Tokyo')">JavaScript</a>
     </div>
-  </header>
 
-        <h1>WEB PAGE</h1>
 
-        <p>- structure and content</p>
-        <p>- aesthetics or presentation</p>
-        <p>- beehavioral</p>
+    <div class="tabcontent" id="HTML">
+      <h3>HTML</h3>
 
-        <h1>HTML</h1>
-        <p>- language used to mark-up documents (i.e. web pages) in the WWW</p>
 
-        <h1>VERSIONS</h1>
+      <p>HyperText Markup Language</p>
+    </div>
+
+
+    <div class="tabcontent" id="CSS">
+      <h3>CSS</h3>
+
+
+      <p>Cascading Style Sheets</p>
+    </div>
+
+
+    <div class="tabcontent" id="JavaScript">
+      <h3>JavaScript</h3>
+
+
+      <p>What is JavaScript</p>
+    </div>
+
+
+    <div id="HTML">
+      <div class="course">
+        <h1>HyperText Markup Language</h1>
+
+
+        <p>- </p>
+
+
+        <p>-</p>
+
+
+        <h1></h1>
+
+
+        <p>Tim Berners-Lee</p>
+
+
+        <p>*insert image here*</p>
+      </div>
+    </div>
+
+
+    <div id="CSS">
+      <div class="course">
+        <h1>THE CASCADING STYLE SHEETS</h1>
+
+
+        <p>- </p>
+
+
+        <h1>Developed By</h1>
+
+
+        <p>Håkon Wium Lie</p>
+        <p>Bert Bos</p>
+        <img src="../images/" alt="">
+        <img src="../images/" alt="">
+
+        <h1>BRIEF HISTORY</h1>
+
+
+        <p></p>
+      </div>
+    </div>
+
+
+    <div id="http">
+      <div class="course">
+        <h1>HYPERTEXT TRANSFER PROTOCOL (HTTP)</h1>
+
+
+        <p>- Application layer used primarily to retrieve hypertext (on hypermedia) documents and resources on the World Wide Web</p>
+
+
+        <p>- Jointly developed by the W3C and the IETF</p>
+
+
+        <p>Protocol - Set of rules needs to be followed</p>
+
+
+        <p>HTTP 1.1 requires atleast the HOST request</p>
+
+
+        <h1>FUNDAMENTALS</h1>
+
+
         <ul>
-          <li>HTML 1.0</li>
-          <li>HTML 2.0</li>
-          <li>HTML 3.0</li>
-          <li>HTML 3.2</li>
-          <li>HTML 4.0</li>
-          <li>HTML 4.1 (December 1999)</li>
-          <li>HTML 5.0 (2014)</li>
-          <li>HTML 5.1 (November 2016)</li>
+          <li>HTTP typically runs on the top of TCP/IP, using TCP port 80 by default (TCP port 443 for HTTPS)</li>
+
+
+          <li>HTTP resources are identified using URIs (specifically in HTTP URLs)</li>
+
+
+          <li style="list-style: none; display: inline">
+            <p><u>http</u>://<u>student</u>:<u>123password</u>@<u>i.slu.edu.ph</u>:<u>8080</u>/<u>home.php</u>;<u>sessionid=1234567</u>? <u>name=studentid</u>#<u>summary</u></p>
+            <small>scheme username password host port path scheme specific parameters start of query fragment</small>
+
+            <p>
+            </p>
+          </li>
+
+
+          <li>HTTP is based on client-server achitecture</li>
+
+
+          <li>Clients are also known as User Agent (UA):</li>
+
+
+          <li style="list-style: none; display: inline">
+            <p>Web browsers, Web crawlers, e-mail clients, and other end user tools and applications</p>
+          </li>
+
+
+          <li>Servers:</li>
+
+
+          <li style="list-style: none; display: inline">
+            <p>origin servers, proxy servers, getaways, tunnels</p>
+          </li>
+
+
+          <li>HTTP uses a request-response standard protocol</li>
+
+
+          <li style="list-style: none; display: inline">
+            <p>The client sends an HTTP request message to the server</p>
+
+
+            <p>The server processes the request and replies with an HTTP response message</p>
+
+
+            <p>
+            </p>
+          </li>
+
+
+          <li>HTTP is a stateless communications protocol</li>
+
+
+          <li style="list-style: none; display: inline">
+            <p>Servers do not keep informatin about clients in between requests</p>
+
+
+            <p>Web applications effect session tracking using mechanism such as cookies on URL-encoded session information to keep track of related client requests</p>
+          </li>
+
+
+          <li>HTTP provides suport for other functionalities such as cahe control, content media type (MIME) specification, language and character set specification,<br>
+          content/transfer coding, client-server protocol negotiatons, persistent connections, request pipelining, etc.</li>
         </ul>
 
-        <h1>STRUCTURE</h1>
 
-        <h3>Head</h3>
-        <p>- title, base, link, meta, style,, script</p>
+        <h1>COOKIE</h1>
 
+
+        <p>a very small text file *add some notes here*</p>
+
+
+        <h1>CACHE</h1>
+
+
+        <p>Local storage or copy of resource that is fetched from a server</p>
+
+
+        <h1>HTTP REQUEST METHODS</h1>
+
+
+        <ul>
+          <li>GET</li>
+
+
+          <li style="list-style: none; display: inline">
+            <p>Most commonly used in HTTP method</p>
+
+
+            <p>Used to request from the server the retrieval if the source identified by the request URI; teh retrieved resource is returned in the message body as an entity</p>
+
+
+            <p>Can be combine dwith conditional and/or range request headers to effect conditional and/or partial resource retrieval</p>
+
+
+            <p>must be supported by all general-purpose servers</p>
+          </li>
+
+
+          <li>HEAD</li>
+
+
+          <li style="list-style: none; display: inline">
+            <p>Identical to GET method, except the message body is not included in the response</p>
+          </li>
+
+
+          <li>POST</li>
+
+
+          <li style="list-style: none; display: inline">
+            <p>Request that the origin server accept the entity enclosed in the request as a new subordinate of the resource identified by the Request-URI in the Request-Line</p>
+          </li>
+
+
+          <li>TRACE</li>
+
+
+          <li style="list-style: none; display: inline">
+            <p>Request the server to "echo" back to the client of received request</p>
+
+
+            <p>Typically used for testing or diagnostics of the request chain</p>
+          </li>
+
+
+          <li>DELETE</li>
+
+
+          <li style="list-style: none; display: inline">
+            <p>Request the server to delete the resource identified by the Request-URI</p>
+          </li>
+
+
+          <li>CONNECT</li>
+
+
+          <li style="list-style: none; display: inline">
+            <p>Reserved for used of tunneling proxy servers</p>
+          </li>
+        </ul>
+
+
+        <h1>HTTP REQUEST-RESPONSE HEADER</h1>
+
+
+        <ul>
+          <li>Request Header</li>
+
+
+          <li style="list-style: none; display: inline">
+            <p>Message Header</p>
+
+
+            <p>Empty Line (CLF)</p>
+
+
+            <p>Message Body</p>
+          </li>
+
+
+          <li>Response Header</li>
+
+
+          <li style="list-style: none; display: inline">
+            <p>Status Line (CLF)</p>
+
+
+            <p>- HTTP Protocol Version</p>
+
+
+            <p>- Status Code</p>
+
+
+            <p>- REason Phase</p>
+
+
+            <p>Message Headers</p>
+
+
+            <p>Empty Line</p>
+
+
+            <p>Message Body (optional)</p>
+          </li>
+        </ul>
+
+
+        <h1>HTTP MESSAGE HEADERS</h1>
+
+
+        <ul>
+          <li>General Header Fields</li>
+
+
+          <li style="list-style: none; display: inline">
+            <p>Cache-control</p>
+
+
+            <p>Connection</p>
+
+
+            <p>Date</p>
+
+
+            <p>Pragma</p>
+
+
+            <p>Trailer</p>
+
+
+            <p>Transfer-encoding</p>
+
+
+            <p>upgrade</p>
+
+
+            <p>Via</p>
+
+
+            <p>Warning</p>
+          </li>
+
+
+          <li>Request Header Fields</li>
+
+
+          <li style="list-style: none; display: inline">
+            <p>Accept</p>
+
+
+            <p>Accept-charset</p>
+
+
+            <p>Accept-encoding</p>
+
+
+            <p>Accept-language</p>
+
+
+            <p>Authorization</p>
+
+
+            <p>Expect</p>
+
+
+            <p>From</p>
+
+
+            <p>Host</p>
+
+
+            <p>If-Match</p>
+
+
+            <p>If-Modified-Since</p>
+
+
+            <p>If-Unmodified-Since</p>
+
+
+            <p>If-None-Match</p>
+
+
+            <p>Range</p>
+
+
+            <p>If-Range</p>
+
+
+            <p>Max-forward</p>
+
+
+            <p>Proxy-Authorization</p>
+
+
+            <p>Referer</p>
+
+
+            <p>User-Agent</p>
+          </li>
+
+
+          <li>Response Header Fields</li>
+
+
+          <li style="list-style: none; display: inline">
+            <p>Accept-Range</p>
+
+
+            <p>Age</p>
+
+
+            <p>E-tag</p>
+
+
+            <p>Location</p>
+
+
+            <p>Proxy-Authenticate</p>
+
+
+            <p>Retry-After</p>
+
+
+            <p>Server</p>
+
+
+            <p>Vary</p>
+
+
+            <p>WWW-Authenticate</p>
+          </li>
+
+
+          <li>Entity Header Fields</li>
+
+
+          <li style="list-style: none; display: inline">
+            <p>Allow</p>
+
+
+            <p>Content-encoding</p>
+
+
+            <p>Content-Languge</p>
+
+
+            <p>Content-length</p>
+
+
+            <p>Content-location</p>
+
+
+            <p>Content-MD5</p>
+
+
+            <p>Content-type</p>
+
+
+            <p>Content-range</p>
+
+
+            <p>Expires</p>
+
+
+            <p>Last-modified</p>
+          </li>
+        </ul>
+
+
+        <h1>HTTP STATUS CODES</h1>
+
+
+        <ul>
+          <li>Informational (1xx)</li>
+
+
+          <li style="list-style: none; display: inline">
+            <p>100 Continue</p>
+
+
+            <p>101 Switching Protocols</p>
+          </li>
+
+
+          <li>Success (2xx)</li>
+
+
+          <li style="list-style: none; display: inline">
+            <p>200 OK</p>
+
+
+            <p>202 Accepted</p>
+
+
+            <p>203 Non-Authoritative Information</p>
+
+
+            <p>204 No Content</p>
+
+
+            <p>205 Reset Content</p>
+
+
+            <p>206 Partial Content</p>
+          </li>
+
+
+          <li>Redirection (3xx)</li>
+
+
+          <li style="list-style: none; display: inline">
+            <p>300 Multiple Choices</p>
+
+
+            <p>301 Moved Permanently</p>
+
+
+            <p>302 Found</p>
+
+
+            <p>303 See Other</p>
+
+
+            <p>304 Not Modified</p>
+
+
+            <p>305 Use Proxy</p>
+
+
+            <p>307 Temporary Redirect</p>
+          </li>
+
+
+          <li>Client Error (4xx)</li>
+
+
+          <li style="list-style: none; display: inline">
+            <p>400 Bad Request</p>
+
+
+            <p>401 Unauthorized</p>
+
+
+            <p>402 Payment Required</p>
+
+
+            <p>403 Forbidden</p>
+
+
+            <p>404 Not Found</p>
+
+
+            <p>405 Method Not Allowed</p>
+
+
+            <p>406 Not Acceptable</p>
+
+
+            <p>407 Proxy Authentication Required</p>
+
+
+            <p>408 Request Time-out</p>
+
+
+            <p>409 Conflict</p>
+
+
+            <p>410 Gone</p>
+
+
+            <p>411 Length Required</p>
+
+
+            <p>412 Precondition Failed</p>
+
+
+            <p>413 Request Entity Too Large</p>
+
+
+            <p>414 Request-URI Too Long</p>
+
+
+            <p>415 Unsuppoted Media Type</p>
+
+
+            <p>416 Request Range Not Satisfiable</p>
+
+
+            <p>417 Expectation Failed</p>
+          </li>
+
+
+          <li>Server Error (5xx)</li>
+
+
+          <li style="list-style: none; display: inline">
+            <p>500 Internal Server Error</p>
+
+
+            <p>501 Not Implemented</p>
+
+
+            <p>502 Bad Gateway</p>
+
+
+            <p>503 Service Unavailable</p>
+
+
+            <p>504 Gateway Time-out</p>
+
+
+            <p>505 HTTP Version Not Supported</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script>
+  function openCity(evt, cityName) {
+     var i, tabcontent, tablinks;
+     tabcontent = document.getElementsByClassName("tabcontent");
+     for (i = 0; i < tabcontent.length; i++) {
+         tabcontent[i].style.display = "none";
+     }
+     tablinks = document.getElementsByClassName("tablinks");
+     for (i = 0; i < tablinks.length; i++) {
+         tablinks[i].className = tablinks[i].className.replace(" active", "");
+     }
+     document.getElementById(cityName).style.display = "block";
+     evt.currentTarget.className += " active";
+  }
+
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultOpen").click();
+  </script> 
 </body>
 </html>
