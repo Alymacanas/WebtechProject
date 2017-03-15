@@ -6,655 +6,535 @@
   <link href="../css/mystyle.css" rel="stylesheet" type="text/css">
 </head>
 
-<body>
-  <div id="pre">
-    <header>
-      <div class="nav">
-        <a class="navtext" href="index.html" target="_self">Home</a>
+	<body>
+	  <div id="pre">
+		<header>
+			<div class="nav">
+				<a class="navtext" href="index.html" target="_self">Home</a>
+				<a class="navtext" href="prelims.html" target="_self">Prelims</a>
+				<!--<li>Midterms Topics</li>-->
+				<a class="navtext" href="midterms.html" target="_self">Midterms</a>
+				<!--<li>Finals Topics</li>-->
+				<a class="navtext" href="finals.html" target="_self">Finals</a>
+				<a class="navtext" href="glossary.html" target="_self">Glossary</a>
+				<a class="navtext" href="sources.html" target="_self">Sources</a>
+			</div>
+		</header>
+		
+		<div id="http">
+		  <div class="course">
+			<h1>HYPERTEXT TRANSFER PROTOCOL (HTTP)</h1>
 
-        <div class="menu">
-          <a class="navtext" href="prelims.html" target="_self">Prelims</a>
-        </div>
-         <!--<li>Midterms Topics</li>-->
 
+			<p>- Application layer used primarily to retrieve hypertext (on hypermedia) documents and resources on the World Wide Web</p>
 
-        <div class="menu">
-          <a class="navtext" href="midterms.html" target="_self">Midterms</a>
-        </div>
-        <!--<li>Finals Topics</li>-->
 
+			<p>- Jointly developed by the W3C and the IETF</p>
 
-        <div class="menu">
-          <a class="navtext" href="" target="_self">Finals</a>
-        </div>
 
+			<p>Protocol - Set of rules needs to be followed</p>
 
-        <div class="menu">
-          <a class="navtext" href="glossary.html" target="_self">Glossary</a>
-        </div>
 
+			<p>HTTP 1.1 requires atleast the HOST request</p>
 
-        <div class="menu">
-          <a class="navtext" href="sources.html" target="_self">Sources</a>
-        </div>
-      </div>
-    </header>
 
+			<h1>FUNDAMENTALS</h1>
 
-    <div class="tab">
-      <a class="tablinks" href="javascript:void(0)" id="defaultOpen" onclick="openCity(event, 'London')">Internet</a> <a class="tablinks" href="javascript:void(0)" onclick="openCity(event, 'Paris')">WWW</a> <a class="tablinks" href="javascript:void(0)" onclick="openCity(event, 'Tokyo')">HTTP</a>
-    </div>
 
+			<ul>
+			  <li>HTTP typically runs on the top of TCP/IP, using TCP port 80 by default (TCP port 443 for HTTPS)</li>
 
-    <div class="tabcontent" id="Internet">
-      <h3>Internet</h3>
 
+			  <li>HTTP resources are identified using URIs (specifically in HTTP URLs)</li>
 
-      <p>What is Internet</p>
-    </div>
 
+			  <li style="list-style: none; display: inline">
+				<p><u>http</u>://<u>student</u>:<u>123password</u>@<u>i.slu.edu.ph</u>:<u>8080</u>/<u>home.php</u>;<u>sessionid=1234567</u>? <u>name=studentid</u>#<u>summary</u></p>
+				<small>scheme username password host port path scheme specific parameters start of query fragment</small>
 
-    <div class="tabcontent" id="WWW">
-      <h3>WWW</h3>
+				<p>
+				</p>
+			  </li>
 
 
-      <p>The World Wide Web</p>
-    </div>
+			  <li>HTTP is based on client-server achitecture</li>
 
 
-    <div class="tabcontent" id="Tokyo">
-      <h3>HTTP</h3>
+			  <li>Clients are also known as User Agent (UA):</li>
 
 
-      <p>Hypertext Transfer Protocol</p>
-    </div>
+			  <li style="list-style: none; display: inline">
+				<p>Web browsers, Web crawlers, e-mail clients, and other end user tools and applications</p>
+			  </li>
 
 
-    <div id="int">
-      <div class="course">
-        <h1>WHAT IS INTERNET?</h1>
+			  <li>Servers:</li>
 
 
-        <p>- A global system of interconnected computer networks that use the standard Internet Protocol Suite (TCP/IP)<br>
-        to serve billions of users worldwide.</p>
+			  <li style="list-style: none; display: inline">
+				<p>origin servers, proxy servers, getaways, tunnels</p>
+			  </li>
 
 
-        <p>- It is a networks that consists of millions of private, public, academic, business, and government networks<br>
-        of local to global scope, that are linked by a broad array of electronic, wireless, and optical networking technologies.</p>
+			  <li>HTTP uses a request-response standard protocol</li>
 
 
-        <h1>FATHER OF INTERNET</h1>
+			  <li style="list-style: none; display: inline">
+				<p>The client sends an HTTP request message to the server</p>
 
 
-        <p>Vinton Cerf</p>
+				<p>The server processes the request and replies with an HTTP response message</p>
 
+			  </li>
 
-        <p>*insert image here*</p>
-      </div>
-    </div>
 
+			  <li>HTTP is a stateless communications protocol</li>
 
-    <div id="www">
-      <div class="course">
-        <h1>THE WORLD WIDE WEB</h1>
 
+			  <li style="list-style: none; display: inline">
+				<p>Servers do not keep informatin about clients in between requests</p>
 
-        <p>- A global information medium which users can read and write via computers connected to the Internet.<br>
-        The term is often mistakenly used as a synonym for the Internet itself, but the Web is a service that operates over Internet as E-mail does.</p>
 
+				<p>Web applications effect session tracking using mechanism such as cookies on URL-encoded session information to keep track of related client requests</p>
+			  </li>
 
-        <h1>FATHER OF THE WEB</h1>
 
+			  <li>HTTP provides suport for other functionalities such as cahe control, content media type (MIME) specification, language and character set specification,<br>
+			  content/transfer coding, client-server protocol negotiatons, persistent connections, request pipelining, etc.</li>
+			</ul>
 
-        <p>Tim Berners-Lee</p>
-        <img src="../images/timbernerslee.jpg" alt="timbernerslee">
 
-        <h1>BRIEF HISTORY</h1>
+			<h1>COOKIE</h1>
 
 
-        <p>in September 1994, Berners-Lee founded the World Wide Web Consortium (W3C) at the Massachusetts Institute of Technology<br>
-        with support from the Defense Advanced Research Projects Agency (DARPA) and the Europian Commission.<br>
-        It compromised various companies that were willing to create standards and recommendations to improve the quality of the Web.</p>
-      </div>
-    </div>
+			<p>a very small text file *add some notes here*</p>
 
 
-    <div id="http">
-      <div class="course">
-        <h1>HYPERTEXT TRANSFER PROTOCOL (HTTP)</h1>
+			<h1>CACHE</h1>
 
 
-        <p>- Application layer used primarily to retrieve hypertext (on hypermedia) documents and resources on the World Wide Web</p>
+			<p>Local storage or copy of resource that is fetched from a server</p>
 
 
-        <p>- Jointly developed by the W3C and the IETF</p>
+			<h1>HTTP REQUEST METHODS</h1>
 
 
-        <p>Protocol - Set of rules needs to be followed</p>
+			<ul>
+			  <li>GET</li>
 
 
-        <p>HTTP 1.1 requires atleast the HOST request</p>
+			  <li style="list-style: none; display: inline">
+				<p>Most commonly used in HTTP method</p>
 
 
-        <h1>FUNDAMENTALS</h1>
+				<p>Used to request from the server the retrieval if the source identified by the request URI; teh retrieved resource is returned in the message body as an entity</p>
 
 
-        <ul>
-          <li>HTTP typically runs on the top of TCP/IP, using TCP port 80 by default (TCP port 443 for HTTPS)</li>
+				<p>Can be combine dwith conditional and/or range request headers to effect conditional and/or partial resource retrieval</p>
 
 
-          <li>HTTP resources are identified using URIs (specifically in HTTP URLs)</li>
+				<p>must be supported by all general-purpose servers</p>
+			  </li>
 
 
-          <li style="list-style: none; display: inline">
-            <p><u>http</u>://<u>student</u>:<u>123password</u>@<u>i.slu.edu.ph</u>:<u>8080</u>/<u>home.php</u>;<u>sessionid=1234567</u>? <u>name=studentid</u>#<u>summary</u></p>
-            <small>scheme username password host port path scheme specific parameters start of query fragment</small>
+			  <li>HEAD</li>
 
-            <p>
-            </p>
-          </li>
 
+			  <li style="list-style: none; display: inline">
+				<p>Identical to GET method, except the message body is not included in the response</p>
+			  </li>
 
-          <li>HTTP is based on client-server achitecture</li>
 
+			  <li>POST</li>
 
-          <li>Clients are also known as User Agent (UA):</li>
 
+			  <li style="list-style: none; display: inline">
+				<p>Request that the origin server accept the entity enclosed in the request as a new subordinate of the resource identified by the Request-URI in the Request-Line</p>
+			  </li>
 
-          <li style="list-style: none; display: inline">
-            <p>Web browsers, Web crawlers, e-mail clients, and other end user tools and applications</p>
-          </li>
 
+			  <li>TRACE</li>
 
-          <li>Servers:</li>
 
+			  <li style="list-style: none; display: inline">
+				<p>Request the server to "echo" back to the client of received request</p>
 
-          <li style="list-style: none; display: inline">
-            <p>origin servers, proxy servers, getaways, tunnels</p>
-          </li>
 
+				<p>Typically used for testing or diagnostics of the request chain</p>
+			  </li>
 
-          <li>HTTP uses a request-response standard protocol</li>
 
+			  <li>DELETE</li>
 
-          <li style="list-style: none; display: inline">
-            <p>The client sends an HTTP request message to the server</p>
 
+			  <li style="list-style: none; display: inline">
+				<p>Request the server to delete the resource identified by the Request-URI</p>
+			  </li>
 
-            <p>The server processes the request and replies with an HTTP response message</p>
 
+			  <li>CONNECT</li>
 
-            <p>
-            </p>
-          </li>
 
+			  <li style="list-style: none; display: inline">
+				<p>Reserved for used of tunneling proxy servers</p>
+			  </li>
+			</ul>
 
-          <li>HTTP is a stateless communications protocol</li>
 
+			<h1>HTTP REQUEST-RESPONSE HEADER</h1>
 
-          <li style="list-style: none; display: inline">
-            <p>Servers do not keep informatin about clients in between requests</p>
 
+			<ul>
+			  <li>Request Header</li>
 
-            <p>Web applications effect session tracking using mechanism such as cookies on URL-encoded session information to keep track of related client requests</p>
-          </li>
 
+			  <li style="list-style: none; display: inline">
+				<p>Message Header</p>
 
-          <li>HTTP provides suport for other functionalities such as cahe control, content media type (MIME) specification, language and character set specification,<br>
-          content/transfer coding, client-server protocol negotiatons, persistent connections, request pipelining, etc.</li>
-        </ul>
 
+				<p>Empty Line (CLF)</p>
 
-        <h1>COOKIE</h1>
 
+				<p>Message Body</p>
+			  </li>
 
-        <p>a very small text file *add some notes here*</p>
 
+			  <li>Response Header</li>
 
-        <h1>CACHE</h1>
 
+			  <li style="list-style: none; display: inline">
+				<p>Status Line (CLF)</p>
 
-        <p>Local storage or copy of resource that is fetched from a server</p>
 
+				<p>- HTTP Protocol Version</p>
 
-        <h1>HTTP REQUEST METHODS</h1>
 
+				<p>- Status Code</p>
 
-        <ul>
-          <li>GET</li>
 
+				<p>- REason Phase</p>
 
-          <li style="list-style: none; display: inline">
-            <p>Most commonly used in HTTP method</p>
 
+				<p>Message Headers</p>
 
-            <p>Used to request from the server the retrieval if the source identified by the request URI; teh retrieved resource is returned in the message body as an entity</p>
 
+				<p>Empty Line</p>
 
-            <p>Can be combine dwith conditional and/or range request headers to effect conditional and/or partial resource retrieval</p>
 
+				<p>Message Body (optional)</p>
+			  </li>
+			</ul>
 
-            <p>must be supported by all general-purpose servers</p>
-          </li>
 
+			<h1>HTTP MESSAGE HEADERS</h1>
 
-          <li>HEAD</li>
 
+			<ul>
+			  <li>General Header Fields</li>
 
-          <li style="list-style: none; display: inline">
-            <p>Identical to GET method, except the message body is not included in the response</p>
-          </li>
 
+			  <li style="list-style: none; display: inline">
+				<p>Cache-control</p>
 
-          <li>POST</li>
 
+				<p>Connection</p>
 
-          <li style="list-style: none; display: inline">
-            <p>Request that the origin server accept the entity enclosed in the request as a new subordinate of the resource identified by the Request-URI in the Request-Line</p>
-          </li>
 
+				<p>Date</p>
 
-          <li>TRACE</li>
 
+				<p>Pragma</p>
 
-          <li style="list-style: none; display: inline">
-            <p>Request the server to "echo" back to the client of received request</p>
 
+				<p>Trailer</p>
 
-            <p>Typically used for testing or diagnostics of the request chain</p>
-          </li>
 
+				<p>Transfer-encoding</p>
 
-          <li>DELETE</li>
 
+				<p>upgrade</p>
 
-          <li style="list-style: none; display: inline">
-            <p>Request the server to delete the resource identified by the Request-URI</p>
-          </li>
 
+				<p>Via</p>
 
-          <li>CONNECT</li>
 
+				<p>Warning</p>
+			  </li>
 
-          <li style="list-style: none; display: inline">
-            <p>Reserved for used of tunneling proxy servers</p>
-          </li>
-        </ul>
 
+			  <li>Request Header Fields</li>
 
-        <h1>HTTP REQUEST-RESPONSE HEADER</h1>
 
+			  <li style="list-style: none; display: inline">
+				<p>Accept</p>
 
-        <ul>
-          <li>Request Header</li>
 
+				<p>Accept-charset</p>
 
-          <li style="list-style: none; display: inline">
-            <p>Message Header</p>
 
+				<p>Accept-encoding</p>
 
-            <p>Empty Line (CLF)</p>
 
+				<p>Accept-language</p>
 
-            <p>Message Body</p>
-          </li>
 
+				<p>Authorization</p>
 
-          <li>Response Header</li>
 
+				<p>Expect</p>
 
-          <li style="list-style: none; display: inline">
-            <p>Status Line (CLF)</p>
 
+				<p>From</p>
 
-            <p>- HTTP Protocol Version</p>
 
+				<p>Host</p>
 
-            <p>- Status Code</p>
 
+				<p>If-Match</p>
 
-            <p>- REason Phase</p>
 
+				<p>If-Modified-Since</p>
 
-            <p>Message Headers</p>
 
+				<p>If-Unmodified-Since</p>
 
-            <p>Empty Line</p>
 
+				<p>If-None-Match</p>
 
-            <p>Message Body (optional)</p>
-          </li>
-        </ul>
 
+				<p>Range</p>
 
-        <h1>HTTP MESSAGE HEADERS</h1>
 
+				<p>If-Range</p>
 
-        <ul>
-          <li>General Header Fields</li>
 
+				<p>Max-forward</p>
 
-          <li style="list-style: none; display: inline">
-            <p>Cache-control</p>
 
+				<p>Proxy-Authorization</p>
 
-            <p>Connection</p>
 
+				<p>Referer</p>
 
-            <p>Date</p>
 
+				<p>User-Agent</p>
+			  </li>
 
-            <p>Pragma</p>
 
+			  <li>Response Header Fields</li>
 
-            <p>Trailer</p>
 
+			  <li style="list-style: none; display: inline">
+				<p>Accept-Range</p>
 
-            <p>Transfer-encoding</p>
 
+				<p>Age</p>
 
-            <p>upgrade</p>
 
+				<p>E-tag</p>
 
-            <p>Via</p>
 
+				<p>Location</p>
 
-            <p>Warning</p>
-          </li>
 
+				<p>Proxy-Authenticate</p>
 
-          <li>Request Header Fields</li>
 
+				<p>Retry-After</p>
 
-          <li style="list-style: none; display: inline">
-            <p>Accept</p>
 
+				<p>Server</p>
 
-            <p>Accept-charset</p>
 
+				<p>Vary</p>
 
-            <p>Accept-encoding</p>
 
+				<p>WWW-Authenticate</p>
+			  </li>
 
-            <p>Accept-language</p>
 
+			  <li>Entity Header Fields</li>
 
-            <p>Authorization</p>
 
+			  <li style="list-style: none; display: inline">
+				<p>Allow</p>
 
-            <p>Expect</p>
 
+				<p>Content-encoding</p>
 
-            <p>From</p>
 
+				<p>Content-Languge</p>
 
-            <p>Host</p>
 
+				<p>Content-length</p>
 
-            <p>If-Match</p>
 
+				<p>Content-location</p>
 
-            <p>If-Modified-Since</p>
 
+				<p>Content-MD5</p>
 
-            <p>If-Unmodified-Since</p>
 
+				<p>Content-type</p>
 
-            <p>If-None-Match</p>
 
+				<p>Content-range</p>
 
-            <p>Range</p>
 
+				<p>Expires</p>
 
-            <p>If-Range</p>
 
+				<p>Last-modified</p>
+			  </li>
+			</ul>
 
-            <p>Max-forward</p>
 
+			<h1>HTTP STATUS CODES</h1>
 
-            <p>Proxy-Authorization</p>
 
+			<ul>
+			  <li>Informational (1xx)</li>
 
-            <p>Referer</p>
 
+			  <li style="list-style: none; display: inline">
+				<p>100 Continue</p>
 
-            <p>User-Agent</p>
-          </li>
 
+				<p>101 Switching Protocols</p>
+			  </li>
 
-          <li>Response Header Fields</li>
 
+			  <li>Success (2xx)</li>
 
-          <li style="list-style: none; display: inline">
-            <p>Accept-Range</p>
 
+			  <li style="list-style: none; display: inline">
+				<p>200 OK</p>
 
-            <p>Age</p>
 
+				<p>202 Accepted</p>
 
-            <p>E-tag</p>
 
+				<p>203 Non-Authoritative Information</p>
 
-            <p>Location</p>
 
+				<p>204 No Content</p>
 
-            <p>Proxy-Authenticate</p>
 
+				<p>205 Reset Content</p>
 
-            <p>Retry-After</p>
 
+				<p>206 Partial Content</p>
+			  </li>
 
-            <p>Server</p>
 
+			  <li>Redirection (3xx)</li>
 
-            <p>Vary</p>
 
+			  <li style="list-style: none; display: inline">
+				<p>300 Multiple Choices</p>
 
-            <p>WWW-Authenticate</p>
-          </li>
 
+				<p>301 Moved Permanently</p>
 
-          <li>Entity Header Fields</li>
 
+				<p>302 Found</p>
 
-          <li style="list-style: none; display: inline">
-            <p>Allow</p>
 
+				<p>303 See Other</p>
 
-            <p>Content-encoding</p>
 
+				<p>304 Not Modified</p>
 
-            <p>Content-Languge</p>
 
+				<p>305 Use Proxy</p>
 
-            <p>Content-length</p>
 
+				<p>307 Temporary Redirect</p>
+			  </li>
 
-            <p>Content-location</p>
 
+			  <li>Client Error (4xx)</li>
 
-            <p>Content-MD5</p>
 
+			  <li style="list-style: none; display: inline">
+				<p>400 Bad Request</p>
 
-            <p>Content-type</p>
 
+				<p>401 Unauthorized</p>
 
-            <p>Content-range</p>
 
+				<p>402 Payment Required</p>
 
-            <p>Expires</p>
 
+				<p>403 Forbidden</p>
 
-            <p>Last-modified</p>
-          </li>
-        </ul>
 
+				<p>404 Not Found</p>
 
-        <h1>HTTP STATUS CODES</h1>
 
+				<p>405 Method Not Allowed</p>
 
-        <ul>
-          <li>Informational (1xx)</li>
 
+				<p>406 Not Acceptable</p>
 
-          <li style="list-style: none; display: inline">
-            <p>100 Continue</p>
 
+				<p>407 Proxy Authentication Required</p>
 
-            <p>101 Switching Protocols</p>
-          </li>
 
+				<p>408 Request Time-out</p>
 
-          <li>Success (2xx)</li>
 
+				<p>409 Conflict</p>
 
-          <li style="list-style: none; display: inline">
-            <p>200 OK</p>
 
+				<p>410 Gone</p>
 
-            <p>202 Accepted</p>
 
+				<p>411 Length Required</p>
 
-            <p>203 Non-Authoritative Information</p>
 
+				<p>412 Precondition Failed</p>
 
-            <p>204 No Content</p>
 
+				<p>413 Request Entity Too Large</p>
 
-            <p>205 Reset Content</p>
 
+				<p>414 Request-URI Too Long</p>
 
-            <p>206 Partial Content</p>
-          </li>
 
+				<p>415 Unsuppoted Media Type</p>
 
-          <li>Redirection (3xx)</li>
 
+				<p>416 Request Range Not Satisfiable</p>
 
-          <li style="list-style: none; display: inline">
-            <p>300 Multiple Choices</p>
 
+				<p>417 Expectation Failed</p>
+			  </li>
 
-            <p>301 Moved Permanently</p>
 
+			  <li>Server Error (5xx)</li>
 
-            <p>302 Found</p>
 
+			  <li style="list-style: none; display: inline">
+				<p>500 Internal Server Error</p>
 
-            <p>303 See Other</p>
 
+				<p>501 Not Implemented</p>
 
-            <p>304 Not Modified</p>
 
+				<p>502 Bad Gateway</p>
 
-            <p>305 Use Proxy</p>
 
+				<p>503 Service Unavailable</p>
 
-            <p>307 Temporary Redirect</p>
-          </li>
 
+				<p>504 Gateway Time-out</p>
 
-          <li>Client Error (4xx)</li>
 
-
-          <li style="list-style: none; display: inline">
-            <p>400 Bad Request</p>
-
-
-            <p>401 Unauthorized</p>
-
-
-            <p>402 Payment Required</p>
-
-
-            <p>403 Forbidden</p>
-
-
-            <p>404 Not Found</p>
-
-
-            <p>405 Method Not Allowed</p>
-
-
-            <p>406 Not Acceptable</p>
-
-
-            <p>407 Proxy Authentication Required</p>
-
-
-            <p>408 Request Time-out</p>
-
-
-            <p>409 Conflict</p>
-
-
-            <p>410 Gone</p>
-
-
-            <p>411 Length Required</p>
-
-
-            <p>412 Precondition Failed</p>
-
-
-            <p>413 Request Entity Too Large</p>
-
-
-            <p>414 Request-URI Too Long</p>
-
-
-            <p>415 Unsuppoted Media Type</p>
-
-
-            <p>416 Request Range Not Satisfiable</p>
-
-
-            <p>417 Expectation Failed</p>
-          </li>
-
-
-          <li>Server Error (5xx)</li>
-
-
-          <li style="list-style: none; display: inline">
-            <p>500 Internal Server Error</p>
-
-
-            <p>501 Not Implemented</p>
-
-
-            <p>502 Bad Gateway</p>
-
-
-            <p>503 Service Unavailable</p>
-
-
-            <p>504 Gateway Time-out</p>
-
-
-            <p>505 HTTP Version Not Supported</p>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <script>
-  function openCity(evt, cityName) {
-     var i, tabcontent, tablinks;
-     tabcontent = document.getElementsByClassName("tabcontent");
-     for (i = 0; i < tabcontent.length; i++) {
-         tabcontent[i].style.display = "none";
-     }
-     tablinks = document.getElementsByClassName("tablinks");
-     for (i = 0; i < tablinks.length; i++) {
-         tablinks[i].className = tablinks[i].className.replace(" active", "");
-     }
-     document.getElementById(cityName).style.display = "block";
-     evt.currentTarget.className += " active";
-  }
-
-  // Get the element with id="defaultOpen" and click on it
-  document.getElementById("defaultOpen").click();
-  </script> 
-</body>
+				<p>505 HTTP Version Not Supported</p>
+			  </li>
+			</ul>
+		</div>
+	</div>
+	</body>
 </html>

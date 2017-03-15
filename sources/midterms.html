@@ -7,82 +7,23 @@
 </head>
 
 <body>
-  <div id="pre">
+  <div id="mid">
     <header>
-      <div class="nav">
-        <a class="navtext" href="index.html" target="_self">Home</a>
-
-        <div class="menu">
-          <a class="navtext" href="prelims.html" target="_self">Prelims</a>
-        </div>
-         <!--<li>Midterms Topics</li>-->
-
-
-        <div class="menu">
-          <a class="navtext" href="midterms.html" target="_self">Midterms</a>
-        </div>
-        <!--<li>Finals Topics</li>-->
-
-
-        <div class="menu">
-          <a class="navtext" href="" target="_self">Finals</a>
-        </div>
-
-
-        <div class="menu">
-          <a class="navtext" href="glossary.html" target="_self">Glossary</a>
-        </div>
-
-
-        <div class="menu">
-          <a class="navtext" href="sources.html" target="_self">Sources</a>
-        </div>
-      </div>
+		<div class="nav">
+			<a class="navtext" href="index.html" target="_self">Home</a>
+			<a class="navtext" href="prelims.html" target="_self">Prelims</a>
+			<!--<li>Midterms Topics</li>-->
+			<a class="navtext" href="midterms.html" target="_self">Midterms</a>
+			<!--<li>Finals Topics</li>-->
+			<a class="navtext" href="finals.html" target="_self">Finals</a>
+			<a class="navtext" href="glossary.html" target="_self">Glossary</a>
+			<a class="navtext" href="sources.html" target="_self">Sources</a>
+		</div>
     </header>
 
-
-    <div class="tab">
-      <a class="tablinks" href="javascript:void(0)" id="defaultOpen" onclick="openCity(event, 'London')">HTML</a> <a class="tablinks" href="javascript:void(0)" onclick="openCity(event, 'Paris')">CSS</a> <a class="tablinks" href="javascript:void(0)" onclick="openCity(event, 'Tokyo')">JavaScript</a>
-    </div>
-
-
-    <div class="tabcontent" id="HTML">
-      <h3>HTML</h3>
-
-
-      <p>HyperText Markup Language</p>
-    </div>
-
-
-    <div class="tabcontent" id="CSS">
-      <h3>CSS</h3>
-
-
-      <p>Cascading Style Sheets</p>
-    </div>
-
-
-    <div class="tabcontent" id="JavaScript">
-      <h3>JavaScript</h3>
-
-
-      <p>What is JavaScript</p>
-    </div>
-
-
-    <div id="HTML">
+    <div id="html">
       <div class="course">
         <h1>HyperText Markup Language</h1>
-
-
-        <p>- </p>
-
-
-        <p>-</p>
-
-
-        <h1></h1>
-
 
         <p>Tim Berners-Lee</p>
 
@@ -91,13 +32,9 @@
       </div>
     </div>
 
-
     <div id="CSS">
       <div class="course">
         <h1>THE CASCADING STYLE SHEETS</h1>
-
-
-        <p>- </p>
 
 
         <h1>Developed By</h1>
@@ -634,24 +571,6 @@
         </ul>
       </div>
     </div>
-  </div>
-  <script>
-  function openCity(evt, cityName) {
-     var i, tabcontent, tablinks;
-     tabcontent = document.getElementsByClassName("tabcontent");
-     for (i = 0; i < tabcontent.length; i++) {
-         tabcontent[i].style.display = "none";
-     }
-     tablinks = document.getElementsByClassName("tablinks");
-     for (i = 0; i < tablinks.length; i++) {
-         tablinks[i].className = tablinks[i].className.replace(" active", "");
-     }
-     document.getElementById(cityName).style.display = "block";
-     evt.currentTarget.className += " active";
-  }
-
-  // Get the element with id="defaultOpen" and click on it
-  document.getElementById("defaultOpen").click();
-  </script> 
-</body>
+	</div>
+	</body>
 </html>
