@@ -1,428 +1,286 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-  <title>Prelim Topics</title>
-  <link href="../css/mystyle.css" rel="stylesheet" type="text/css">
+	<title>Prelims</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
-
 	<body>
-	  <div id="pre">
-		<header>
-			<div class="nav">
-				<a class="navtext" href="index.html" target="_self">Home</a>
-				<a class="navtext" href="prelims.html" target="_self">Prelims</a>
-				<!--<li>Midterms Topics</li>-->
-				<a class="navtext" href="midterms.html" target="_self">Midterms</a>
-				<!--<li>Finals Topics</li>-->
-				<a class="navtext" href="finals.html" target="_self">Finals</a>
-				<a class="navtext" href="glossary.html" target="_self">Glossary</a>
-				<a class="navtext" href="sources.html" target="_self">Sources</a>
-			</div>
-		</header>
-		
+		<div id="pre">
+			<nav class="navbar navbar-default">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<a class="navbar-brand" href="#">Web Systems and Technologies</a>
+					</div>
+					<ul class="nav navbar-nav">
+					  <li><a href="index.html">Home</a></li>
+					  <li><a href="prelims.html">Prelims</a></li>
+					  <li><a href="midterms.html">Midterms</a></li>
+					  <li><a href="finals.html">Finals</a></li>
+					  <li><a href="glossary.html">Glossary</a></li>
+					  <li><a href="sources.html">Sources</a></li>
+					</ul>
+				</div>
+			</nav>	
+		</div>	
+
 		<div id="http">
 		  <div class="course">
 			<h1>HYPERTEXT TRANSFER PROTOCOL (HTTP)</h1>
-
-
-			<p>- Application layer used primarily to retrieve hypertext (on hypermedia) documents and resources on the World Wide Web</p>
-
-
-			<p>- Jointly developed by the W3C and the IETF</p>
-
-
-			<p>Protocol - Set of rules needs to be followed</p>
-
-
-			<p>HTTP 1.1 requires atleast the HOST request</p>
-
+				<ul>
+					<li>Application layer used primarily to retrieve hypertext (on hypermedia) documents and resources on the World Wide Web</li>
+					<li>Jointly developed by the W3C and the IETF</li>
+					<li>Protocol - Set of rules needs to be followed</li>
+					<li>HTTP 1.1 requires atleast the HOST request</li>
+				</ul>
 
 			<h1>FUNDAMENTALS</h1>
 			<img src="./images/fundamentals.png" alt="fundamentals">
-
-			<ul>
-			  <li>HTTP typically runs on the top of TCP/IP, using TCP port 80 by default (TCP port 443 for HTTPS)</li>
-
-
-			  <li>HTTP resources are identified using URIs (specifically in HTTP URLs)</li>
-
-
-			  <li>HTTP is based on client-server achitecture</li>
-
-
-			  <li>Clients are also known as User Agent (UA):</li>
-
-
-			  <li style="list-style: none; display: inline">
-				<p>Web browsers, Web crawlers, e-mail clients, and other end user tools and applications</p>
-			  </li>
-
-
-			  <li>Servers:</li>
-
-
-			  <li style="list-style: none; display: inline">
-				<p>origin servers, proxy servers, getaways, tunnels</p>
-			  </li>
-
-
-			  <li>HTTP uses a request-response standard protocol</li>
-
-
-			  <li style="list-style: none; display: inline">
-				<p>The client sends an HTTP request message to the server</p>
-
-
-				<p>The server processes the request and replies with an HTTP response message</p>
-
-			  </li>
-
-
-			  <li>HTTP is a stateless communications protocol</li>
-
-
-			  <li style="list-style: none; display: inline">
-				<p>Servers do not keep informatin about clients in between requests</p>
-
-
-				<p>Web applications effect session tracking using mechanism such as cookies on URL-encoded session information to keep track of related client requests</p>
-			  </li>
-
-
-			  <li>HTTP provides suport for other functionalities such as cahe control, content media type (MIME) specification, language and character set specification,<br>
-			  content/transfer coding, client-server protocol negotiatons, persistent connections, request pipelining, etc.</li>
-			</ul>
-
-
+				<ul>
+				  <li>HTTP typically runs on the top of TCP/IP, using TCP port 80 by default (TCP port 443 for HTTPS)</li>
+				  <li>HTTP resources are identified using URIs (specifically in HTTP URLs)</li>
+				  <li>HTTP is based on client-server achitecture</li>
+				  <li>Clients are also known as User Agent (UA):</li>
+				  <li style="list-style: none; display: inline">
+					<p>Web browsers, Web crawlers, e-mail clients, and other end user tools and applications</p>
+				  </li>
+				  <li>Servers:</li>
+				  <li style="list-style: none; display: inline">
+					<p>origin servers, proxy servers, getaways, tunnels</p>
+				  </li>
+				  <li>HTTP uses a request-response standard protocol</li>
+				  <li style="list-style: none; display: inline">
+					<p>The client sends an HTTP request message to the server</p>
+					<p>The server processes the request and replies with an HTTP response message</p>
+				  </li>
+				  <li>HTTP is a stateless communications protocol</li>
+				  <li style="list-style: none; display: inline">
+					<p>Servers do not keep informatin about clients in between requests</p>
+					<p>Web applications effect session tracking using mechanism such as cookies on URL-encoded session information to keep track of related client requests</p>
+				  </li>
+				  <li>HTTP provides suport for other functionalities such as cahe control, content media type (MIME) specification, language and character set specification,<br>
+				  content/transfer coding, client-server protocol negotiatons, persistent connections, request pipelining, etc.</li>
+				</ul>
 			<h1>COOKIE</h1>
-
-
-			<p> HTTP Cookie which is also called web cookie, Internet cookie, browser cookie or simply cookie is small piece of data sent from a website and stored on the user's computer by the user's web browser while user is browsing. </p>
-
+				<p> HTTP Cookie which is also called web cookie, Internet cookie, browser cookie or simply cookie is small piece of data sent from a website and stored on the user's computer by the user's web browser while user is browsing. </p>
 
 			<h1>CACHE</h1>
-
-
-			<p>HTTP Cache is an information technology for the temporary local storage or copy of resource that is fetched from a server.</p>
+				<p>HTTP Cache is an information technology for the temporary local storage or copy of resource that is fetched from a server.</p>
 			<img src="./images/cache.png" alt="cache">
 
-
 			<h1>HTTP REQUEST METHODS</h1>
+				<ul>
+				  <li>GET</li>
+
+				  <li style="list-style: none; display: inline">
+					<p>The GET method is commonly used in HTTP method, It is used to request from the server the retrieval if the source identified by the request URI and can be combine with conditional and/or range request headers to effect conditional and/or partial resource retrieval.</p>
+				  </li>
+
+				  <li>HEAD</li>
+
+				  <li style="list-style: none; display: inline">
+					<p>The HEAD Method is identical to GET method, Method will asks for a response but without the response body. This is very useful for retrieving.</p>
+				  </li>
+
+				  <li>POST</li>
+
+				  <li style="list-style: none; display: inline">
+					<p>The POST method requests that the origin server accept the entity enclosed in the request as a new subordinate of the resource identified by the Request-URI in the Request-Line.</p>
+				  </li>
+
+					  <li>PUT</li>
+
+				  <li style="list-style: none; display: inline">
+					<p>The PUT method requests that the enclosed entity in the message body under the specified request URI.</p>
+				  </li>
+
+				  <li>TRACE</li>
+
+				  <li style="list-style: none; display: inline">
+					<p>The TRACE method requests the server to "echo" back to the client of received request and typically used for testing or diagnostics of the request chain.</p>
+				  </li>
 
 
-			<ul>
-			  <li>GET</li>
+				  <li>DELETE</li>
 
-			  <li style="list-style: none; display: inline">
-				<p>The GET method is commonly used in HTTP method, It is used to request from the server the retrieval if the source identified by the request URI and can be combine with conditional and/or range request headers to effect conditional and/or partial resource retrieval.</p>
-			  </li>
-
-			  <li>HEAD</li>
-
-			  <li style="list-style: none; display: inline">
-				<p>The HEAD Method is identical to GET method, Method will asks for a response but without the response body. This is very useful for retrieving.</p>
-			  </li>
-
-			  <li>POST</li>
-
-			  <li style="list-style: none; display: inline">
-				<p>The POST method requests that the origin server accept the entity enclosed in the request as a new subordinate of the resource identified by the Request-URI in the Request-Line.</p>
-			  </li>
-
-			  	  <li>PUT</li>
-
-			  <li style="list-style: none; display: inline">
-				<p>The PUT method requests that the enclosed entity in the message body under the specified request URI.</p>
-			  </li>
-
-			  <li>TRACE</li>
-
-			  <li style="list-style: none; display: inline">
-				<p>The TRACE method requests the server to "echo" back to the client of received request and typically used for testing or diagnostics of the request chain.</p>
-			  </li>
+				  <li style="list-style: none; display: inline">
+					<p>The DELETE method requests the server to delete the resource identified by the Request-URI.</p>
+				  </li>
 
 
-			  <li>DELETE</li>
+				  <li>CONNECT</li>
 
-			  <li style="list-style: none; display: inline">
-				<p>The DELETE method requests the server to delete the resource identified by the Request-URI.</p>
-			  </li>
+				  <li style="list-style: none; display: inline">
+					<p>The CONNECT method is reserved for used of tunneling proxy servers and converts the request connection to a transparent TCP/IP tunnel.</p>
+				  </li>
 
+				  <li>OPTIONS</li>
 
-			  <li>CONNECT</li>
-
-			  <li style="list-style: none; display: inline">
-				<p>The CONNECT method is reserved for used of tunneling proxy servers and converts the request connection to a transparent TCP/IP tunnel.</p>
-			  </li>
-
-			  <li>OPTIONS</li>
-
-			  <li style="list-style: none; display: inline">
-				<p>The OPTIONS method returns the HTTP methods what a server can do. It can be used to check the functionality of a web server by requesting. </p>
-			  </li>
-			</ul>
-
-
-
+				  <li style="list-style: none; display: inline">
+					<p>The OPTIONS method returns the HTTP methods what a server can do. It can be used to check the functionality of a web server by requesting. </p>
+				  </li>
+				</ul>
 
 			<h1>HTTP REQUEST-RESPONSE HEADER</h1>
+				<ul>
+				  <li>Request Header</li>
 
 
-			<ul>
-			  <li>Request Header</li>
+				  <li style="list-style: none; display: inline">
+					<p>Message Header</p>
 
 
-			  <li style="list-style: none; display: inline">
-				<p>Message Header</p>
+					<p>Empty Line (CLF)</p>
 
 
-				<p>Empty Line (CLF)</p>
+					<p>Message Body</p>
+				  </li>
 
 
-				<p>Message Body</p>
-			  </li>
+				  <li>Response Header</li>
 
 
-			  <li>Response Header</li>
+				  <li style="list-style: none; display: inline">
+					<p>Status Line (CLF)</p>
 
 
-			  <li style="list-style: none; display: inline">
-				<p>Status Line (CLF)</p>
+					<p>- HTTP Protocol Version</p>
 
 
-				<p>- HTTP Protocol Version</p>
+					<p>- Status Code</p>
 
 
-				<p>- Status Code</p>
+					<p>- REason Phase</p>
 
 
-				<p>- REason Phase</p>
+					<p>Message Headers</p>
 
 
-				<p>Message Headers</p>
+					<p>Empty Line</p>
 
 
-				<p>Empty Line</p>
-
-
-				<p>Message Body (optional)</p>
-			  </li>
-			</ul>
-
+					<p>Message Body (optional)</p>
+				  </li>
+				</ul>
 
 			<h1>HTTP MESSAGE HEADERS</h1>
+				<ul>
+				  <li>General Header Fields</li><dl>It is an HTTP header that can be used for the request and response methods but it doesn't apply to the content itself.</dl>
 
 
-			<ul>
-			  <li>General Header Fields</li><dl>It is an HTTP header that can be used for the request and response methods but it doesn't apply to the content itself.</dl>
+				  <li style="list-style: none; display: inline">
+					<p>Cache-control</p><dl>It is a general-header field used for specifying the directives for the caching mechanisms in both, requests and responses. Caching directives are unidirectional which means a given directive in a request is not implying that the same directive is to be given in the response.</dl>
 
 
-			  <li style="list-style: none; display: inline">
-				<p>Cache-control</p><dl>It is a general-header field used for specifying the directives for the caching mechanisms in both, requests and responses. Caching directives are unidirectional which means a given directive in a request is not implying that the same directive is to be given in the response.</dl>
+					<p>Connection</p><dl>The Connection general header controls whether or not the network connection stays open after the current transaction finishes. If the value sent is keep-alive, the connection is persistent and not closed, allowing for subsequent requests to the same server to be done.</dl>
 
 
-				<p>Connection</p><dl>The Connection general header controls whether or not the network connection stays open after the current transaction finishes. If the value sent is keep-alive, the connection is persistent and not closed, allowing for subsequent requests to the same server to be done.</dl>
+					 <p>Date</p><dl>The Date general HTTP header contains the date and time in which the message was originated.</dl>
 
 
-				 <p>Date</p><dl>The Date general HTTP header contains the date and time in which the message was originated.</dl>
+					<p>Pragma</p><dl>The Pragma general-header field is used to include implementation specific directives that might apply to any recipient along the request/response chain. </dl>
 
 
-				<p>Pragma</p><dl>The Pragma general-header field is used to include implementation specific directives that might apply to any recipient along the request/response chain. </dl>
+					<p>Trailer</p><dl>The Trailer response header allows the sender to include additional fields at the end of chunked messages in order to supply metadata that might be dynamically generated while the message body is sent, such as a message integrity check, digital signature, or post-processing status.</dl>
 
 
-				<p>Trailer</p><dl>The Trailer response header allows the sender to include additional fields at the end of chunked messages in order to supply metadata that might be dynamically generated while the message body is sent, such as a message integrity check, digital signature, or post-processing status.</dl>
+					<p>Transfer-encoding</p><dl>The Transfer-Encoding general-header field indicates what type of transformation has been applied to the message body in order to safely transfer it between the sender and the recipient. This is not the same as content-encoding because transfer-encodings are a property of the message, not of the entity-body.</dl>
 
 
-				<p>Transfer-encoding</p><dl>The Transfer-Encoding general-header field indicates what type of transformation has been applied to the message body in order to safely transfer it between the sender and the recipient. This is not the same as content-encoding because transfer-encodings are a property of the message, not of the entity-body.</dl>
+					<p>Upgrade</p><dl>The Upgrade general-header allows the client to specify what additional communication protocols it supports and would like to use if the server finds it appropriate to switch protocols.</dl>
 
 
-				<p>Upgrade</p><dl>The Upgrade general-header allows the client to specify what additional communication protocols it supports and would like to use if the server finds it appropriate to switch protocols.</dl>
+					<p>Via</p><dl>The Via general header is added by proxies, both forward and reverse proxies, and can appear in the request headers and the response headers. It is used for tracking message forwards, avoiding request loops, and identifying the protocol capabilities of senders along the request/response chain.</dl>
 
 
-				<p>Via</p><dl>The Via general header is added by proxies, both forward and reverse proxies, and can appear in the request headers and the response headers. It is used for tracking message forwards, avoiding request loops, and identifying the protocol capabilities of senders along the request/response chain.</dl>
-
-
-				<p>Warning</p><dl>The Warning general-header is used to carry additional information about the status or transformation of a message which might not be reflected in the message. A response may carry more than one Warning header.</dl>
-			  </li>
-
-
+					<p>Warning</p><dl>The Warning general-header is used to carry additional information about the status or transformation of a message which might not be reflected in the message. A response may carry more than one Warning header.</dl>
+				  </li>
 			  <li>Request Header Fields</li>
-
-
 			  <li style="list-style: none; display: inline">
 				<p>Accept</p><dl>It can be used to specify certain media types which are acceptable for the response.</dl>
-
-
 				<p>Accept-charset</p><dl>It can be used to indicates acceptable character sets for the response.</dl>
-
-
 				<p>Accept-encoding</p><dl>It is similar to Accept however the difference is that it restricts the acceptable content-codings in the response.</dl>
-
-
 				<p>Accept-language</p><dl>It is also similar to Accept but it restricts the preferred set of natural languages as a response to the request.</dl>
-
-
 				<p>Authorization</p><dl>The value of it consists of credentials containing the authentication information of the user agent for the realm of the resource being requested. </dl>
-
-
 				<p>Expect</p><dl>It is used to indicate the required particular set of server behaviors by the client.</dl>
-
-
 				<p>From</p><dl>It contains an Internet e-mail address for the user who controls the requesting user agent.</dl>
-
-
 				<p>Host</p><dl>It is used to indicate the Internet host and the port number of the resource being requested.</dl>
-
-
 				<p>If-Match</p><dl>It is used with a method to make it conditional. This header requests the server to perform the requested method only if the given value in this tag matches the given entity tags represented by ETag.</dl>
-
-
 				<p>If-Modified-Since</p><dl>It requests HTTP header to make the request conditional in which the server will send back the requested resource, with a 200 status, only if it has been last modified after the given date. If the request has not been modified since, the response will be a 304 without any body.</dl>
-
-
 				<p>If-Unmodified-Since</p><dl>It requests HTTP header to make the request conditional in which the server will send back the requested resource, or accept it in the case of a POST or another non-safe method, only if it has not been last modified after the given date. If the request has been modified after the given date, the response will be a 412 (Precondition Failed) error.</dl>
-
-
 				<p>If-None-Match</p><dl>It is used with a method to make it conditional. This header requests the server to perform the requested method only if one of the given value in this tag matches the given entity tags represented by ETag.</dl>
-
-
 				<p>Range</p><dl>It specifies the partial range of the requested content from the document.</dl>
-
-
 				<p>If-Range</p><dl>It can be used with a conditional GET to request only the portion of the entity that is missing, if it has not been changed, and the entire entity if it has been changed.</dl>
-
-
 				<p>Max-forward</p><dl>It provides a mechanism with the TRACE and OPTIONS methods to limit the number of proxies or gateways that can forward the request to the next inbound server.</dl>
-
-
 				<p>Proxy-Authorization</p><dl>It allows the client to identify itself or the user to a proxy that requires authentication.</dl>
-
-
 				<p>Referer</p><dl>It allows the client to specify the address (URI) of the resource from which the URL has been requested.</dl>
-
-
 				<p>User-Agent</p><dl>It contains information about the user agent originating the request. </dl>
 			  </li>
 
-
 			  <li>Response Header Fields</li>
-
-
 			  <li style="list-style: none; display: inline">
 				<p>Accept-Range</p><dl>It allows the server to indicate its acceptance of range requests for a resource. </dl>
-
-
 				<p>Age</p><dl>It conveys the sender's estimate of the amount of time since the response (or its revalidation) was generated at the origin server. </dl>
-
-
 				<p>E-tag</p><dl>It provides the current value of the entity tag for the requested variant.</dl>
-
-
 				<p>Location</p><dl>It is used to redirect the recipient to a location other than the Request-URI for completion.</dl>
-
-
 				<p>Proxy-Authenticate</p><dl>It must be included as a part of a 407 (Proxy Authentication Required) response.</dl>
-
-
 				<p>Retry-After</p><dl>It can be used with a 503 (Service Unavailable) response to indicate how long the service is expected to be unavailable to the requesting client.</dl>
-
-
 				<p>Server</p><dl>It contains information about the software used by the origin server to handle the request.</dl>
-
-
 				<p>Vary</p><dl>It specifies that the entity has multiple sources and may therefore vary according to the specified list of request header(s). </dl>
-
-
 				<p>WWW-Authenticate</p><dl>The value might contain more than one challenge, or if more than one WWW-Authenticate header field is provided, the contents of a challenge itself can contain a comma-separated list of authentication parameters.</dl>
 			  </li>
 
-
 			  <li>Entity Header Fields</li>
-
-
 			  <li style="list-style: none; display: inline">
 				<p>Allow</p><dl>It will list the set of methods supported by the resource identified by the Request-URI.</dl>
-
-
 				<p>Content-encoding</p><dl>It is used as a modifier to the media-type. </dl>
-
-
 				<p>Content-Languge</p><dl>It describes the natural language of the intended audience for the enclosed entity. </dl>
-
-
 				<p>Content-length</p><dl>It indicates the size of the entity-body, in decimal number of OCTETs, sent to the recipient or, in the case of the HEAD method, the size of the entity-body that would have been sent, had the request been a GET.</dl>
-
-
 				<p>Content-location</p><dl>It indicates the size of the entity-body, in decimal number of OCTETs, sent to the recipient or, in the case of the HEAD method, the size of the entity-body that would have been sent, had the request been a GET.</dl>
-
-
 				<p>Content-MD5</p><dl>It may be used to supply an MD5 digest of the entity for checking the integrity of the message upon receipt. </dl>
-
-
 				<p>Content-type</p><dl>It indicates the media type of the entity-body sent to the recipient or, in the case of the HEAD method, the media type that would have been sent, had the request been a GET. </dl>
-
-
 				<p>Content-range</p><dl>It is sent with a partial entity-body to specify where in the full entity-body the partial body should be applied.</dl>
-
-
 				<p>Expires</p><dl>It gives the date or the time after which the response is considered stale.</dl>
-
-
 				<p>Last-modified</p><dl>It indicates the date and time of the modification of the origin server.</dl>
 			  </li>
 			</ul>
 
-
 			<h1>HTTP STATUS CODES</h1>
-
-
 			<ul>
-
 			  <li style="list-style: none; display: inline">
-
 			  <li>Informational (1xx)</li> <dl> - indicates an interim response for communicating connection status or request progress prior to completing the requested action and sending a final response.</dl>
-
 			  <ul>
-			  <li> 	100 Continue<dl>- request has been received and has not yet been rejected by the server.</dl></li>
-			  <li>101 Switching Protocols<dl> - server understands and is willing to comply with the client's request, via the Upgrade header field for a change in the application protocol being used on this connection. </dl>
+				  <li> 	100 Continue<dl>- request has been received and has not yet been rejected by the server.</dl></li>
+				  <li>101 Switching Protocols<dl> - server understands and is willing to comply with the client's request, via the Upgrade header field for a change in the application protocol being used on this connection. </dl>
 			  </ul>
-		
-			</li>
- 				
- 			   <li style="list-style: none; display: inline">
+		   	</li>
+			<li style="list-style: none; display: inline">
 
-			  <li>Success (2xx)</li> <dl>- indicates that the client's request was successfully received, understood, and accepted.</dl>
-
-			 <ul>
-
-			   <li>200 Ok</li><dl> - request has succeeded. </dl>
-			   <li>201 Created</li><dl>  - request has been fulfilled and has resulted in one or more new resources being created.</dl>
-			   <li>202 Accepted</li><dl> - the request has been accepted for processing, but the processing has not been completed. </dl>
-			   <li>203 Non-Authoritative Information</li><dl> -  the request was successful but the enclosed payload has been modified from that of the origin server's 200 (OK) response by a transforming proxy. </dl>
-			   <li>204 No Content</li><dl> - the server has successfully fulfilled the request and that there is no additional content to send in the response payload body.</dl>
-			   <li>205 Reset Content</li><dl> - user agent reset the "document view".</dl>
-			   <li>206 Partial Content</li><dl> - partial content - the server has fulfilled the partial GET request for the resource. </dl>
-
-
-			</ul>
+			 <li>Success (2xx)</li> <dl>- indicates that the client's request was successfully received, understood, and accepted.</dl>
+				 <ul>
+				   <li>200 Ok</li><dl> - request has succeeded. </dl>
+				   <li>201 Created</li><dl>  - request has been fulfilled and has resulted in one or more new resources being created.</dl>
+				   <li>202 Accepted</li><dl> - the request has been accepted for processing, but the processing has not been completed. </dl>
+				   <li>203 Non-Authoritative Information</li><dl> -  the request was successful but the enclosed payload has been modified from that of the origin server's 200 (OK) response by a transforming proxy. </dl>
+				   <li>204 No Content</li><dl> - the server has successfully fulfilled the request and that there is no additional content to send in the response payload body.</dl>
+				   <li>205 Reset Content</li><dl> - user agent reset the "document view".</dl>
+				   <li>206 Partial Content</li><dl> - partial content - the server has fulfilled the partial GET request for the resource. </dl>
+				</ul>
 			  </li>
-
 			  <li style="list-style: none; display: inline">
 
 			  <li>Redirection (3xx)</li><dl> - indicates that further action needs to be taken by the user agent in order to fulfill the request.</dl>
-
 			  	<ul>
-
-			   <li>300 Multiple Choices</li><dl> - the target resource has more than one representation, each with its own more specific identifier, user can select a preferred representation.</dl>
-			   <li>301 Moved Permanently</li><dl>  - the target resource has been assigned a new permanent URI.</dl>
-			   <li>302 Found</li><dl> - the target resource resides temporarily under a different URI.</dl>
-			   <li>303 See Other</li><dl> - the server is redirecting the user agent to a different resource.</dl>
-			   <li>304 Not Modified</li><dl> - the client has performed a conditional GET request and access is allowed, but the document has not been modified.</dl>
-			   <li>305 Use Proxy</li><dl> - The requested resource must be accessed through the proxy given by the Location field. </dl>
-			   <li>307 Temporary Redirect</li><dl> - the target resource resides temporarily under a different URI and performs an automatic redirection to that URI.</dl>
-
-
+				   <li>300 Multiple Choices</li><dl> - the target resource has more than one representation, each with its own more specific identifier, user can select a preferred representation.</dl>
+				   <li>301 Moved Permanently</li><dl>  - the target resource has been assigned a new permanent URI.</dl>
+				   <li>302 Found</li><dl> - the target resource resides temporarily under a different URI.</dl>
+				   <li>303 See Other</li><dl> - the server is redirecting the user agent to a different resource.</dl>
+				   <li>304 Not Modified</li><dl> - the client has performed a conditional GET request and access is allowed, but the document has not been modified.</dl>
+				   <li>305 Use Proxy</li><dl> - The requested resource must be accessed through the proxy given by the Location field. </dl>
+				   <li>307 Temporary Redirect</li><dl> - the target resource resides temporarily under a different URI and performs an automatic redirection to that URI.</dl>
 				</ul>
 			  </li>
 
@@ -430,85 +288,84 @@
 			  <li>Client Error (4xx)</li>
 				<dl>- indicates that the client made a mistake which resulted to an error</dl>
 				<ul>
-				<li>400 Bad Request</li>
-					<dl>- the server cannot process the request due to a client error</dl>
+					<li>400 Bad Request</li>
+						<dl>- the server cannot process the request due to a client error</dl>
 
-				<li>401 Unauthorized</li>
-					<dl>- the request is not accepted because it is not authenticated</dl>
+					<li>401 Unauthorized</li>
+						<dl>- the request is not accepted because it is not authenticated</dl>
 
-				<li>402 Payment Required</li>
-					<dl>- reserved for future use</dl>
+					<li>402 Payment Required</li>
+						<dl>- reserved for future use</dl>
 
-				<li>403 Forbidden</li>
-					<dl>- indicates that the server understood the request but refuses to authorize it</dl>
+					<li>403 Forbidden</li>
+						<dl>- indicates that the server understood the request but refuses to authorize it</dl>
 
-				<li>404 Not Found</li>
-					<dl>- the origin server could not find a current representation for the target resource</dl>
+					<li>404 Not Found</li>
+						<dl>- the origin server could not find a current representation for the target resource</dl>
 
-				<li>405 Method Not Allowed</li>
-					<dl>- indicates that the method received in the request-line is recognized by the server but not supported by the target resource</dl>
+					<li>405 Method Not Allowed</li>
+						<dl>- indicates that the method received in the request-line is recognized by the server but not supported by the target resource</dl>
 
-				<li>406 Not Acceptable</li>
-					<dl>- the target resource is unwilling to supply a representation of the resource because it is not in accordance with the negotiation header 
-					fields received in the request</dl>
+					<li>406 Not Acceptable</li>
+						<dl>- the target resource is unwilling to supply a representation of the resource because it is not in accordance with the negotiation header 
+						fields received in the request</dl>
 
-				<li>407 Proxy Authentication Required</li>
-					<dl>- similar to 401 but it indicates that the client needs to authenticate itself in order to use a proxy</dl>
+					<li>407 Proxy Authentication Required</li>
+						<dl>- similar to 401 but it indicates that the client needs to authenticate itself in order to use a proxy</dl>
 
-				<li>408 Request Time-out</li>
-					<dl>- the server did not receive a complete request message within the time that it was prepared to wait</dl>
+					<li>408 Request Time-out</li>
+						<dl>- the server did not receive a complete request message within the time that it was prepared to wait</dl>
 
-				<li>409 Conflict</li>
-					<dl>- the request could not be completed because of a conflict with the target resource</dl>
+					<li>409 Conflict</li>
+						<dl>- the request could not be completed because of a conflict with the target resource</dl>
 
-				<li>410 Gone</li>
-					<dl>- the target resource is no longer available at the server</dl>
+					<li>410 Gone</li>
+						<dl>- the target resource is no longer available at the server</dl>
 
-				<li>411 Length Required</li>
-					<dl>- the server refuses to accept the request without the Content-Length header field</dl>
+					<li>411 Length Required</li>
+						<dl>- the server refuses to accept the request without the Content-Length header field</dl>
 
-				<li>412 Precondition Failed</li>
-					<dl>- one or more conditions given in the request header fields resulted to false</dl>
+					<li>412 Precondition Failed</li>
+						<dl>- one or more conditions given in the request header fields resulted to false</dl>
 
-				<li>413 Request Entity Too Large</li>
-					<dl>- the server is refusing to process the request because it is larger than what the server can process</dl>
+					<li>413 Request Entity Too Large</li>
+						<dl>- the server is refusing to process the request because it is larger than what the server can process</dl>
 
-				<li>414 Request-URI Too Long</li>
-					<dl>- the server is refusing the request because the target URI is longer than the server can interpret</dl>
+					<li>414 Request-URI Too Long</li>
+						<dl>- the server is refusing the request because the target URI is longer than the server can interpret</dl>
 
-				<li>415 Unsupported Media Type</li>
-					<dl>- the server is refusing to serve the request because it is not in a format that is supported on the target resource</dl>
+					<li>415 Unsupported Media Type</li>
+						<dl>- the server is refusing to serve the request because it is not in a format that is supported on the target resource</dl>
 
-				<li>416 Request Range Not Satisfiable</li>
-					<dl>- the ranges specified in the Range header field is invalid</dl>
+					<li>416 Request Range Not Satisfiable</li>
+						<dl>- the ranges specified in the Range header field is invalid</dl>
 
-				<li>417 Expectation Failed</li>
-					<dl>- the expectation given in the Expect header field could not be met by the servers</dl>
+					<li>417 Expectation Failed</li>
+						<dl>- the expectation given in the Expect header field could not be met by the servers</dl>
 				</ul>
 			  </li>
 
 			  <li style="list-style: none; display: inline">
 			  <li>Server Error (5xx)</li>
 				<dl>- the server is aware of the error it caused or is unable of serving the request</dl>
-
 				<ul>
-				<li>500 Internal Server Error</li>
-					<dl>- the server encountered a problem that prevented it from serving the request</dl>
+					<li>500 Internal Server Error</li>
+						<dl>- the server encountered a problem that prevented it from serving the request</dl>
 
-				<li>501 Not Implemented</li>
-					<dl>- the server does not recognize the request method and could not give it any resource</dl>
+					<li>501 Not Implemented</li>
+						<dl>- the server does not recognize the request method and could not give it any resource</dl>
 
-				<li>502 Bad Gateway</li>
-					<dl>- the gateway or proxy received an invalid response from the server it accessed while trying to serve the request</dl>
+					<li>502 Bad Gateway</li>
+						<dl>- the gateway or proxy received an invalid response from the server it accessed while trying to serve the request</dl>
 
-				<li>503 Service Unavailable</li>
-					<dl>- indicates that the server is currently unavailable because of an overload or ongoing maintenance which will likely be gone after some time</dl>
+					<li>503 Service Unavailable</li>
+						<dl>- indicates that the server is currently unavailable because of an overload or ongoing maintenance which will likely be gone after some time</dl>
 
-				<li>504 Gateway Time-out</li>
-					<dl>- the gateway or proxy did not receive a response needed from the server within the time given to complete the request</dl>
+					<li>504 Gateway Time-out</li>
+						<dl>- the gateway or proxy did not receive a response needed from the server within the time given to complete the request</dl>
 
-				<li>505 HTTP Version Not Supported</li>
-					<dl>- the server does not support the version of the HTTP that was used in the request message</dl>
+					<li>505 HTTP Version Not Supported</li>
+						<dl>- the server does not support the version of the HTTP that was used in the request message</dl>
 				</ul>
 			  </li>
 			</ul>
