@@ -215,35 +215,35 @@
 
 
 			<ul>
-			  <li>General Header Fields</li>
+			  <li>General Header Fields</li><dl>It is an HTTP header that can be used for the request and response methods but it doesn't apply to the content itself.</dl>
 
 
 			  <li style="list-style: none; display: inline">
-				<p>Cache-control</p>
+				<p>Cache-control</p><dl>It is a general-header field used for specifying the directives for the caching mechanisms in both, requests and responses. Caching directives are unidirectional which means a given directive in a request is not implying that the same directive is to be given in the response.</dl>
 
 
-				<p>Connection</p>
+				<p>Connection</p><dl>The Connection general header controls whether or not the network connection stays open after the current transaction finishes. If the value sent is keep-alive, the connection is persistent and not closed, allowing for subsequent requests to the same server to be done.</dl>
 
 
-				<p>Date</p>
+				 <p>Date</p><dl>The Date general HTTP header contains the date and time in which the message was originated.</dl>
 
 
-				<p>Pragma</p>
+				<p>Pragma</p><dl>The Pragma general-header field is used to include implementation specific directives that might apply to any recipient along the request/response chain. </dl>
 
 
-				<p>Trailer</p>
+				<p>Trailer</p><dl>The Trailer response header allows the sender to include additional fields at the end of chunked messages in order to supply metadata that might be dynamically generated while the message body is sent, such as a message integrity check, digital signature, or post-processing status.</dl>
 
 
-				<p>Transfer-encoding</p>
+				<p>Transfer-encoding</p><dl>The Transfer-Encoding general-header field indicates what type of transformation has been applied to the message body in order to safely transfer it between the sender and the recipient. This is not the same as content-encoding because transfer-encodings are a property of the message, not of the entity-body.</dl>
 
 
-				<p>upgrade</p>
+				<p>Upgrade</p><dl>The Upgrade general-header allows the client to specify what additional communication protocols it supports and would like to use if the server finds it appropriate to switch protocols.</dl>
 
 
-				<p>Via</p>
+				<p>Via</p><dl>The Via general header is added by proxies, both forward and reverse proxies, and can appear in the request headers and the response headers. It is used for tracking message forwards, avoiding request loops, and identifying the protocol capabilities of senders along the request/response chain.</dl>
 
 
-				<p>Warning</p>
+				<p>Warning</p><dl>The Warning general-header is used to carry additional information about the status or transformation of a message which might not be reflected in the message. A response may carry more than one Warning header.</dl>
 			  </li>
 
 
@@ -251,58 +251,58 @@
 
 
 			  <li style="list-style: none; display: inline">
-				<p>Accept</p>
+				<p>Accept</p><dl>It can be used to specify certain media types which are acceptable for the response.</dl>
 
 
-				<p>Accept-charset</p>
+				<p>Accept-charset</p><dl>It can be used to indicates acceptable character sets for the response.</dl>
 
 
-				<p>Accept-encoding</p>
+				<p>Accept-encoding</p><dl>It is similar to Accept however the difference is that it restricts the acceptable content-codings in the response.</dl>
 
 
-				<p>Accept-language</p>
+				<p>Accept-language</p><dl>It is also similar to Accept but it restricts the preferred set of natural languages as a response to the request.</dl>
 
 
-				<p>Authorization</p>
+				<p>Authorization</p><dl>The value of it consists of credentials containing the authentication information of the user agent for the realm of the resource being requested. </dl>
 
 
-				<p>Expect</p>
+				<p>Expect</p><dl>It is used to indicate the required particular set of server behaviors by the client.</dl>
 
 
-				<p>From</p>
+				<p>From</p><dl>It contains an Internet e-mail address for the user who controls the requesting user agent.</dl>
 
 
-				<p>Host</p>
+				<p>Host</p><dl>It is used to indicate the Internet host and the port number of the resource being requested.</dl>
 
 
-				<p>If-Match</p>
+				<p>If-Match</p><dl>It is used with a method to make it conditional. This header requests the server to perform the requested method only if the given value in this tag matches the given entity tags represented by ETag.</dl>
 
 
-				<p>If-Modified-Since</p>
+				<p>If-Modified-Since</p><dl>It requests HTTP header to make the request conditional in which the server will send back the requested resource, with a 200 status, only if it has been last modified after the given date. If the request has not been modified since, the response will be a 304 without any body.</dl>
 
 
-				<p>If-Unmodified-Since</p>
+				<p>If-Unmodified-Since</p><dl>It requests HTTP header to make the request conditional in which the server will send back the requested resource, or accept it in the case of a POST or another non-safe method, only if it has not been last modified after the given date. If the request has been modified after the given date, the response will be a 412 (Precondition Failed) error.</dl>
 
 
-				<p>If-None-Match</p>
+				<p>If-None-Match</p><dl>It is used with a method to make it conditional. This header requests the server to perform the requested method only if one of the given value in this tag matches the given entity tags represented by ETag.</dl>
 
 
-				<p>Range</p>
+				<p>Range</p><dl>It specifies the partial range of the requested content from the document.</dl>
 
 
-				<p>If-Range</p>
+				<p>If-Range</p><dl>It can be used with a conditional GET to request only the portion of the entity that is missing, if it has not been changed, and the entire entity if it has been changed.</dl>
 
 
-				<p>Max-forward</p>
+				<p>Max-forward</p><dl>It provides a mechanism with the TRACE and OPTIONS methods to limit the number of proxies or gateways that can forward the request to the next inbound server.</dl>
 
 
-				<p>Proxy-Authorization</p>
+				<p>Proxy-Authorization</p><dl>It allows the client to identify itself or the user to a proxy that requires authentication.</dl>
 
 
-				<p>Referer</p>
+				<p>Referer</p><dl>It allows the client to specify the address (URI) of the resource from which the URL has been requested.</dl>
 
 
-				<p>User-Agent</p>
+				<p>User-Agent</p><dl>It contains information about the user agent originating the request. </dl>
 			  </li>
 
 
@@ -310,31 +310,31 @@
 
 
 			  <li style="list-style: none; display: inline">
-				<p>Accept-Range</p>
+				<p>Accept-Range</p><dl>It allows the server to indicate its acceptance of range requests for a resource. </dl>
 
 
-				<p>Age</p>
+				<p>Age</p><dl>It conveys the sender's estimate of the amount of time since the response (or its revalidation) was generated at the origin server. </dl>
 
 
-				<p>E-tag</p>
+				<p>E-tag</p><dl>It provides the current value of the entity tag for the requested variant.</dl>
 
 
-				<p>Location</p>
+				<p>Location</p><dl>It is used to redirect the recipient to a location other than the Request-URI for completion.</dl>
 
 
-				<p>Proxy-Authenticate</p>
+				<p>Proxy-Authenticate</p><dl>It must be included as a part of a 407 (Proxy Authentication Required) response.</dl>
 
 
-				<p>Retry-After</p>
+				<p>Retry-After</p><dl>It can be used with a 503 (Service Unavailable) response to indicate how long the service is expected to be unavailable to the requesting client.</dl>
 
 
-				<p>Server</p>
+				<p>Server</p><dl>It contains information about the software used by the origin server to handle the request.</dl>
 
 
-				<p>Vary</p>
+				<p>Vary</p><dl>It specifies that the entity has multiple sources and may therefore vary according to the specified list of request header(s). </dl>
 
 
-				<p>WWW-Authenticate</p>
+				<p>WWW-Authenticate</p><dl>The value might contain more than one challenge, or if more than one WWW-Authenticate header field is provided, the contents of a challenge itself can contain a comma-separated list of authentication parameters.</dl>
 			  </li>
 
 
@@ -342,34 +342,34 @@
 
 
 			  <li style="list-style: none; display: inline">
-				<p>Allow</p>
+				<p>Allow</p><dl>It will list the set of methods supported by the resource identified by the Request-URI.</dl>
 
 
-				<p>Content-encoding</p>
+				<p>Content-encoding</p><dl>It is used as a modifier to the media-type. </dl>
 
 
-				<p>Content-Languge</p>
+				<p>Content-Languge</p><dl>It describes the natural language of the intended audience for the enclosed entity. </dl>
 
 
-				<p>Content-length</p>
+				<p>Content-length</p><dl>It indicates the size of the entity-body, in decimal number of OCTETs, sent to the recipient or, in the case of the HEAD method, the size of the entity-body that would have been sent, had the request been a GET.</dl>
 
 
-				<p>Content-location</p>
+				<p>Content-location</p><dl>It indicates the size of the entity-body, in decimal number of OCTETs, sent to the recipient or, in the case of the HEAD method, the size of the entity-body that would have been sent, had the request been a GET.</dl>
 
 
-				<p>Content-MD5</p>
+				<p>Content-MD5</p><dl>It may be used to supply an MD5 digest of the entity for checking the integrity of the message upon receipt. </dl>
 
 
-				<p>Content-type</p>
+				<p>Content-type</p><dl>It indicates the media type of the entity-body sent to the recipient or, in the case of the HEAD method, the media type that would have been sent, had the request been a GET. </dl>
 
 
-				<p>Content-range</p>
+				<p>Content-range</p><dl>It is sent with a partial entity-body to specify where in the full entity-body the partial body should be applied.</dl>
 
 
-				<p>Expires</p>
+				<p>Expires</p><dl>It gives the date or the time after which the response is considered stale.</dl>
 
 
-				<p>Last-modified</p>
+				<p>Last-modified</p><dl>It indicates the date and time of the modification of the origin server.</dl>
 			  </li>
 			</ul>
 
