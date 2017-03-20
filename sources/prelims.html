@@ -27,13 +27,54 @@
 			</nav>	
 		</div>	
 	<div class="container">
+
+		<div id="internet">
+			<h1>Internet</h1>
+				<ul>
+					<h2>FATHER OF INTERNET</h2>
+					<p>Vinton Gray "Vint" Cerf</p>
+					<p>Born: 23 June 1943 , New Haven, Connecticut, United States</p>
+					<img src="./images/vint_cerf.jpg" alt="vint_cerf">
+					<p>Internet began in 1969</p>
+					<li>Internet (internetwork), a global information system that is logically linked together by a globally unique address space based on IP.</li>
+					<li>A global system of interconnected computer networks that use the standard Internet Protocol Suite (TCP/IP)
+						to serve billions of users worldwide.</li>
+					<li>It is a networks that consists of millions of private, public, academic, business, and government networks
+						of local to global scope, that are linked by a broad array of electronic, wireless, and optical networking technologies.</li>
+					<li>ARPANET –  (Advanced Research Projects Agency Network) an early packet switching network and the first network to implement the protocol suite TCP/IP.(foundation of the internet)</li>
+					<li>DARPA – (Defense Advanced Research Projects Agency) research program to allow networked computers to communicate transparently across multiple, linked packet networks.</li>
+				</ul>
+
+		<div id="WWW">
+			<h1>World Wide Web(WWW)</h1>
+				<ul>
+
+
+					<h2>FATHER OF WEB</h2>
+					<p>Tim Berners-Lee</p>
+					<p>Born: 8 June 1955, London, United Kingdom</p>
+					<img src="./images/timbernerslee.jpg" alt="timbernerslee">
+					<p>World Wide Web began in 1989</p>
+
+
+					<li>A global information medium which users can read and write via computers connected to the Internet.<br>
+    				The term is often mistakenly used as a synonym for the Internet itself, but the Web is a service that operates over Internet as E-mail does.</li>
+					<li>in September 1994, Berners-Lee founded the World Wide Web Consortium (W3C) at the Massachusetts Institute of Technology
+    				with support from the Defense Advanced Research Projects Agency (DARPA) and the Europian Commission.It compromised various companies that were willing to create standards and recommendations to improve the quality of the Web.</li>
+
+					
+				</ul>
+
 		<div id="http">
 			<h1>Hypertext Transfer Protocol (HTTP)</h1>
 				<ul>
+
 					<li>Application layer used primarily to retrieve hypertext (on hypermedia) documents and resources on the World Wide Web</li>
 					<li>Jointly developed by the W3C and the IETF</li>
 					<li>Protocol - Set of rules needs to be followed</li>
 					<li>HTTP 1.1 requires atleast the HOST request</li>
+
+
 				</ul>
 
 			<h1>Fundamentals</h1>
@@ -125,41 +166,51 @@
 
 			<h1>HTTP Request-Response Header</h1>
 				<ul>
-				  <li>Request Header</li>
-
+				  <h4>Request Header</h4>
+				  	<li>Methods – HEAD, GET, POST, PUT, DELETE, TRACE, CONNECT, OPTION</li>
+				  	<li>Request URI – target</li>
+				  	<li>HTTP Protocol Version</li>
 
 				  <li style="list-style: none; display: inline">
-					<p>Message Header</p>
+					<h5>Message Headers</h5>
+					<li>General – used by either client or server</li>
+					<li>Request – client</li>
+					<li>Response – server</li>
+					<li>Entity – content</li>
+
+					<h5>Empty Line (CRLF)</h5>
 
 
-					<p>Empty Line (CLF)</p>
-
-
-					<p>Message Body</p>
+					<h5>Message Body(Optional)</h5>
+					<li>DNT – do not track, an extension</li>
+					<li>Upgrade – Insecure – Request – also an extension</li>
+					<li>Blank line after the Accept- Language – means terminate</li>
 				  </li>
 
 
-				  <li>Response Header</li>
-
+				  <h4>Response Header</h4>
 
 				  <li style="list-style: none; display: inline">
-					<p>Status Line (CLF)</p>
+					<h5>Status Line (CRLF)</h5>
+					<li>HTTP protocol version</li>
+					<li>Status Code</li>
+					<li>Reason Phrase</li>
 
+					<h5>HTTP Protocol Version</h5>
 
-					<p>- HTTP Protocol Version</p>
+					<h5>Status Code</h5>
+					<li>Information(1XX)</li>
+					<li>Success(2XX)</li>
+					<li>Redirection(3XX)</li>
+					<li>Client Error(4XX)</li>
+					<li>Server Error(5XX)</li>
 
+					<h5>Reason Phase</h5>
 
-					<p>- Status Code</p>
+					<h5>Message Headers</h5>
+					<li>General, Request and Entity header</li>
 
-
-					<p>- REason Phase</p>
-
-
-					<p>Message Headers</p>
-
-
-					<p>Empty Line</p>
-
+					<h5>Empty Line</h5>
 
 					<p>Message Body (optional)</p>
 				  </li>
