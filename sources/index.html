@@ -1,21 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<title>Home</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		
-		<title>Home</title>
-		
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	</head>
 	<body>
 		<div id="index">
-			<nav class="navbar navbar-inverse">
+			<nav class="navbar navbar">
 				<div class="container-fluid">
 					<div class="navbar-header">
-						<a class="navbar-brand" href="#">Web Systems and Technologies</a>
+						<a class="navbar-brand" href="index.html">Web Systems and Technologies</a>
 					</div>
 					<ul class="nav navbar-nav">
 					  <li><a href="index.html">Home</a></li>
@@ -25,7 +23,7 @@
 					  <li><a href="glossary.html">Glossary</a></li>
 					  <li><a href="sources.html">Sources</a></li>
 					</ul>
-					<form class="navbar-form navbar-left">
+					<form class="navbar-form navbar-right">
 					  <div class="form-group">
 						<input type="text" class="form-control" placeholder="Search">
 					  </div>
@@ -34,16 +32,130 @@
 				</div>
 			</nav>	
 		</div>	
-	<div class="container">
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+			  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			  <li data-target="#myCarousel" data-slide-to="1"></li>
+			  <li data-target="#myCarousel" data-slide-to="2"></li>
+			</ol>
+
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner" role="listbox">
+			  <div class="item active">
+				<img src="images/techback.jpg" alt="Chania" width="1920" height="1080">
+				<div class="carousel-caption">
+				  <h3>Prelim Lessons</h3>
+				  <p>HTTP, HTML</p>
+				</div>
+			  </div>
+
+			  <div class="item">
+				<img src="images/techback1.jpg" alt="Chania" width="1920" height="1080">
+				<div class="carousel-caption">
+				  <h3>Midterm Lessons</h3>
+				  <p>Client Side Scripting, CSS, Javascript</p>
+				</div>
+			  </div>
+			
+			  <div class="item">
+				<img src="images/techback2.jpg" alt="Flower" width="1920" height="1080">
+				<div class="carousel-caption">
+				  <h3>Final Lessons</h3>
+				  <p>Server Side Scripting</p>
+				</div>
+			  </div>
+
+			<!-- Left and right controls -->
+			<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+			  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			  <span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+			  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			  <span class="sr-only">Next</span>
+			</a>
+		  </div>
+		</div>
+		
+		<div class="container">
 		<h1>WEB SYSTEMS AND TECHNOLOGIES</h1>
 			<p>This subject aims to teach students about the development of the Internet and the web to give knowledge about the background of the subject, educate students about the principles needed for web development, and provide lessons that will enhance the student's skills on web development such as creating web pages and websites. The current technologies that are used for web development is also incorporated in this subject.</p>
-			<h2>The Team</h2>
-			<p>Christian Beltran</p>
-			<p>Gia Cabagbag</p>
-			<p>Swira Claire Cogasi</p>
-			<p>Alyson Macanas</p>
-			<p>Maricris Macario</p>
-			<p>Rica Louis Sanchez</p>
-	</div>
-	</body>
+		
+		<h2>The Team</h2>
+		<div class="row">
+			<div class="col-md-3">
+			  <div class="thumbnail">
+				<img src="images/vint_cerf.jpg" alt="Jane" style="width:100%">
+					<h3>Christian Beltran</h3>
+					<p class="title">CEO & Founder</p>
+					<p>example@example.com</p>
+				</div>	
+			</div>
+			
+			<div class="col-md-3">
+			  <div class="thumbnail">
+				<img src="images/vint_cerf.jpg" alt="Mike" style="width:100%">
+					<h3>Gia Cabagbag</h3>
+					<p class="title">Art Director</p>
+					<p>example@example.com</p>
+				</div>	
+			</div>
+			
+			<div class="col-md-3">
+			  <div class="thumbnail">
+				<img src="images/vint_cerf.jpg" alt="John" style="width:100%">
+					<h3>Swira Claire Cogasi</h3>
+					<p class="title">Designer</p>
+					<p>example@example.com</p>
+				</div>	
+			</div>
+			
+			<div class="col-md-3">
+			  <div class="thumbnail">
+				<img src="images/vint_cerf.jpg" alt="John" style="width:100%">
+					<h3>Alyson Macanas</h3>
+					<p class="title">Designer</p>
+					<p>example@example.com</p>
+				</div>	
+			</div>	
+			
+			<div class="col-md-3">
+			  <div class="thumbnail">		
+				<img src="images/vint_cerf.jpg" alt="John" style="width:100%">
+				  
+					<h3>Maricris Macario</h3>
+					<p class="title">Designer</p>
+					<p>example@example.com</p>
+				</div>	
+			</div>	
+			
+			<div class="col-md-3">
+			  <div class="thumbnail">
+				<img src="images/vint_cerf.jpg" alt="John" style="width:100%">
+					<h3>Rica Louis Sanchez</h3>
+					<p class="title">Designer</p>
+					<p>example@example.com</p>
+				</div>	
+			</div>	
+		</div>	
+	</div>	
+	<!-- Footer -->
+    
+    <div class="footer-bottom">
+        <div class="container">
+            <p class="pull-left"> Copyright © Web Technology Lessons 2017. All right reserved. </p>
+            <div class="pull-right">
+                <ul class="nav nav-pills payments">
+                    <li><i class="fa fa-cc-visa"></i></li>
+                    <li><i class="fa fa-cc-mastercard"></i></li>
+                    <li><i class="fa fa-cc-amex"></i></li>
+                    <li><i class="fa fa-cc-paypal"></i></li>
+                </ul> 
+            </div>
+        </div>
+    </div>
+    <!--/.footer-bottom--> 
+</footer>
+</body>
 </html>
