@@ -102,6 +102,29 @@
 					<li>HTML 5.1 (2016)</li>
 				</ul>
 			</section>
+			
+			<section>
+	            <h3 id="html-el">Content Model</h3>
+	            <ul>
+	                <li><b>Heading</b></li>
+	                <li><b>Sectioning</b></li>
+	                <li><b>Embedded</b></li>
+					<li><b>Phrasing</b></li>
+	                <li><b>Flow</b></li>
+	                <li><b>Interactive</b></li>
+					<li><b>Metadata</b></li>
+	            </ul>
+	        </section>
+			
+			<section>
+	            <h3 id="html-el">Content Attributes</h3>
+	            <ul>
+	                <li><b>Global Attributes</b></li>
+					<li><b>Element Specific Attributes</b></li>
+					<li><b>Data Attributes</b></li>
+					<li><b>Role, Aria Attributes</b></li>
+	            </ul>
+	        </section>
 
 	        <section>
 	            <h3 id="html-xh">XHTML</h3>
@@ -152,19 +175,111 @@
 				<ul>
 					<li><b>CCS 1, CSS 2, CSS 2.1, CSS 3</b></li>
 				</ul>
-				<h3 id="html-el">CSS Rules</h3>
-	                <li>Selectors</li>
+				
+				<h3 id="html-el">CSS Statement</h3>
+	                <li>CSS Selectors</li>
+					<li>Selector Syntax</li>
 				<ul>
-					<li><b>Universal Selectors</b>* { }</li>
-					<li><b>Type</b> p { }</li>
-					<li><b>Grouping</b> h1, h2, h3 { }</li>
-					<li><b>ID</b> #nav { }</li>
-					<li><b>Class</b> .classname { }</li>
-					<li><b>Descendant</b> div.content em { }</li>
-					<li><b>Child</b> div.content > em { }</li>
-					<li><b>Adjacent sibling</b> h1 + p { }</li>
-					<li><b>Pseudo Clasess</b> div[class=note] { }</li>
+					<li><b>Simple Selector</b></li>
+					<ul>
+						<li><b>Type Selector</b></li>
+						<li><b>Universal Selector</b></li>
+						<li><b>Attribute Selector</b></li>
+						<li><b>Class Selector</b></li>
+						<li><b>ID Selector</b></li>
+						<li><b>Pseudo Class</b></li>
+						<ul>
+							<li><b>Dynamic Pseudo Class</b></li>
+							<li><b>Link Pseudo Class</b></li>
+							<ul>
+								<li>:link</li>
+								<li>:visited</li>
+							</ul>
+							<li><b>User Action Pseudo Class</b></li>
+							<ul>
+								<li>:hover</li>
+								<li>:active</li>
+								<li>:focus</li>
+							</ul>
+							<li><b>Target Pseudo Class</b></li>
+							<ul>
+								<li>:target</li>
+							</ul>
+							<li><b>Language</b></li>
+							<ul>
+								<li>:lang()</li>
+							</ul>
+							<li><b>UI Element State</b></li>
+							<ul>
+								<li>:enabled</li>
+								<li>:disabled</li>
+								<li>:checked</li>
+								<li>:indeterminate</li>
+							</ul>
+							<li><b>Structural Pseudo Class</b></li>
+							<ul>
+								<li>:root</li>
+								<li>:first-child</li>
+								<li>:last-child</li>
+								<li>:only-child</li>
+								<li>:nth-child ()</li>
+								<li>:nth-last-child ()</li>
+								<li>:first-of-type</li>
+								<li>:last-of-type</li>
+								<li>:only-of-type</li>
+								<li>:nth-of-type ()</li>
+								<li>:nth-last-of-type ()</li>
+								<li>:empty</li>
+							</ul>
+							<li><b>Negation Pseudo Class</b></li>
+						</ul>
+					</ul>
+					<li><b>Type Selector</b></li>
+					<li><b>Group Selector</b></li>
+					<li><b>Combinators</b></li>
+					<ul>
+						<li>Decendant Combinator</li>
+						<li>Child Combinator</li>
+						<li>Sibling Combinator</li>
+						<ul>
+							<li>Adjacent Sibling Combinator</li>
+							<li>General Sibling Combinator</li>
+						</ul>
+						<li>Pseudo Elements</li>
+						<ul>
+							<li>::first-letter, :first-letter</li>
+							<li>::first-line, :first-line</li>
+							<li>::before, :before</li>
+							<li>::after, :after</li>
+						</ul>
+					</ul>
 				</ul>
+				
+				<h3 id="html-el">CSS Rule Precedence</h3>
+	                <li>Cascading</li>
+				<ul>
+					<li><b>By Origin and Importance</b></li>
+					<ul>
+						<li>User Agent Important Declarations</li>
+						<li>User Important Declarations</li>
+						<li>Author Important Declarations</li>
+						<li>Author Normal Declarations</li>
+						<li>User Normal Declarations</li>
+						<li>User Agent Normal Declarations</li>
+					</ul>
+					<li><b>By Specificity</b></li>
+					<ul>
+						<li>Inline-style</li>
+						<li>Number of ID Selectors</li>
+						<li>Number of Class Selectors, Attribute Selectors and Pseudo Classes</li>
+						<li>Number of Type Selectors and Pseudo Elements</li>
+					</ul>
+					<li><b>By Order</b></li>
+					<ul>
+						<li>the last is given the priority</li>
+					</ul>
+				</ul>
+				
 				<h3 id="html-el">Declaration Block</h3>
 	                <li>Properties</li>
 				<ul>
@@ -181,9 +296,16 @@
 					<ul>
 						<li>Keywords</li>
 						<li>Numbers</li>
-						<li>Length units:</li>
-						<li><b>Relative</b> - em, ex, px</li>
-						<li><b>Absolute</b> - in, an, nm, pt, pc</li>
+						<li>Dimensions</li>
+						<ul>
+							<li>Length, angle, duration, frequency, resolution</li>
+							<li>Length units:</li>
+							<ul>
+								<li><b>Font-Relative</b> - em, ex, px</li>
+								<li><b>Viewport-Percentage</b> - vm, vh, vmin, vmax</li>
+								<li><b>Absolute Lenths</b> - in, an, nm, pt, pc</li>
+							</ul>
+						</ul>
 						<li>Percentages</li>
 						<li>Colors</li>
 						<li>Strings</li>
@@ -191,6 +313,15 @@
 						<li>Initial values, inherited values, !important rules</li>
 					</ul>
 	            </ul>
+				<h3 id="html-el">CSS Preprocessor and CSS Framework</h3>
+				<ul>
+					<li><b>Saas</b></li>
+					<li><b>Less</b></li>
+					<li><b>960 Grid System</b></li>
+					<li><b>Bootstrap</b></li>
+					<li><b>Foundation</b></li>
+					<li><b>Materialize</b></li>
+				</ul>		
 	        </section>
 
 	       	<section>
@@ -204,6 +335,16 @@
 					<li>script.aculo.us, JQuery, Mootools, Prototype, Dojo Toolkit, etc.</li>
 				</ul>
 	        </section>
+			
+			<section>
+			<h3 id="html-el">Different Ways on How to Link JavaScript</h3>
+				<ul>
+					<li><b>Externally Linked Script</b></li>
+					<li><b>Embedded Script</b></li>
+					<li><b>Inline Script</b></li>
+					<li><b>Externally Linked Script</b></li>
+				</ul>
+			</section>		
 
 	    <section>
 	        <h3 id="terms">Terminologies</h3>
