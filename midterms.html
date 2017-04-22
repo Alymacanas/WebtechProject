@@ -68,125 +68,128 @@
 		</div>
 
 
-	<div class="container">
-	    <article id="internet">
-	        <h2>Hypertext Markup Language</h2>
-	        <section>
-	            <p>language used to markup the structure and content of documents(i.e. webpages) in the <a href="#www">WWW</a></p>
-				<p>was created by Tim Berners-Lee</p>
-	            <ul>
-					<p><strong>Aspects:</strong></p>
-	                <li>structure and content</li>
-	                <li>aesthetics/presentation - well layed-out</li>
-					<li>behavioral - client-side (JavaScript)</li>
-	            </ul>
-	        </section>
-	    </article>
-	
-			<section>
-				<h3 id="html-version">Versions and History:</h3>
-				<ul>
-					<li>HTML 1.0 - first version of HTML</li>
-					<li>HTML 2.0 - embodied in a technical document (<a href="#rfc">RFC</a> in 1866) and was the first standard HTML which was published in November 1995.</li>
-					<li>HTML 3.0 - W3C Recommendation</li>
-					<li>HTML 3.2</li>
-					<li>HTML 4.0</li>
-					<li>HTML 4.01 - <a href="w3c">W3C</a> Recommendation (December 24 1999)</li>
-					<li>Web Hypertext Technology Group (WHATWG) - Ian Hickson started this group and develop the next version of HTML since XHTML is not that great because of the strict syntax.</li>
-					<li>HTML 5.0 (2014) -  supports HTML flexible syntax and XHTML strict syntax</li>
-					<li>HTML 5.1 (2016)</li>
-				</ul>
+		<div class="container">
+			<div id="HMTL">
+			    <article id="internet">
+			        <h2>Hypertext Markup Language</h2>
+			        <section>
+			            <p>language used to markup the structure and content of documents(i.e. webpages) in the <a href="#www">WWW</a></p>
+						<p>was created by Tim Berners-Lee</p>
+			            <ul>
+							<p><strong>Aspects:</strong></p>
+			                <li>structure and content</li>
+			                <li>aesthetics/presentation - well layed-out</li>
+							<li>behavioral - client-side (JavaScript)</li>
+			            </ul>
+			        </section>
+			    </article>
 			
-				<p><strong>Typical Start of HTML</strong></p>
-				 <img src="./images/HTMLStart.png" class="img-responsive" alt="html_start">
-			</section>
-			
-			<section>
-				<h3 id="xhtml">Extensible Hypertext Markup Language</h3>
-				<p> is the reformulation of HTML to XML</p>
-				<p> was developed by the World Wide Web Consortium (W3C) to help web developers to make transition from HTML to XML</p>
-				<p> XHTML is almost identical to HTML 4.01</p>
-				<p> rules are very strict (case sensitive)</p>
-				<ul>
-					<li><b>strict</b> - deprecate presentational aspects</li>
-					<li><b>transitional</b> - you can still use deprecated presentation aspect</li>
-					<li><b>frameset</b> - to partition the browser into multiple frames</li>
-				</ul>
-			</section>
-			
-			<section>
-	            <h3 id="html-el">Content Model</h3>
-	            <ul>
-	                <li><b>Heading</b> - the header of a section.</li>
-					<ul>
-						<li>h1, h2, h3, h4, h5, h6</li>
-					</ul>
-	                <li><b>Sectioning</b> - content that defines the scope of the headings and footers.</li>
-	                <ul>
-						<li>article, aside, nav, section</li>
-					</ul>
-					<li><b>Embedded</b> - content that imports another resource into the document.</li>
-					<ul>
-						<li>audio, canvas, embed, iframe, img, math, object, svg, video</li>
-					</ul>
-					<li><b>Phrasing</b> - the text of the document aswell as the elements.</li>
-					<ul>
-						<li>a, abbr, area, b, bdi, bdo, br, button, canvas, cite, code, command, dfn, em, embed, i, iframe, input, ins, kbd, label, map, mark, math, object, output, progress, q, ruby, s, samp, script, select, small, span , strong, sub, sup, svg, textarea, time, u, var, wbr</li>
-					</ul>
-	                <li><b>Flow</b> - elements that are mostly used in the body of the document</li>
-					<ul>
-						<li>a, abbr, address, area, article, aside, audio, b, bdi, bdo, blockquote, br, button, canvas, cite, code, command, datalist, del, details, dfn, div, dl, em, embed, fieldset, figure, footer, form, header, hgroup, hr, i , iframe, img, input, ins, kbd, keygen, label, map, mark, math, menu, meter, nav, noscript, object, ol, output, p, pre, progress, q, ruby, s, samp, script, section, select, small, span, strong, style, sub, sup, svg, table, textarea, time, u, ul, var, video, wbr</li>
-					</ul>
-	                <li><b>Interactive</b> - content that is intended for user interaction.</li>
-					<ul>
-						<li>a, audio, button, details, embed, iframe, img, input, keygen, label, menu, object, select, textarea, video</li>
-					</ul>
-					<li><b>Metadata</b> - content that sets up the presentation of the content with other documents.</li>
-					<ul>
-						<li>base, command, link, meta, noscript, script, style, title</li>
-					</ul>
-				</ul>
-	        </section>
-			
-			<section>
-	            <h3 id="html-el">Content Attributes</h3>
-	            <ul>
-	                <li><b>Global Attributes</b></li>
-					<li><b>Element Specific Attributes</b></li>
-					<li><b>Data Attributes</b></li>
-					<li><b>Role, Aria Attributes</b></li>
-	            </ul>
-	        </section>
-
-	        <section>
-	            <h3 id="html-el">HTML Elements</h3>
-	            <ul>
-	                <li>Head</li>
-				<ul>
-					<li><b>title, base, link, meta, style, script</b></li>
-				</ul>
-	                <li>Body</li>
-				<ul>
-					<li><b>Grouping elements</b> (div, span)</li>
-					<li><b>Headings</b> (h1, h2, h3, h4, h5, h6)</li>
-					<li><b>Lists</b> (ul, ol, li, dl, dt, dd, dir, menu)</li>
-					<li><b>Tables</b> (table, th, tr, td, thead, tfoot, tbody, colgroup, col)</li>
-					<li><b>Phrase elements</b> (em,strong, dfn, code, samp, kbd, var, cite, abbr, acronym)</li>
-					<li><b>Quotations</b> (blockquote, q)</li>
-					<li><b>Subscripts and Superscripts</b> (sub, sup)</li>
-					<li><b>Preformatted texts</b> (pre)</li>
-					<li><b>Font styles and alignments</b> (tt, i, b, big, small, strike, s, u, font, basefont, center)</li>
-					<li><b>Document changes</b> (ins, del)</li>
-					<li><b>Links and anchors</b> (a)</li>
-					<li><b>Objects, images, applets</b> (object, img, param, applet)</li>
-					<li><b>Scripts</b> (script, noscript)</li>
-					<li><b>Miscellaneous</b> (bdi, bdo)</li>
-					<li><b>Frames, noframes, iframe</b></li>
-					<li><b>Frameset(for frameset DTD)</li>
+					<section>
+						<h3 id="html-version">Versions and History:</h3>
+						<ul>
+							<li>HTML 1.0 - first version of HTML</li>
+							<li>HTML 2.0 - embodied in a technical document (<a href="#rfc">RFC</a> in 1866) and was the first standard HTML which was published in November 1995.</li>
+							<li>HTML 3.0 - W3C Recommendation</li>
+							<li>HTML 3.2</li>
+							<li>HTML 4.0</li>
+							<li>HTML 4.01 - <a href="w3c">W3C</a> Recommendation (December 24 1999)</li>
+							<li>Web Hypertext Technology Group (WHATWG) - Ian Hickson started this group and develop the next version of HTML since XHTML is not that great because of the strict syntax.</li>
+							<li>HTML 5.0 (2014) -  supports HTML flexible syntax and XHTML strict syntax</li>
+							<li>HTML 5.1 (2016)</li>
+						</ul>
 					
-				</ul>
-	        </section>
+						<p><strong>Typical Start of HTML</strong></p>
+						 <img src="./images/HTMLStart.png" class="img-responsive" alt="html_start">
+					</section>
+					
+					<section>
+						<h3 id="xhtml">Extensible Hypertext Markup Language</h3>
+						<p> is the reformulation of HTML to XML</p>
+						<p> was developed by the World Wide Web Consortium (W3C) to help web developers to make transition from HTML to XML</p>
+						<p> XHTML is almost identical to HTML 4.01</p>
+						<p> rules are very strict (case sensitive)</p>
+						<ul>
+							<li><b>strict</b> - deprecate presentational aspects</li>
+							<li><b>transitional</b> - you can still use deprecated presentation aspect</li>
+							<li><b>frameset</b> - to partition the browser into multiple frames</li>
+						</ul>
+					</section>
+					
+					<section>
+			            <h3 id="html-el">Content Model</h3>
+			            <ul>
+			                <li><b>Heading</b> - the header of a section.</li>
+							<ul>
+								<li>h1, h2, h3, h4, h5, h6</li>
+							</ul>
+			                <li><b>Sectioning</b> - content that defines the scope of the headings and footers.</li>
+			                <ul>
+								<li>article, aside, nav, section</li>
+							</ul>
+							<li><b>Embedded</b> - content that imports another resource into the document.</li>
+							<ul>
+								<li>audio, canvas, embed, iframe, img, math, object, svg, video</li>
+							</ul>
+							<li><b>Phrasing</b> - the text of the document aswell as the elements.</li>
+							<ul>
+								<li>a, abbr, area, b, bdi, bdo, br, button, canvas, cite, code, command, dfn, em, embed, i, iframe, input, ins, kbd, label, map, mark, math, object, output, progress, q, ruby, s, samp, script, select, small, span , strong, sub, sup, svg, textarea, time, u, var, wbr</li>
+							</ul>
+			                <li><b>Flow</b> - elements that are mostly used in the body of the document</li>
+							<ul>
+								<li>a, abbr, address, area, article, aside, audio, b, bdi, bdo, blockquote, br, button, canvas, cite, code, command, datalist, del, details, dfn, div, dl, em, embed, fieldset, figure, footer, form, header, hgroup, hr, i , iframe, img, input, ins, kbd, keygen, label, map, mark, math, menu, meter, nav, noscript, object, ol, output, p, pre, progress, q, ruby, s, samp, script, section, select, small, span, strong, style, sub, sup, svg, table, textarea, time, u, ul, var, video, wbr</li>
+							</ul>
+			                <li><b>Interactive</b> - content that is intended for user interaction.</li>
+							<ul>
+								<li>a, audio, button, details, embed, iframe, img, input, keygen, label, menu, object, select, textarea, video</li>
+							</ul>
+							<li><b>Metadata</b> - content that sets up the presentation of the content with other documents.</li>
+							<ul>
+								<li>base, command, link, meta, noscript, script, style, title</li>
+							</ul>
+						</ul>
+			        </section>
+					
+					<section>
+			            <h3 id="html-el">Content Attributes</h3>
+			            <ul>
+			                <li><b>Global Attributes</b></li>
+							<li><b>Element Specific Attributes</b></li>
+							<li><b>Data Attributes</b></li>
+							<li><b>Role, Aria Attributes</b></li>
+			            </ul>
+			        </section>
 
+			        <section>
+			            <h3 id="html-el">HTML Elements</h3>
+			            <ul>
+			                <li>Head</li>
+						<ul>
+							<li><b>title, base, link, meta, style, script</b></li>
+						</ul>
+			                <li>Body</li>
+						<ul>
+							<li><b>Grouping elements</b> (div, span)</li>
+							<li><b>Headings</b> (h1, h2, h3, h4, h5, h6)</li>
+							<li><b>Lists</b> (ul, ol, li, dl, dt, dd, dir, menu)</li>
+							<li><b>Tables</b> (table, th, tr, td, thead, tfoot, tbody, colgroup, col)</li>
+							<li><b>Phrase elements</b> (em,strong, dfn, code, samp, kbd, var, cite, abbr, acronym)</li>
+							<li><b>Quotations</b> (blockquote, q)</li>
+							<li><b>Subscripts and Superscripts</b> (sub, sup)</li>
+							<li><b>Preformatted texts</b> (pre)</li>
+							<li><b>Font styles and alignments</b> (tt, i, b, big, small, strike, s, u, font, basefont, center)</li>
+							<li><b>Document changes</b> (ins, del)</li>
+							<li><b>Links and anchors</b> (a)</li>
+							<li><b>Objects, images, applets</b> (object, img, param, applet)</li>
+							<li><b>Scripts</b> (script, noscript)</li>
+							<li><b>Miscellaneous</b> (bdi, bdo)</li>
+							<li><b>Frames, noframes, iframe</b></li>
+							<li><b>Frameset(for frameset DTD)</li>
+							
+						</ul>
+			        </section>
+				</div>
+
+		<div id="CSS">
 	       	<section>
 	            <h3 id="html-el">Cascading Style Sheets</h3>
 	            <p>Language used to specify the presentation aspects of structurally marked up document.</p>
@@ -358,7 +361,9 @@
 					<li><b>Materialize</b></li>
 				</ul>		
 	        </section>
+	   	</div>
 
+	   	<div id="JS">
 	       	<section>
 	            <h3 id="html-el">Javascript</h3>
 	            <p>Developed by <i>Brendan Eich</i> at Netscape Communications as the scripting language for the Netscape Navigator Browser</p>
@@ -459,7 +464,9 @@
 				<li>Array.prototype.[@@iterator]()</li>
 			</ul>
 			</section>
+		</div>
 
+		<div id="terms">
 	        <h3 id="terms">Terminologies</h3>
 	        <ul>
 	            <li id="html"><strong>Hypertext Transfer Markup Language</strong></li>
@@ -468,7 +475,7 @@
 				<li id="w3c">W3C(World Wide Web Consortium)</li>
 				<li id="xhtml">XHTML(Extensible Hypertext Markup Language)</li>
 	        </ul>
-	</div>
+	    </div>
 	</body>
 </html>
 
