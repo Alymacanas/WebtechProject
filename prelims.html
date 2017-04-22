@@ -15,7 +15,7 @@
 			<nav class="navbar navbar-default navbar-fixed-top">
 				<div class="container-fluid">
 					<div class="navbar-header">
-						<a class="navbar-brand" href="#">Web Systems and Technologies</a>
+						<a class="navbar-brand" href="index.html">Web Systems and Technologies</a>
 					</div>
 					<ul class="nav navbar-nav">
 					  <li><a href="index.html"></span> Home</a></li>
@@ -25,13 +25,15 @@
 					  <li><a href="glossary.html">Glossary</a></li>
 					  <li><a href="sources.html">Sources</a></li>
 					</ul>
-					<form class="navbar-form navbar-right">
-					  <div class="form-group">
-						<input type="text" class="form-control" placeholder="Search">
-					  </div>
-					  <button type="submit" class="btn btn-default">Submit</button>
-					</form>
-				</div>
+					<form class="navbar-form navbar-right" role="search">
+						<div class="input-group add-on">
+						<input class="form-control" placeholder="Search" name="srch-term" id="srch-term" type="text">
+							<div class="input-group-btn">
+								<button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+							</div>
+						</div>
+					</form>	
+				</div>	
 			</nav>	
 		</div>	
 
