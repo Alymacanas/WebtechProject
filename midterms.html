@@ -109,43 +109,73 @@
 						<p> XHTML is almost identical to HTML 4.01</p>
 						<p> rules are very strict (case sensitive)</p>
 						<ul>
-							<li><b>strict</b> - deprecate presentational aspects</li>
-							<li><b>transitional</b> - you can still use deprecated presentation aspect</li>
-							<li><b>frameset</b> - to partition the browser into multiple frames</li>
+							 <li data-toggle="collapse" data-target="#str"><b><a>strict</a></b></li>
+							 <div id="str" class="collapse">
+							 - deprecate presentational aspects.
+							 </div>
+							 <li data-toggle="collapse" data-target="#tra"><b><a>transitional</a></b></li>
+							 <div id="tra" class="collapse">
+							 - you can still use deprecated presentation aspect.
+							 </div>
+							 <li data-toggle="collapse" data-target="#fra"><b><a>frameset</a></b></li>
+							 <div id="fra" class="collapse">
+							  - to partition the browser into multiple frames.
+							 </div> 
 						</ul>
 					</section>
 					
 					<section>
 			            <h3 id="html-el">Content Model</h3>
 			            <ul>
-			                <li><b>Heading</b> - the header of a section.</li>
+			                <li data-toggle="collapse" data-target="#head"><b><a>Heading</a></b></li>
+							<div id="head" class="collapse">
+							- the header of a section.
 							<ul>
 								<li>h1, h2, h3, h4, h5, h6</li>
 							</ul>
-			                <li><b>Sectioning</b> - content that defines the scope of the headings and footers.</li>
+							</div>
+			                <li data-toggle="collapse" data-target="#sec"><b><a>Sectioning</a></b></li>
+							<div id="sec" class="collapse">
+							 - content that defines the scope of the headings and footers.
 			                <ul>
 								<li>article, aside, nav, section</li>
 							</ul>
-							<li><b>Embedded</b> - content that imports another resource into the document.</li>
+							</div>
+							<li data-toggle="collapse" data-target="#emb"><b><a>Embedded</a></b></li>
+							<div id="emb" class="collapse">
+							 - content that imports another resource into the document.
 							<ul>
 								<li>audio, canvas, embed, iframe, img, math, object, svg, video</li>
 							</ul>
-							<li><b>Phrasing</b> - the text of the document aswell as the elements.</li>
+							</div>
+							<li data-toggle="collapse" data-target="#phra"><b><a>Phrasing</a></b></li> 
+							<div id="phra" class="collapse">
+							- the text of the document aswell as the elements.
 							<ul>
 								<li>a, abbr, area, b, bdi, bdo, br, button, canvas, cite, code, command, dfn, em, embed, i, iframe, input, ins, kbd, label, map, mark, math, object, output, progress, q, ruby, s, samp, script, select, small, span , strong, sub, sup, svg, textarea, time, u, var, wbr</li>
 							</ul>
-			                <li><b>Flow</b> - elements that are mostly used in the body of the document</li>
+							</div>
+			                <li data-toggle="collapse" data-target="#flow"><b><a>Flow</a></b></li> 
+							<div id="flow" class="collapse">
+							- elements that are mostly used in the body of the document.
 							<ul>
 								<li>a, abbr, address, area, article, aside, audio, b, bdi, bdo, blockquote, br, button, canvas, cite, code, command, datalist, del, details, dfn, div, dl, em, embed, fieldset, figure, footer, form, header, hgroup, hr, i , iframe, img, input, ins, kbd, keygen, label, map, mark, math, menu, meter, nav, noscript, object, ol, output, p, pre, progress, q, ruby, s, samp, script, section, select, small, span, strong, style, sub, sup, svg, table, textarea, time, u, ul, var, video, wbr</li>
 							</ul>
-			                <li><b>Interactive</b> - content that is intended for user interaction.</li>
+							</div>
+			                <li data-toggle="collapse" data-target="#inter"><b><a>Interactive</a></b></li>
+							<div id="inter" class="collapse">
+							 - content that is intended for user interaction.
 							<ul>
 								<li>a, audio, button, details, embed, iframe, img, input, keygen, label, menu, object, select, textarea, video</li>
 							</ul>
-							<li><b>Metadata</b> - content that sets up the presentation of the content with other documents.</li>
+							</div>
+							<li data-toggle="collapse" data-target="#meta"><b><a>Metadata</a></b></li>
+							<div id="meta" class="collapse">
+							 - content that sets up the presentation of the content with other documents.
 							<ul>
 								<li>base, command, link, meta, noscript, script, style, title</li>
 							</ul>
+							</div>
 						</ul>
 			        </section>
 					
@@ -161,10 +191,33 @@
 
 			        <section>
 			            <h3 id="html-el">HTML Elements</h3>
-			            <ul>
+			            
 			                <li>Head</li>
 						<ul>
-							<li><b>title, base, link, meta, style, script</b></li>
+							<li data-toggle="collapse" data-target="#ti"><b><a>title</a></b></li>
+							<div id="ti" class="collapse">
+							 - title of the document.
+							</div>
+							<li data-toggle="collapse" data-target="#bas"><b><a>base</a></b></li>
+							<div id="bas" class="collapse">
+							 - allows you to specify relative (move).
+							</div>
+							<li data-toggle="collapse" data-target="#li"><b><a>link</a></b></li>
+							<div id="li" class="collapse">
+							 - link different resources to the document like stylesheets.
+							</div>
+							<li data-toggle="collapse" data-target="#me"><b><a>meta</a></b></li>
+							<div id="me" class="collapse">
+							 - define other meta.
+							</div>
+							<li data-toggle="collapse" data-target="#sty"><b><a>style</a></b></li>
+							<div id="sty" class="collapse">
+							 - is for embedding.
+							</div>
+							<li data-toggle="collapse" data-target="#scr"><b><a>script</a></b></li>
+							<div id="scr" class="collapse">
+							 - is for embedding.
+							</div>
 						</ul>
 			                <li>Body</li>
 						<ul>
@@ -220,8 +273,8 @@
 						<li><b>ID Selector</b></li>
 						<li><b>Pseudo Class</b></li>
 						<ul>
-							<li><b>Dynamic Pseudo Class</b></li>
-							<li><b>Link Pseudo Class</b></li>
+							<li>Dynamic Pseudo Class</b></li>
+							<li>Link Pseudo Class</b></li>
 							<ul>
 								<li>:link</li>
 								<li>:visited</li>
@@ -316,7 +369,7 @@
 			
 			<section>
 				<h3 id="html-el">Declaration Block</h3>
-	                <li>Properties</li>
+	                <li><b>Properties</b></li>
 				<ul>
 					<li>Visual, aural, paged, interactive</li>
 					<li>Margins, borders, and paddings</li>
@@ -327,7 +380,7 @@
 					<li>Positioning and dimensions</li>
 					<li>Miscellaneous</li>
 				</ul>
-					<li>Values</li>
+					<li><b>Values</b></li>
 					<ul>
 						<li>Keywords</li>
 						<li>Numbers</li>
@@ -336,18 +389,17 @@
 							<li>Length, angle, duration, frequency, resolution</li>
 							<li>Length units:</li>
 							<ul>
-								<li><b>Font-Relative</b> - em, ex, px</li>
-								<li><b>Viewport-Percentage</b> - vm, vh, vmin, vmax</li>
-								<li><b>Absolute Lenths</b> - in, an, nm, pt, pc</li>
+								<li>Font-Relative - em, ex, px</li>
+								<li>Viewport-Percentage - vm, vh, vmin, vmax</li>
+								<li>Absolute Lenths - in, an, nm, pt, pc</li>
 							</ul>
 						</ul>
-						<li>Percentages</li>
-						<li>Colors</li>
-						<li>Strings</li>
-						<li>URLs</li>
-						<li>Initial values, inherited values, !important rules</li>
+						<li><b>Percentages</b></li>
+						<li><b>Colors</b></li>
+						<li><b>Strings</b></li>
+						<li><b>URLs</b></li>
+						<li><b>Initial values, inherited values, !important rules</b></li>
 					</ul>
-	            </ul>
 			</section>
 			
 			<section>	
@@ -469,16 +521,14 @@
 		<div id="terms">
 	        <h3 id="terms">Terminologies</h3>
 	        <ul>
-	            <li id="html"><strong>Hypertext Transfer Markup Language</strong></li>
-	            <li id="www"><strong>WWW (World Wide Web)</strong></li>
+	            <li id="html">Hypertext Transfer Markup Language</li>
+	            <li id="www">WWW (World Wide Web)</li>
 				<li id="rfc">RFC(Request for Comments)</li>
 				<li id="w3c">W3C(World Wide Web Consortium)</li>
 				<li id="xhtml">XHTML(Extensible Hypertext Markup Language)</li>
 	        </ul>
-<<<<<<< HEAD
 	    </div>
 	</body>
-=======
 	</div>
 	<!-- Footer -->
     
@@ -490,6 +540,5 @@
     <!--/.footer-bottom--> 
 </footer>
 </body>
->>>>>>> 2c91c2d51bac79132d38be80431bc2d704f904f4
 </html>
 
