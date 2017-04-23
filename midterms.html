@@ -6,7 +6,7 @@
 		
 		<title>Midterms</title>
 		
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/bootstrap.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	</head>
@@ -73,8 +73,8 @@
 			    <article id="internet">
 			        <h2>Hypertext Markup Language</h2>
 			        <section>
-			            <p>language used to markup the structure and content of documents(i.e. webpages) in the <a href="#www">WWW</a></p>
-						<p>was created by Tim Berners-Lee</p>
+			            <p>Hypertext Markup Language is the language used to markup the structure and content of documents(i.e. webpages) in the <a href="#www">WWW</a></p>
+						<p>It was created by Tim Berners-Lee</p>
 			            <ul>
 							<p><strong>Aspects:</strong></p>
 			                <li>structure and content</li>
@@ -85,7 +85,7 @@
 			    </article>
 			
 					<section>
-						<h3 id="html-version">Versions and History:</h3>
+						<h2 id="html-version">Versions and History:</h2>
 						<ul>
 							<li>HTML 1.0 - first version of HTML</li>
 							<li>HTML 2.0 - embodied in a technical document (<a href="#rfc">RFC</a> in 1866) and was the first standard HTML which was published in November 1995.</li>
@@ -103,11 +103,11 @@
 					</section>
 					
 					<section>
-						<h3 id="xhtml">Extensible Hypertext Markup Language</h3>
-						<p> is the reformulation of HTML to XML</p>
-						<p> was developed by the World Wide Web Consortium (W3C) to help web developers to make transition from HTML to XML</p>
+						<h2 id="xhtml">Extensible Hypertext Markup Language</h2>
+						<p> Extensible Hypertext Markup Language is the reformulation of HTML to XML</p>
+						<p> It was developed by the World Wide Web Consortium (W3C) to help web developers to make transition from HTML to XML</p>
 						<p> XHTML is almost identical to HTML 4.01</p>
-						<p> rules are very strict (case sensitive)</p>
+						<p> The rules are very strict (case sensitive)</p>
 						<ul>
 							 <li data-toggle="collapse" data-target="#str"><b><a>strict</a></b></li>
 							 <div id="str" class="collapse">
@@ -125,7 +125,7 @@
 					</section>
 					
 					<section>
-			            <h3 id="html-el">Content Model</h3>
+			            <h2 id="html-el">Content Model</h2>
 			            <ul>
 			                <li data-toggle="collapse" data-target="#head"><b><a>Heading</a></b></li>
 							<div id="head" class="collapse">
@@ -180,7 +180,7 @@
 			        </section>
 					
 					<section>
-			            <h3 id="html-el">Content Attributes</h3>
+			            <h2 id="html-el">Content Attributes</h2>
 			            <ul>
 			                <li><b>Global Attributes</b></li>
 							<li><b>Element Specific Attributes</b></li>
@@ -190,7 +190,7 @@
 			        </section>
 
 			        <section>
-			            <h3 id="html-el">HTML Elements</h3>
+			            <h2 id="html-el">HTML Elements</h2>
 			            
 			                <li>Head</li>
 						<ul>
@@ -221,22 +221,38 @@
 						</ul>
 			                <li>Body</li>
 						<ul>
-							<li><b>Grouping elements</b> (div, span)</li>
-							<li><b>Headings</b> (h1, h2, h3, h4, h5, h6)</li>
-							<li><b>Lists</b> (ul, ol, li, dl, dt, dd, dir, menu)</li>
-							<li><b>Tables</b> (table, th, tr, td, thead, tfoot, tbody, colgroup, col)</li>
-							<li><b>Phrase elements</b> (em,strong, dfn, code, samp, kbd, var, cite, abbr, acronym)</li>
-							<li><b>Quotations</b> (blockquote, q)</li>
-							<li><b>Subscripts and Superscripts</b> (sub, sup)</li>
-							<li><b>Preformatted texts</b> (pre)</li>
-							<li><b>Font styles and alignments</b> (tt, i, b, big, small, strike, s, u, font, basefont, center)</li>
-							<li><b>Document changes</b> (ins, del)</li>
-							<li><b>Links and anchors</b> (a)</li>
-							<li><b>Objects, images, applets</b> (object, img, param, applet)</li>
-							<li><b>Scripts</b> (script, noscript)</li>
-							<li><b>Miscellaneous</b> (bdi, bdo)</li>
-							<li><b>Frames, noframes, iframe</b></li>
-							<li><b>Frameset(for frameset DTD)</li>
+							<li data-toggle="collapse" data-target="#grp"><b><a>Grouping elements</a></b> </li>
+							<div id="grp" class="collapse">(div, span)</div>
+							<li data-toggle="collapse" data-target="#hd"><b><a>Headings</a></b> </li>
+							<div id="hd" class="collapse">(h1, h2, h3, h4, h5, h6)</div>
+							<li data-toggle="collapse" data-target="#list"><b><a>Lists</a></b> </li>
+							<div id="list" class="collapse">(ul, ol, li, dl, dt, dd, dir, menu)</div>
+							<li data-toggle="collapse" data-target="#tables"><b><a>Tables</a></b> </li>
+							<div id="tables" class="collapse">(table, th, tr, td, thead, tfoot, tbody, colgroup, col)</div>
+							<li data-toggle="collapse" data-target="#phrase"><b><a>Phrase elements</a></b> </li>
+							<div id="phrase" class="collapse">(em,strong, dfn, code, samp, kbd, var, cite, abbr, acronym)</div>					
+							<li data-toggle="collapse" data-target="#quot"><b><a>Quotations</a></b> </li>
+							<div id="quot" class="collapse">(blockquote, q)</div>
+							<li data-toggle="collapse" data-target="#subs"><b><a>Subscripts and Superscripts</a></b> </li>
+							<div id="subs" class="collapse">(sub, sup)</div>
+							<li data-toggle="collapse" data-target="#pert"><b><a>Preformatted texts</a></b> </li>
+							<div id="pert" class="collapse">(pre)</div>
+							<li data-toggle="collapse" data-target="#fsa"><b><a>Font styles and alignments</a></b> </li>
+							<div id="fsa" class="collapse">(tt, i, b, big, small, strike, s, u, font, basefont, center)</div>
+							<li data-toggle="collapse" data-target="#dc"><b><a>Document changes</a></b> </li>
+							<div id="dc" class="collapse">(ins, del)</div>
+							<li data-toggle="collapse" data-target="#la"><b><a>Links and anchors</a></b> </li>
+							<div id="la" class="collapse">(a)</div>
+							<li data-toggle="collapse" data-target="#oia"><b><a>Objects, images, applets</a></b> </li>
+							<div id="oia" class="collapse">(object, img, param, applet)</div>
+							<li data-toggle="collapse" data-target="#scri"><b><a>Scripts</a></b> </li>
+							<div id="scri" class="collapse">(script, noscript)</div>
+							<li data-toggle="collapse" data-target="#misc"><b><a>Miscellaneous</a></b> </li>
+							<div id="misc" class="collapse">(bdi, bdo)</div>
+							<li data-toggle="collapse" data-target="#fr"><b><a>Frames</a></b> </li>
+							<div id="fr" class="collapse">(frame, noframes, iframe)</div>
+							<li data-toggle="collapse" data-target="#frm"><b><a>Frameset</a></b> </li>
+							<div id="frm" class="collapse">(for frameset DTD)</div>
 							
 						</ul>
 			        </section>
@@ -244,10 +260,10 @@
 
 		<div id="CSS">
 	       	<section>
-	            <h3 id="html-el">Cascading Style Sheets</h3>
+	            <h2 id="html-el">Cascading Style Sheets</h2>
 	            <p>Language used to specify the presentation aspects of structurally marked up document.</p>
 	            <p>Developed by <i>Hakon Wium Lie and Bert Boss</i></p>
-	            <img src="./images/hakonwiumlie.jpg" class="img-responsive" alt="hakon_wium_lie" width="304" height="236">	       
+	            <img src="./images/hakonwiumlie.jpg" class="img-circle" alt="hakon_wium_lie">	       
 	        
 			<br>
 				
@@ -260,7 +276,7 @@
 			</section>
 			
 			<section>	
-				<h3 id="html-el">CSS Statement</h3>
+				<h2 id="html-el">CSS Statement</h2>
 	                <li>CSS Selectors</li>
 					<li>Selector Syntax</li>
 				<ul>
@@ -341,7 +357,7 @@
 			</section>
 			
 			<section>
-				<h3 id="html-el">CSS Rule Precedence</h3>
+				<h2 id="html-el">CSS Rule Precedence</h2>
 	                <li>Cascading</li>
 				<ul>
 					<li><b>By Origin and Importance</b></li>
@@ -368,7 +384,7 @@
 			</section>
 			
 			<section>
-				<h3 id="html-el">Declaration Block</h3>
+				<h2 id="html-el">Declaration Block</h2>
 	                <li><b>Properties</b></li>
 				<ul>
 					<li>Visual, aural, paged, interactive</li>
@@ -403,7 +419,7 @@
 			</section>
 			
 			<section>	
-				<h3 id="html-el">CSS Preprocessor and CSS Framework</h3>
+				<h2 id="html-el">CSS Preprocessor and CSS Framework</h2>
 				<ul>
 					<li><b>Saas</b></li>
 					<li><b>Less</b></li>
@@ -417,9 +433,9 @@
 
 	   	<div id="JS">
 	       	<section>
-	            <h3 id="html-el">Javascript</h3>
+	            <h2 id="html-el">Javascript</h2>
 	            <p>Developed by <i>Brendan Eich</i> at Netscape Communications as the scripting language for the Netscape Navigator Browser</p>
-	            <img src="./images/brendaneich.jpg" class="img-responsive" alt="brendan_eich" width="304" height="236">
+	            <img src="./images/brendaneich.jpg" class="img-circle" alt="brendan_eich" width="304" height="236">
 	            <p>Formerly called <i>Mocha</i> and <i>LiveScript</i></p>	
 	            <p>Standardized by ECMA International as ECMAScript</p>
 	                <li>JavaScript Frameworks</li>
@@ -429,7 +445,7 @@
 	        </section>
 			
 			<section>
-			<h3 id="html-el">Placement in HTML File</h3>
+			<h2 id="html-el">Placement in HTML File</h2>
 				<ul>
 					<li><b>Externally Linked Script</b></li>
 					<li><b>Embedded Script</b></li>
@@ -439,7 +455,7 @@
 			</section>	
 
 			<section>	
-				<h3 id="html-el">Javascript Statement</h3>
+				<h2 id="html-el">Javascript Statement</h2>
 				<ul>
 					<li>Control flow</li>
 				<ul>
@@ -483,7 +499,7 @@
 
 			<section>
 		
-			<h3 id="html-el">Expressions and operators</h3>
+			<h2 id="html-el">Expressions and operators</h2>
 				<ul>				
 					<li>Primary expressions</li>
 				
@@ -516,7 +532,7 @@
 			</section>
 			
 			<section>
-			<h3 id="html-el">Standard Objects</h3>
+			<h2 id="html-el">Standard Objects</h2>
 				<ul>
 					<li>Array</li>
 					<li>Boolean</li>
@@ -536,7 +552,7 @@
 				</ul>
 			
 			<section>
-			<h3 id="html-el">Document Object Model or DOM</h3>
+			<h2 id="html-el">Document Object Model or DOM</h2>
 				<p><strong>Document Methods</strong></p>
 				<ul>
 					<li>document.createAttribute('name')</li>
@@ -551,7 +567,7 @@
 				</ul>
 			</section>
 			
-			<h3 id="html-el">Three Categories of Methods</h3>
+			<h2 id="html-el">Three Categories of Methods</h2>
 				<li>Mutator Method</li>
 			<ul>
 				<li>Array.prototype.copyWithin()</li>
@@ -587,7 +603,7 @@
 		</div>
 
 		<div id="terms">
-	        <h3 id="terms">Terminologies</h3>
+	        <h2 id="terms">Terminologies</h2>
 	        <ul>
 	            <li id="html">Hypertext Transfer Markup Language</li>
 	            <li id="www">WWW (World Wide Web)</li>

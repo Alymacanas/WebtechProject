@@ -1141,7 +1141,15 @@ img {
           transition: all .2s ease-in-out;
 }
 .img-circle {
+  margin : auto;
   border-radius: 50%;
+  height: 236px;
+  width: 304px;
+
+}
+img {
+    display: block;
+    margin: 0 auto;
 }
 hr {
   margin-top: 20px;
@@ -1265,18 +1273,25 @@ h6 .small,
 h1,
 .h1 {
   font-size: 36px;
+  background-color: #dcd;
+  text-align: center;
 }
 h2,
 .h2 {
   font-size: 30px;
+  background-color: #dcd;
+  text-align: center;
 }
 h3,
 .h3 {
   font-size: 24px;
+  text-align: center;
+
 }
 h4,
 .h4 {
   font-size: 18px;
+  text-align: center;
 }
 h5,
 .h5 {
@@ -1288,6 +1303,7 @@ h6,
 }
 p {
   margin: 0 0 10px;
+  text-align: center;
 }
 .lead {
   margin-bottom: 20px;
