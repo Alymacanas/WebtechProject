@@ -798,39 +798,101 @@
 			
 			<h2 id="html-el">Three Categories of Methods</h2>
 				<li>Mutator Method</li>
-				<p>Methods that can modify the target array</p>
-			<ul>
-				<li>Array.prototype.copyWithin()</li>
-				<li>Array.prototype.fill()</li>
-				<li>Array.prototype.pop()</li>
-				<li>Array.prototype.push()</li>
-				<li>Array.prototype.reverse()</li>
-				<li>Array.prototype.shift()</li>
-				<li>Array.prototype.sort()</li>
-				<li>Array.prototype.splice()</li>
-			</ul>
+				<p>Methods that can modify the target array</p>  
+					<li data-toggle="collapse" data-target="#a-cop"><b><a>Array.prototype.copyWithin()</a></b></li>
+						<div id="a-cop" class="collapse">
+							<p>- The copyWithin works like C and C++'s memmove, and is a high-performance method to shift the data of an Array. This especially applies to the Typed Array method of the same name. The sequence is copied and pasted as one operation; pasted sequence will have the copied values even when the copy and paste region overlap.
+								The copyWithin function is intentionally generic, it does not require that its this value be an Array object.</p>
+						<img src="./images/copywithin.png" class="img-responsive" alt="copy_within">
+						</div>
 				<li>Accessor Method</li>
 				<p>Methods that does not modify the array but returns a value when invoked</p>
-			<ul>
-				<li>Array.prototype.concat()</li>
-				<li>Array.prototype.indexOf()</li>
-				<li>Array.prototype.join()</li>
-				<li>Array.prototype.lastIndexOf()</li>
-				<li>Array.prototype.slice()</li>
-				<li>Array.prototype.toString()</li>
-			</ul>
+					<li data-toggle="collapse" data-target="#a-con"><b><a>Array.prototype.concat()</a></b></li>
+						<div id="a-con" class="collapse">
+							<p>- filter() calls a provided callback function once for each element in an array, and constructs a new array of all the values for which callback returns a value that coerces to true. callback is invoked only for indexes of the array which have assigned values; it is not invoked for indexes which have been deleted or which have never been assigned values. Array elements which do not pass the callback test are simply skipped, and are not included in the new array.</p>
+						<img src="./images/concat.png" class="img-responsive" alt="concat">
+						</div>
+					<li data-toggle="collapse" data-target="#a-con"><b><a>Array.prototype.indexOf()</a></b></li>
+						<div id="a-con" class="collapse">
+							<p>- indexOf() compares searchElement to elements of the Array using strict equality (the same method used by the === or triple-equals operator).</p>
+						<img src="./images/indexof.png" class="img-responsive" alt="index_of">
+						</div>
+					<li data-toggle="collapse" data-target="#a-jo"><b><a>Array.prototype.join()</a></b></li>
+						<div id="a-jo" class="collapse">
+							<p>- The string conversions of all array elements are joined into one string. If an element is undefined or null, it is converted to the empty string.</p>
+						<img src="./images/join.png" class="img-responsive" alt="join">
+						</div>
+					<li data-toggle="collapse" data-target="#a-la"><b><a>Array.prototype.lastIndexOf()</a></b></li>
+						<div id="a-la" class="collapse">
+							<p>- lastIndexOf compares searchElement to elements of the Array using strict equality (the same method used by the ===, or triple-equals, operator).</p>
+						<img src="./images/lastindex.png" class="img-responsive" alt="last_index">
+						</div>
+					<li data-toggle="collapse" data-target="#a-sl"><b><a>Array.prototype.slice()</a></b></li>
+						<div id="a-sl" class="collapse">
+							-slice does not alter. It returns a shallow copy of elements from the original array. Elements of the original array are copied into the returned array as follows:
+							<ul>
+							<li>For object references (and not the actual object), slice copies object references into the new array. Both the original and new array refer to the same object. If a referenced object changes, the changes are visible to both the new and original arrays.</li>
+							<li>For strings, numbers and booleans (not String, Number and Boolean objects), slice copies the values into the new array. Changes to the string, number or boolean in one array do not affect the other array.</li>
+							</ul>
+						<img src="./images/slice.png" class="img-responsive" alt="slice">
+						</div>
+					<li data-toggle="collapse" data-target="#a-st"><b><a>Array.prototype.toString()</a></b></li>
+						<div id="a-st" class="collapse">
+							<p>- The Array object overrides the toString method of Object. For Array objects, the toString method joins the array and returns one string containing each array element separated by commas.</p>
+						</div>
 				<li>Iteration or Iterator Method</li>
 				<p>When these methods are called, functions that take three arguments (array item value, position of the item in the array, the array object) are taken as the argument of the method and does not modify the values in the array</p>
-			<ul>
-				<li>Array.prototype.filter()</li>
-				<li>Array.prototype.every()</li>
-				<li>Array.prototype.find()</li>
-				<li>Array.prototype.forEach()</li>
-				<li>Array.prototype.entries()</li>
-				<li>Array.prototype.values()</li>
-				<li>Array.prototype.reduce()</li>
-				<li>Array.prototype.[@@iterator]()</li>
-			</ul>
+					<li data-toggle="collapse" data-target="#a-fi"><b><a>Array.prototype.filter()</a></b></li>
+						<div id="a-fi" class="collapse">
+							<p>- filter() calls a provided callback function once for each element in an array, and constructs a new array of all the values for which callback returns a value that coerces to true. callback is invoked only for indexes of the array which have assigned values; it is not invoked for indexes which have been deleted or which have never been assigned values. Array elements which do not pass the callback test are simply skipped, and are not included in the new array.
+							callback is invoked with three arguments:
+							<ul>
+							<li>the value of the element</li>
+							<li>the index of the element</li>
+							<li>the Array object being traversed</li>
+							</ul>
+						<img src="./images/filter.png" class="img-responsive" alt="filter">
+						</div>
+					<li data-toggle="collapse" data-target="#a-ev"><b><a>Array.prototype.every()</a></b></li>
+						<div id="a-ev" class="collapse">
+							<p>-The every method executes the provided callback function once for each element present in the array until it finds one where callback returns a falsy value. If such an element is found, the every method immediately returns false. Otherwise, if callback returns a truthy value for all elements, every returns true. callback is invoked only for indexes of the array which have assigned values; it is not invoked for indexes which have been deleted or which have never been assigned values.</p>
+						<img src="./images/every.png" class="img-responsive" alt="every ">
+						</div>
+					<li data-toggle="collapse" data-target="#a-fd"><b><a>Array.prototype.find()</a></b></li>
+						<div id="a-fd" class="collapse">
+							<p>-The find method executes the callback function once for each index of the array until it finds one where callback returns a true value. If such an element is found, find immediately returns the value of that element. Otherwise, find returns undefined. callback is invoked for every index of the array from 0 to length - 1 and is invoked for all indexes, not just those that have been assigned values. This may mean that it's less efficient for sparse arrays than other methods that only visit indexes that have been assigned a value.</p>
+						<img src="./images/find.png" class="img-responsive" alt="find ">
+						</div>
+					<li data-toggle="collapse" data-target="#a-fc"><b><a>Array.prototype.forEach()</a></b></li>
+						<div id="a-fc" class="collapse">
+							forEach() executes the provided callback once for each element present in the array in ascending order. It is not invoked for index properties that have been deleted or are uninitialized (i.e. on sparse arrays). callback is invoked with three arguments:
+							<ul>
+							<li>the element value</li>
+							<li>the element index</li>
+							<li>the array being traversed</li>
+							</ul>
+						<img src="./images/foreach.png" class="img-responsive" alt="for_each ">
+						</div>
+					<li data-toggle="collapse" data-target="#a-en"><b><a>Array.prototype.entries()</a></b></li>
+						<div id="a-en" class="collapse">
+							<p>-The entries() method returns a new Array Iterator object that contains the key/value pairs for each index in the array.</p>
+						<img src="./images/values.png" class="img-responsive" alt="values ">
+						</div>
+					<li data-toggle="collapse" data-target="#a-va"><b><a>Array.prototype.values()</a></b></li>
+						<div id="a-va" class="collapse">
+							<p>-The values() method returns a new Array Iterator object that contains the values for each index in the array.</p>
+						<img src="./images/entries.png" class="img-responsive" alt="entries ">
+						</div>
+					<li data-toggle="collapse" data-target="#a-re"><b><a>Array.prototype.reduce()</a></b></li>
+						<div id="a-re" class="collapse">
+							<p>-The reduce() method applies a function against an accumulator and each element in the array (from left to right) to reduce it to a single value.</p>
+						<img src="./images/reduce.png" class="img-responsive" alt="reduce ">
+						</div>
+					<li data-toggle="collapse" data-target="#a-it"><b><a>Array.prototype.[@@iterator]()</a></b></li>
+						<div id="a-it" class="collapse">
+							<p>-The initial value of the @@iterator property is the same function object as the initial value of the values() property.</p>
+						<img src="./images/iterator.png" class="img-responsive" alt="iterator">
+						</div>
 			</section>
 		</div>
 	<br>
