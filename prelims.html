@@ -155,55 +155,54 @@
 
 			<h1>HTTP Request Methods</h1>
 				<ul>
-				  <li>GET</li>
-
-				  <li style="list-style: none; display: inline">
-					<p>The GET method is commonly used in HTTP method, It is used to request from the server the retrieval if the source identified by the request URI and can be combine with conditional and/or range request headers to effect conditional and/or partial resource retrieval.</p>
-				  </li>
-
-				  <li>HEAD</li>
-
-				  <li style="list-style: none; display: inline">
-					<p>The HEAD Method is identical to GET method, Method will asks for a response but without the response body. This is very useful for retrieving.</p>
-				  </li>
-
-				 <li>POST</li>
-
-				  <li style="list-style: none; display: inline">
-					<p>The POST method requests that the origin server accept the entity enclosed in the request as a new subordinate of the resource identified by the Request-URI in the Request-Line.</p>
-				  </li>
-
-				 <li>PUT</li>
-
-				  <li style="list-style: none; display: inline">
-					<p>The PUT method requests that the enclosed entity in the message body under the specified request URI.</p>
-				  </li>
-
-				  <li>TRACE</li>
-
-				  <li style="list-style: none; display: inline">
-					<p>The TRACE method requests the server to "echo" back to the client of received request and typically used for testing or diagnostics of the request chain.</p>
-				  </li>
-
-
-				  <li>DELETE</li>
-
-				  <li style="list-style: none; display: inline">
-					<p>The DELETE method requests the server to delete the resource identified by the Request-URI.</p>
-				  </li>
-
-
-				  <li>CONNECT</li>
-
-				  <li style="list-style: none; display: inline">
-					<p>The CONNECT method is reserved for used of tunneling proxy servers and converts the request connection to a transparent TCP/IP tunnel.</p>
-				  </li>
-
-				  <li>OPTIONS</li>
-
-				  <li style="list-style: none; display: inline">
-					<p>The OPTIONS method returns the HTTP methods what a server can do. It can be used to check the functionality of a web server by requesting. </p>
-				  </li>
+				<li data-toggle="collapse" data-target="#get"><b><a>GET</a></b></li>
+				<div id="get" class="collapse">
+					<ul>
+						<li>The GET method is commonly used in HTTP method, It is used to request from the server the retrieval if the source identified by the request URI and can be combine with conditional and/or range request headers to effect conditional and/or partial resource retrieval.</li>
+					</ul>
+				</div>
+				<li data-toggle="collapse" data-target="#head"><b><a>HEAD</a></b></li>
+				<div id="head" class="collapse">
+					<ul>
+						<li>The HEAD Method is identical to GET method, Method will asks for a response but without the response body. This is very useful for retrieving.</li>
+					</ul>
+				</div>
+				<li data-toggle="collapse" data-target="#post"><b><a>POST</a></b></li>
+				<div id="post" class="collapse">
+					<ul>
+						<li>The POST method requests that the origin server accept the entity enclosed in the request as a new subordinate of the resource identified by the Request-URI in the Request-Line.</li>
+					</ul>
+				</div>
+				<li data-toggle="collapse" data-target="#put"><b><a>PUT</a></b></li>
+				<div id="put" class="collapse">
+					<ul>
+						<li>The PUT method requests that the enclosed entity in the message body under the specified request URI.</li>
+					</ul>
+				</div>	
+				<li data-toggle="collapse" data-target="#trc"><b><a>TRACE</a></b></li>
+				<div id="trc" class="collapse">
+					<ul>
+						<li>The TRACE method requests the server to "echo" back to the client of received request and typically used for testing or diagnostics of the request chain.</li>
+					</ul>
+				</div>	
+				<li data-toggle="collapse" data-target="#del"><b><a>DELETE</a></b></li>
+				<div id="del" class="collapse">
+					<ul>
+						<li>The DELETE method requests the server to delete the resource identified by the Request-URI.</li>
+					</ul>
+				</div>	
+				<li data-toggle="collapse" data-target="#conn"><b><a>CONNECT</a></b></li>
+				<div id="conn" class="collapse">
+					<ul>
+						<li>The CONNECT method is reserved for used of tunneling proxy servers and converts the request connection to a transparent TCP/IP tunnel.</li>
+					</ul>
+				</div>	
+				<li data-toggle="collapse" data-target="#opt"><b><a>OPTION</a></b></li>
+				<div id="opt" class="collapse">
+					<ul>
+						<li>The OPTIONS method returns the HTTP methods what a server can do. It can be used to check the functionality of a web server by requesting.</li>
+					</ul>
+				</div>	
 				</ul>
 
 			<h1>HTTP Request-Response Header</h1>
@@ -240,13 +239,16 @@
 
 					<h5>HTTP Protocol Version</h5>
 
-					<h5>Status Code</h5>
-					<li>Information(1XX)</li>
-					<li>Success(2XX)</li>
-					<li>Redirection(3XX)</li>
-					<li>Client Error(4XX)</li>
-					<li>Server Error(5XX)</li>
-
+					<li data-toggle="collapse" data-target="#statc"><b><a>Status Code</a></b></li>
+					<div id="statc" class="collapse">
+					<ul>
+						<li>Information(1XX)</li>
+						<li>Success(2XX)</li>
+						<li>Redirection(3XX)</li>
+						<li>Client Error(4XX)</li>
+						<li>Server Error(5XX)</li>
+					</ul>
+					</div>
 					<h5>Reason Phase</h5>
 
 					<h5>Message Headers</h5>
@@ -260,62 +262,216 @@
 
 			<h1>HTTP Message Headers</h1>
 				<ul>
-				  <li>General Header Fields</li><dl>It is an HTTP header that can be used for the request and response methods but it doesn't apply to the content itself.</dl>
+				  <h4>General Header Fields</h4><dl>It is an HTTP header that can be used for the request and response methods but it doesn't apply to the content itself.</dl>
+					<ul>
+					<li data-toggle="collapse" data-target="#ccl"><b><a>Cache-control</a></b></li>
+					<div id="ccl" class="collapse">
+						<ul>
+							<li>It is a general-header field used for specifying the directives for the caching mechanisms in both, requests and responses. Caching directives are unidirectional which means a given directive in a request is not implying that the same directive is to be given in the response.</li>
+						</ul>
+					</div>	
+					
+					<li data-toggle="collapse" data-target="#cnt"><b><a>Connection</a></b></li>
+					<div id="cnt" class="collapse">
+						<ul>
+							<li>The Connection general header controls whether or not the network connection stays open after the current transaction finishes. If the value sent is keep-alive, the connection is persistent and not closed, allowing for subsequent requests to the same server to be done.</li>
+						</ul>
+					</div>			
 
+					<li data-toggle="collapse" data-target="#date"><b><a>Date</a></b></li>
+					<div id="date" class="collapse">
+						<ul>
+							<li>The Date general HTTP header contains the date and time in which the message was originated.</li>
+						</ul>
+					</div>
 
-				  <li style="list-style: none; display: inline">
-					<p>Cache-control</p><dl>It is a general-header field used for specifying the directives for the caching mechanisms in both, requests and responses. Caching directives are unidirectional which means a given directive in a request is not implying that the same directive is to be given in the response.</dl>
+					<li data-toggle="collapse" data-target="#pgm"><b><a>Pragma</a></b></li>
+					<div id="pgm" class="collapse">
+						<ul>
+							<li>The Pragma general-header field is used to include implementation specific directives that might apply to any recipient along the request/response chain. </li>
+						</ul>
+					</div>
+					
+					<li data-toggle="collapse" data-target="#trl"><b><a>Trailer</a></b></li>
+					<div id="trl" class="collapse">
+						<ul>
+							<li>The Trailer response header allows the sender to include additional fields at the end of chunked messages in order to supply metadata that might be dynamically generated while the message body is sent, such as a message integrity check, digital signature, or post-processing status.</li>
+						</ul>
+					</div>
 
+					<li data-toggle="collapse" data-target="#tfe"><b><a>Transfer-encoding</a></b></li>
+					<div id="tfe" class="collapse">
+						<ul>
+							<li>The Transfer-Encoding general-header field indicates what type of transformation has been applied to the message body in order to safely transfer it between the sender and the recipient. This is not the same as content-encoding because transfer-encodings are a property of the message, not of the entity-body.</li>
+						</ul>
+					</div>		
 
-					<p>Connection</p><dl>The Connection general header controls whether or not the network connection stays open after the current transaction finishes. If the value sent is keep-alive, the connection is persistent and not closed, allowing for subsequent requests to the same server to be done.</dl>
+					<li data-toggle="collapse" data-target="#ugd"><b><a>Upgrade</a></b></li>
+					<div id="ugd" class="collapse">
+						<ul>
+							<li>The Upgrade general-header allows the client to specify what additional communication protocols it supports and would like to use if the server finds it appropriate to switch protocols.</li>
+						</ul>
+					</div>		
 
+					<li data-toggle="collapse" data-target="#via"><b><a>Via</a></b></li>
+					<div id="via" class="collapse">
+						<ul>
+							<li>The Via general header is added by proxies, both forward and reverse proxies, and can appear in the request headers and the response headers. It is used for tracking message forwards, avoiding request loops, and identifying the protocol capabilities of senders along the request/response chain.</li>
+						</ul>
+					</div>
+					
+					<li data-toggle="collapse" data-target="#wrn"><b><a>Warning</a></b></li>
+					<div id="wrn" class="collapse">
+						<ul>
+							<li>The Warning general-header is used to carry additional information about the status or transformation of a message which might not be reflected in the message. A response may carry more than one Warning header.</li>
+						</ul>
+					</div>			
+				  </ul>
+			  <h4>Request Header Fields</h4>
+			  <ul>
+			  <li data-toggle="collapse" data-target="#acp"><b><a>Accept</a></b></li>
+					<div id="acp" class="collapse">
+						<ul>
+							<li>It can be used to specify certain media types which are acceptable for the response.</li>
+						</ul>
+					</div>
+					
+				<li data-toggle="collapse" data-target="#ach"><b><a>Accept-charset</a></b></li>
+					<div id="ach" class="collapse">
+						<ul>
+							<li>It can be used to indicates acceptable character sets for the response.</li>
+						</ul>
+					</div>		
 
-					 <p>Date</p><dl>The Date general HTTP header contains the date and time in which the message was originated.</dl>
+				<li data-toggle="collapse" data-target="#ace"><b><a>Accept-encoding</a></b></li>
+					<div id="ace" class="collapse">
+						<ul>
+							<li>It is similar to Accept however the difference is that it restricts the acceptable content-codings in the response.</li>
+						</ul>
+					</div>		
+	
+				<li data-toggle="collapse" data-target="#acl"><b><a>Accept-language</a></b></li>
+					<div id="acl" class="collapse">
+						<ul>
+							<li>It is also similar to Accept but it restricts the preferred set of natural languages as a response to the request.</li>
+						</ul>
+					</div>		
+				
+				<li data-toggle="collapse" data-target="#atr"><b><a>Authorization</a></b></li>
+					<div id="atr" class="collapse">
+						<ul>
+							<li>The value of it consists of credentials containing the authentication information of the user agent for the realm of the resource being requested. </li>
+						</ul>
+					</div>		
+				
+				<li data-toggle="collapse" data-target="#ept"><b><a>Except</a></b></li>
+					<div id="ept" class="collapse">
+						<ul>
+							<li>It is used to indicate the required particular set of server behaviors by the client.</li>
+						</ul>
+					</div>		
+				
+				<li data-toggle="collapse" data-target="#frm"><b><a>From</a></b></li>
+					<div id="frm" class="collapse">
+						<ul>
+							<li>It contains an Internet e-mail address for the user who controls the requesting user agent.</li>
+						</ul>
+					</div>		
+				
+				<li data-toggle="collapse" data-target="#hot"><b><a>Host</a></b></li>
+					<div id="hot" class="collapse">
+						<ul>
+							<li>It is used to indicate the Internet host and the port number of the resource being requested.</li>
+						</ul>
+					</div>	
+							
+				<li data-toggle="collapse" data-target="#imh"><b><a>If-Match</a></b></li>
+					<div id="imh" class="collapse">
+						<ul>
+							<li>It is used with a method to make it conditional. This header requests the server to perform the requested method only if the given value in this tag matches the given entity tags represented by ETag.</li>
+						</ul>	
+					</div>
+					
+				<li data-toggle="collapse" data-target="#ims"><b><a>If-Modified-Since</a></b></li>
+					<div id="ims" class="collapse">
+						<ul>
+							<li>It requests HTTP header to make the request conditional in which the server will send back the requested resource, with a 200 status, only if it has been last modified after the given date. If the request has not been modified since, the response will be a 304 without any body.</li>
+						</ul>
+					</div>		
+				
+				<li data-toggle="collapse" data-target="#ius"><b><a>If-Unmodified-Since</a></b></li>
+					<div id="ius" class="collapse">
+						<ul>
+							<li>It requests HTTP header to make the request conditional in which the server will send back the requested resource, or accept it in the case of a POST or another non-safe method, only if it has not been last modified after the given date. If the request has been modified after the given date, the response will be a 412 (Precondition Failed) error.</li>
+						</ul>
+					</div>			
+				
+				<li data-toggle="collapse" data-target="#inm"><b><a>If-None-Match</a></b></li>
+					<div id="inm" class="collapse">
+						<ul>
+							<li>It is used with a method to make it conditional. This header requests the server to perform the requested method only if one of the given value in this tag matches the given entity tags represented by ETag.</li>
+						</ul>
+					</div>		
+				
+				<li data-toggle="collapse" data-target="#rne"><b><a>Range</a></b></li>
+					<div id="rne" class="collapse">
+						<ul>
+							<li>It specifies the partial range of the requested content from the document.</li>
+						</ul>	
+					</div>
+					
+				<li data-toggle="collapse" data-target="#ire"><b><a>If-Range</a></b></li>
+					<div id="ire" class="collapse">
+						<ul>
+							<li>It can be used with a conditional GET to request only the portion of the entity that is missing, if it has not been changed, and the entire entity if it has been changed.</li>
+						</ul>	
+					</div>	
+				
+				<li data-toggle="collapse" data-target="#mxf"><b><a>Max-forward</a></b></li>
+					<div id="mxf" class="collapse">
+						<ul>
+							<li>It provides a mechanism with the TRACE and OPTIONS methods to limit the number of proxies or gateways that can forward the request to the next inbound server.</li>
+						</ul>
+					</div>		
+				
+				<li data-toggle="collapse" data-target="#pxa"><b><a>Proxy-Authorization</a></b></li>
+					<div id="pxa" class="collapse">
+						<ul>
+							<li>It allows the client to identify itself or the user to a proxy that requires authentication.</li>
+						</ul>
+					</div>		
+				
+				<li data-toggle="collapse" data-target="#rfr"><b><a>Referer</a></b></li>
+					<div id="rfr" class="collapse">
+						<ul>
+							<li>It allows the client to specify the address (URI) of the resource from which the URL has been requested.</li>
+						</ul>
+					</div>	
+				
+				<li data-toggle="collapse" data-target="#ura"><b><a>User-Agent</a></b></li>
+					<div id="ura" class="collapse">
+						<ul>
+							<li>It contains information about the user agent originating the request. </li>
+						</ul>
+					</div>	
+			  </ul>
 
-
-					<p>Pragma</p><dl>The Pragma general-header field is used to include implementation specific directives that might apply to any recipient along the request/response chain. </dl>
-
-
-					<p>Trailer</p><dl>The Trailer response header allows the sender to include additional fields at the end of chunked messages in order to supply metadata that might be dynamically generated while the message body is sent, such as a message integrity check, digital signature, or post-processing status.</dl>
-
-
-					<p>Transfer-encoding</p><dl>The Transfer-Encoding general-header field indicates what type of transformation has been applied to the message body in order to safely transfer it between the sender and the recipient. This is not the same as content-encoding because transfer-encodings are a property of the message, not of the entity-body.</dl>
-
-
-					<p>Upgrade</p><dl>The Upgrade general-header allows the client to specify what additional communication protocols it supports and would like to use if the server finds it appropriate to switch protocols.</dl>
-
-
-					<p>Via</p><dl>The Via general header is added by proxies, both forward and reverse proxies, and can appear in the request headers and the response headers. It is used for tracking message forwards, avoiding request loops, and identifying the protocol capabilities of senders along the request/response chain.</dl>
-
-
-					<p>Warning</p><dl>The Warning general-header is used to carry additional information about the status or transformation of a message which might not be reflected in the message. A response may carry more than one Warning header.</dl>
-				  </li>
-			  <li>Request Header Fields</li>
-			  <li style="list-style: none; display: inline">
-				<p>Accept</p><dl>It can be used to specify certain media types which are acceptable for the response.</dl>
-				<p>Accept-charset</p><dl>It can be used to indicates acceptable character sets for the response.</dl>
-				<p>Accept-encoding</p><dl>It is similar to Accept however the difference is that it restricts the acceptable content-codings in the response.</dl>
-				<p>Accept-language</p><dl>It is also similar to Accept but it restricts the preferred set of natural languages as a response to the request.</dl>
-				<p>Authorization</p><dl>The value of it consists of credentials containing the authentication information of the user agent for the realm of the resource being requested. </dl>
-				<p>Expect</p><dl>It is used to indicate the required particular set of server behaviors by the client.</dl>
-				<p>From</p><dl>It contains an Internet e-mail address for the user who controls the requesting user agent.</dl>
-				<p>Host</p><dl>It is used to indicate the Internet host and the port number of the resource being requested.</dl>
-				<p>If-Match</p><dl>It is used with a method to make it conditional. This header requests the server to perform the requested method only if the given value in this tag matches the given entity tags represented by ETag.</dl>
-				<p>If-Modified-Since</p><dl>It requests HTTP header to make the request conditional in which the server will send back the requested resource, with a 200 status, only if it has been last modified after the given date. If the request has not been modified since, the response will be a 304 without any body.</dl>
-				<p>If-Unmodified-Since</p><dl>It requests HTTP header to make the request conditional in which the server will send back the requested resource, or accept it in the case of a POST or another non-safe method, only if it has not been last modified after the given date. If the request has been modified after the given date, the response will be a 412 (Precondition Failed) error.</dl>
-				<p>If-None-Match</p><dl>It is used with a method to make it conditional. This header requests the server to perform the requested method only if one of the given value in this tag matches the given entity tags represented by ETag.</dl>
-				<p>Range</p><dl>It specifies the partial range of the requested content from the document.</dl>
-				<p>If-Range</p><dl>It can be used with a conditional GET to request only the portion of the entity that is missing, if it has not been changed, and the entire entity if it has been changed.</dl>
-				<p>Max-forward</p><dl>It provides a mechanism with the TRACE and OPTIONS methods to limit the number of proxies or gateways that can forward the request to the next inbound server.</dl>
-				<p>Proxy-Authorization</p><dl>It allows the client to identify itself or the user to a proxy that requires authentication.</dl>
-				<p>Referer</p><dl>It allows the client to specify the address (URI) of the resource from which the URL has been requested.</dl>
-				<p>User-Agent</p><dl>It contains information about the user agent originating the request. </dl>
-			  </li>
-
-			  <li>Response Header Fields</li>
-			  <li style="list-style: none; display: inline">
-				<p>Accept-Range</p><dl>It allows the server to indicate its acceptance of range requests for a resource. </dl>
-				<p>Age</p><dl>It conveys the sender's estimate of the amount of time since the response (or its revalidation) was generated at the origin server. </dl>
+			  <h4>Response Header Fields</h4>
+			  <ul>
+				<li data-toggle="collapse" data-target="#acr"><b><a>Accept-Range</a></b></li>
+					<div id="acr" class="collapse">
+						<ul>
+							<li>It allows the server to indicate its acceptance of range requests for a resource. </li>
+						</ul>
+					</div>
+					
+				<li data-toggle="collapse" data-target="#age"><b><a>Age</a></b></li>
+					<div id="age" class="collapse">
+						<ul>
+							<li>It conveys the sender's estimate of the amount of time since the response (or its revalidation) was generated at the origin server. </li>
+						</ul>
+					</div>
+					
 				<p>E-tag</p><dl>It provides the current value of the entity tag for the requested variant.</dl>
 				<p>Location</p><dl>It is used to redirect the recipient to a location other than the Request-URI for completion.</dl>
 				<p>Proxy-Authenticate</p><dl>It must be included as a part of a 407 (Proxy Authentication Required) response.</dl>
@@ -323,10 +479,10 @@
 				<p>Server</p><dl>It contains information about the software used by the origin server to handle the request.</dl>
 				<p>Vary</p><dl>It specifies that the entity has multiple sources and may therefore vary according to the specified list of request header(s). </dl>
 				<p>WWW-Authenticate</p><dl>The value might contain more than one challenge, or if more than one WWW-Authenticate header field is provided, the contents of a challenge itself can contain a comma-separated list of authentication parameters.</dl>
-			  </li>
+			  </ul>
 
-			  <li>Entity Header Fields</li>
-			  <li style="list-style: none; display: inline">
+			  <h4>Entity Header Fields</h4>
+			  <ul>
 				<p>Allow</p><dl>It will list the set of methods supported by the resource identified by the Request-URI.</dl>
 				<p>Content-encoding</p><dl>It is used as a modifier to the media-type. </dl>
 				<p>Content-Languge</p><dl>It describes the natural language of the intended audience for the enclosed entity. </dl>
@@ -337,7 +493,7 @@
 				<p>Content-range</p><dl>It is sent with a partial entity-body to specify where in the full entity-body the partial body should be applied.</dl>
 				<p>Expires</p><dl>It gives the date or the time after which the response is considered stale.</dl>
 				<p>Last-modified</p><dl>It indicates the date and time of the modification of the origin server.</dl>
-			  </li>
+			  </ul>
 			</ul>
 
 			<h1>HTTP Status Codes</h1>
