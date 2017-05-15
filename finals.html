@@ -79,86 +79,79 @@
 	        <p>Java Servlets are programs that run on an Web Application server and act as a middle layer between a request coming from a Web browser or other HTTP client and databases or applications on the HTTP server.Servlets can be created using the javax.servlet and javax.servlet.http packages , which are a standard part of the Java's enterprise edition, an expanded version of the Java class library that supports large-scale development projects</p>
 	        </section>
 	        
+			<section>
+				<p data-toggle="collapse" data-target="#serv-pro"><b><a>Servlet Processing</a></b></p>
+	        	<div id="serv-pro" class="collapse">
+					<ul>
+						<li>Client sends a request to a web server URL that is mapped to a servlet. Web server passes on the request to the servlet container </li>
+						<li>Servlet container checks if servlet is already loaded </li>
+						<li>If it is not yet loaded, servlet container loads the servlet class and instantiates the servlet, and calls its init method. </li>
+						<li>Servlet container invokes the servlet's service method, passing request and response objects as arguments </li>
+						<li>Servlet processes the request using the response object to create the response, which is returned by the servlet container to the web server, which in turn sends the response to the client </li>
+						<li>Subsequent request to the servlet will not require servlet re-instantiation, unless the servlet has been unloaded; before a servlet is unloaded, the servlet container invokes its destroy method</li>
+					</ul>
+				</div>
+			</section>
 
 	        <section>
-	        	<p>What does Servlet do?</p>
-	        	<ul>
-	        	<li>Read the explicit data sent by the clients (browsers)</li>
-				<li>Read the implicit HTTP request data sent by the clients (browsers)</li>
-				<li>Process the data and generate the results</li>
-				<li>Send the explicit data (i.e., the document) to the clients (browsers)</li>
-				<li>Send the implicit HTTP response to the clients (browsers).</li>
-				</ul>
+	        	<p data-toggle="collapse" data-target="#serv-do"><b><a>What does Servlet do?</a></b></p>
+	        	<div id="serv-do" class="collapse">
+		        	<ul>
+		        	<li>Read the explicit data sent by the clients (browsers)</li>
+					<li>Read the implicit HTTP request data sent by the clients (browsers)</li>
+					<li>Process the data and generate the results</li>
+					<li>Send the explicit data (i.e., the document) to the clients (browsers)</li>
+					<li>Send the implicit HTTP response to the clients (browsers).</li>
+					</ul>
+				</div>
 			</section>
 		
 
 			<section>
-				<p>javax.servlet</p>
-			<ul>
-				<li>Servlet, GenericServlet</li>
-				<li>ServletRequest, ServletResponse </li>
-				<li>ServletConfig, ServletContext </li>
-				<li>RequestDispatcher</li>
-			</ul>
+				<p data-toggle="collapse" data-target="#javax"><b><a>javax.servlet</a></b></p>
+	        	<div id="javax" class="collapse">
+					<ul>
+					<li>Servlet, GenericServlet</li>
+					<li>ServletRequest, ServletResponse </li>
+					<li>ServletConfig, ServletContext </li>
+					<li>RequestDispatcher</li>
+					</ul>
+				</div>
 			</section>
 
 			<section>
-				<p>javax.servlet.http</p>
-			<ul>
-				<li>HttpServlet </li>
-				<li>HttpServletRequest </li>
-				<li>HttpServletResponse</li>
-				<li>HttpSession</li>
-				<li>Cookie</li>	
-			</ul>
-
-			<section>
-				<p>Servlet Processing</p>
-			<ul>
-				<li>Client sends a request to a web server URL that is mapped to a servlet. Web server passes on the request to the servlet container </li>
-				<li>Servlet container checks if servlet is already loaded </li>
-				<li>If it is not yet loaded, servlet container loads the servlet class and instantiates the servlet, and calls its init method. </li>
-				<li>Servlet container invokes the servlet's service method, passing request and response objects as arguments </li>
-				<li>Servlet processes the request using the response object to create the response, which is returned by the servlet container to the web server, which in turn sends the response to the client </li>
-				<li>Subsequent request to the servlet will not require servlet re-instantiation, unless the servlet has been unloaded; before a servlet is unloaded, the servlet container invokes its destroy method</li>
-			</ul>
-
-
-			</section>
-
-
+				<p data-toggle="collapse" data-target="#javax-http"><b><a>javax.servlet.http</a></b></p>
+	        	<div id="javax" class="collapse">
+					<ul>
+					<li>HttpServlet </li>
+					<li>HttpServletRequest </li>
+					<li>HttpServletResponse</li>
+					<li>HttpSession</li>
+					<li>Cookie</li>	
+					</ul>
+				</div>
 			</section>
 	    </article>
 
 
 	    <section>
-			            <h2 id="html-el">Web Security</h2>
-			            <ul>
-			            <li>Web Security, also known as "Cyber security" involves protecting information by preventing, detecting, and responding to attacks.
-			            </li>
-			            </ul>
+			<h2 id="html-el">Web Security</h2>
+				<p>Web Security, also known as "Cyber security" involves protecting information by preventing, detecting, and responding to attacks. </p>
 
-			            <div class="well" >
-						<h4>Graphical Presentation</h4>
-						 <img src="./images/websec.gif" class="img-responsive" alt="html_start">
-						</div>
+			<div class="well" >
+				<h4>Graphical Presentation</h4>
+				<img src="./images/websec.gif" class="img-responsive" alt="html_start">
+			</div>
 
-						<li data-toggle="collapse" data-target="#ps"><b><a>Packet Sniffer</a></b></li>
-							 <div id="ps" class="collapse">
-							 Also known as a Network Analyzer is a computer program that can itercept security, privacy and log traffic that passes a network.
-							 </div>
-
-						<li data-toggle="collapse" data-target="#le"><b><a>Let's Encrypt</a></b></li>
-							 <div id="le" class="collapse">
-							 Let's Encrypt provides free certificate for Transport Layer Security(TLS) encryption to serve HTTPS traffic.
-							 </div>
-
-
-
-
-
-
-			                
+			<li data-toggle="collapse" data-target="#ps"><b><a>Packet Sniffer</a></b></li>
+				<div id="ps" class="collapse">
+					Also known as a Network Analyzer is a computer program that can itercept security, privacy and log traffic that passes a network.
+				</div>
+			<li data-toggle="collapse" data-target="#le"><b><a>Let's Encrypt</a></b></li>
+				<div id="le" class="collapse">
+					Let's Encrypt provides free certificate for Transport Layer Security(TLS) encryption to serve HTTPS traffic.
+				</div>
+          
     </div>
 	<!-- Footer -->
     <br>
