@@ -6773,5 +6773,7 @@ button.close {
     width: 100%;
 }
 
-
+.li-none {
+  list-style-type: none;
+}
 /*# sourceMappingURL=bootstrap.css.map */

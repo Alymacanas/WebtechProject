@@ -6,6 +6,7 @@
 		
 		<title>Midterms</title>
 		
+		<link rel="icon" type="image/png" href="./images/favicon.ico" />
 		<link rel="stylesheet" href="css/bootstrap.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -410,26 +411,35 @@
 			<section>
 				<h2 id="html-el">CSS Rule Precedence</h2>
 				<ul>
-					<li><b>By Origin and Importance</b></li>
-					<ul>
-						<li>User Agent Important Declarations</li>
-						<li>User Important Declarations</li>
-						<li>Author Important Declarations</li>
-						<li>Author Normal Declarations</li>
-						<li>User Normal Declarations</li>
-						<li>User Agent Normal Declarations</li>
-					</ul>
-					<li><b>By Specificity</b></li>
-					<ul>
-						<li>Inline-style</li>
-						<li>Number of ID Selectors</li>
-						<li>Number of Class Selectors, Attribute Selectors and Pseudo Classes</li>
-						<li>Number of Type Selectors and Pseudo Elements</li>
-					</ul>
-					<li><b>By Order</b></li>
-					<ul>
-						<li>the last is given the priority</li>
-					</ul>
+					<li data-toggle="collapse" data-target="#css-rule"><b><a>By Origin and Importance</a></b></li>
+					<div id="css-rule" class="collapse">
+						<ul>
+							<li>User Agent Important Declarations</li>
+							<li>User Important Declarations</li>
+							<li>Author Important Declarations</li>
+							<li>Author Normal Declarations</li>
+							<li>User Normal Declarations</li>
+							<li>User Agent Normal Declarations</li>
+						</ul>
+					</div>
+
+					<li data-toggle="collapse" data-target="#css-rule-sec"><b><a>By Specificity</a></b></li>
+					<div id="css-rule-sec" class="collapse">
+						<ul>
+							<li>Inline-style</li>
+							<li>Number of ID Selectors</li>
+							<li>Number of Class Selectors, Attribute Selectors and Pseudo Classes</li>
+							<li>Number of Type Selectors and Pseudo Elements</li>
+						</ul>
+					</div>
+
+					<li data-toggle="collapse" data-target="#css-rule-th"><b><a>By Order</a></b></li>
+					<div id="css-rule-th" class="collapse">
+						<ul>
+							<li>the last is given the priority</li>
+						</ul>
+					</div>
+
 				</ul>
 			</section>
 			
@@ -778,7 +788,37 @@
 				</ul>
 			
 			<section>
+				<h2 id="html-el">Asynchronous JavaScript and XML</h2>
+				<p>Synchronous Request – recommended for few small requests. JavaScript will not continue to execute until the server response is ready. If the server is busy or slow the application will stop or terminate. </p>
+				<p>Asynchronous Request – JavaScript does not have to wait for the server response. It can execute other scripts while waiting for the server response and deal with the response when the response is ready.</p>
+			</section>
 
+			<section>
+				<h2 id="html-el">Three important properties of XHTMLRequest Object</h2>
+					<li><b>onReadyStateChange</b> – stores a function to be called automatically each tie readyState changes</li>
+					<br>
+					<li><b>readyState</b>
+					<ul>
+						<li class="li-none">0: request not initialized</li>
+						<li class="li-none">1: server connection established</li>
+						<li class="li-none">2: request received</li>
+						<li class="li-none">3: processing request</li>
+						<li class="li-none">4: request finished and response is ready</li>
+					</ul>
+					</li>
+					<br>
+					<li><b>status</b> – stores a function to be called automatically each tie readyState changes</li>
+					<br>
+					<li><b>readyState</b>
+					<ul>
+						<li class="li-none">200: OK</li>
+						<li class="li-none">404: Not Found</li>
+
+					</ul>
+					</li>
+			</section>
+
+			<section>
 			<h2 id="html-el">Document Object Model or DOM</h2>
 				<p>A programming interface for HTML and XML documents. It provides a representation of the document and defines a way that the structure can be accessed from programs so that they can change the document structure, style and content. It's presented as a structured group of nodes and objects that have properties and methods.</p>
 
@@ -788,11 +828,13 @@
 							<p>-The Document.createAttribute() method creates a new attribute node, and returns it. The object created a node implementing the Attr interface. The DOM does not enforce what sort of attributes can be added to a particular element in this manner.</p>
 						<img src="./images/attribute.png" class="img-responsive" alt="attribute">
 						</div>
+
 					<li data-toggle="collapse" data-target="#d-cc"><b><a>document.createComment('text')</a></b></li>
 						<div id="d-cc" class="collapse">
 							<p>-createComment() creates a new comment node, and returns it.</p>
 						<img src="./images/comment.png" class="img-responsive" alt="comment">
 						</div>
+
 					<li data-toggle="collapse" data-target="#d-cd"><b><a>document.createDocumentFragment()</a></b></li>
 						<div id="d-cd" class="collapse">
 							<p>-DocumentFragments are DOM Nodes. They are never part of the main DOM tree. The usual use case is to create the document fragment, append elements to the document fragment and then append the document fragment to the DOM tree. In the DOM tree, the document fragment is replaced by all its children.</p>
@@ -834,30 +876,31 @@
 			</section>
 
 			<section>
+					<br>
 					<p><strong>	Document Object Collections </strong></p>
 				
 					<!--<li>break</li>-->
-					<li data-toggle="collapse" data-target="#anchors[]"><b><a>anchors[]</a></b></li>
-					<div id="anchors[]" class="collapse">
+					<li data-toggle="collapse" data-target="#anchors"><b><a>anchors[]</a></b></li>
+					<div id="anchors" class="collapse">
 						- insert some desc 
 					</div>
 					<!--<li>continue</li>-->
-					<li data-toggle="collapse" data-target="#forms[]"><b><a>forms[]</a></b></li>
-					<div id="forms[]" class="collapse">
+					<li data-toggle="collapse" data-target="#forms"><b><a>forms[]</a></b></li>
+					<div id="forms" class="collapse">
 						- insert some desc 
 					</div>
 					<!--<li>if...else</li>-->
-					<li data-toggle="collapse" data-target="#images[]"><b><a>images[]</a></b></li>
-					<div id="images[]" class="collapse">
+					<li data-toggle="collapse" data-target="#images"><b><a>images[]</a></b></li>
+					<div id="images" class="collapse">
 						- insert some desc 
 					</div>
 					<!--<li>switch</li>-->
-					<li data-toggle="collapse" data-target="#links[]"><b><a>links[]</a></b></li>
-					<div id="links[]" class="collapse">
+					<li data-toggle="collapse" data-target="#links"><b><a>links[]</a></b></li>
+					<div id="links" class="collapse">
 						- insert some desc 
 					</div>
 
-
+					<br>
 					<p><strong>	Document Object Collections </strong></p>
 
 					<!--<li>var</li>-->
