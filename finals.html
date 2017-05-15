@@ -118,8 +118,8 @@
 			</section>
 
 			<section>
-				<p data-toggle="collapse" data-target="#javax-http"><b><a>javax.servlet.http</a></b></p>
-	        	<div id="javax" class="collapse">
+				<p data-toggle="collapse" data-target="#javaxs"><b><a>javax.servlet.http</a></b></p>
+	        	<div id="javaxs" class="collapse">
 					<ul>
 					<li>HttpServlet </li>
 					<li>HttpServletRequest </li>
@@ -129,7 +129,79 @@
 					</ul>
 				</div>
 			</section>
+
+<section>
+				<p data-toggle="collapse" data-target="#servlet-req"><b><a>Servlet Request Processing (HttpServletRequest)</a></b></p>
+	        	<div id="servlet-req" class="collapse">
+					<ul>
+					<li>Retrieving user-supplied request parameters	 </li>
+					<li>Retrieving request header values</li>
+					</ul>
+				</div>
+			</section>
+
+			<section>
+				<p data-toggle="collapse" data-target="#servlet-res"><b><a>Servlet Response Processing (HttpServletResponse) </a></b></p>
+	        	<div id="servlet-res" class="collapse">
+					<ul>
+					<li>Setting response status code</li>
+					<li>Setting response headers</li>
+					<li>Obtaining output object for sending the response</li>
+					</ul>
+				</div>
+			</section>
+
+			<section>
+				<p data-toggle="collapse" data-target="#servlet-reqd"><b><a>Servlet Request Dispatching (RequestDispatcher)</a></b></p>
+	        	<div id="servlet-reqd" class="collapse">
+					<ul>	
+					<li>Obtain a RequestDispatcher to a resource (static or dynamic) from the request object </li>
+					<br>
+							<p>RequestDispatcher rqstDsp;</p>
+							<p>rqstDsp = request.getRequestDispatcher(res); </p>
+					<br>
+					<li>Include the dispatcher resource (or its output) in the current response; one or more resources can be included (e.g. use for banners, footers, etc.) </li>
+						<br>
+							<p>	rqstDsp.include(request, response); </p>
+								<br>
+					<li>Forwards the processing of the current request to the dispatcher resource; the servlet processing the current request must not generate a response ( e.g. use in MVC “controller” servlets) </li>
+						<br>
+							<p>	rqstDsp.forward(request, response);</p>
+					</ul>
+				</div>
+			</section>
+
+
+			<section>
+				<p data-toggle="collapse" data-target="#session"><b><a>Session Tracking(HttpSession)</a></b></p>
+	        	<div id="session" class="collapse">
+					<ul>	
+					<li>Session tracking support is implemented either cookies or URL-rewriting </li>
+					<br>
+							<p>HttpSession session; </p>
+							<p>session = request.getSession(createNew);  </p>
+					<br>
+					<li>Obtaining session information (HttpSession)</li>
+						<br>
+							<p>	getCreationTime(), getLastAccessedTime(), getMaxInactiveInternal(), getId(), isNew(), setMaxInactiveInterval(int val) </p>
+								<br>
+					<li>Destroying sessions  </li>
+						<br>
+							<p>	invalidate() </p>
+							<br>
+					<li>URL-rewriting(HttpServletResponse)   </li>
+						<br>
+							<p>	encodeURL(String url), encodeRedirectURL(String url) </p>
+					</ul>
+				</div>
+			</section>
+
+			
+
+
 	    </article>
+
+
 
 
 	    <section>
