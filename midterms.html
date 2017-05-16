@@ -70,9 +70,14 @@
 
 
 		<div class="container">
-			<div id="HMTL">
-			    <article id="internet">
-			        <h2>Hypertext Markup Language</h2>
+			<div class="row">
+				<div>
+					<button data-toggle="collapse" data-target="#HTML" class="btn btn-primary col-md-12" style="font-size: 35px;margin: 10px;">Hypertext Markup Language</button>
+				</div>
+			</div>
+			<div id="HTML">
+				
+			    <div id="definition">
 			        <section>
 			            <p>Hypertext Markup Language is the language used to markup the structure and content of documents(i.e. webpages) in the WWW.</a></p>
 						<p>It was created by Tim Berners-Lee</p>
@@ -83,10 +88,14 @@
 							<li>behavioral - client-side (JavaScript)</li>
 			            </ul>
 			        </section>
-			    </article>
-			
+			    </div>
+				<div class="row">
+					<div>
+						<button data-toggle="collapse" data-target="#html-version" class="btn btn-primary col-md-12" style="font-size: 20px;margin: 10px;">Versions and History</button>
+					</div>
+				</div>
+				<div id="html-version">
 					<section>
-						<h2 id="html-version">Versions and History:</h2>
 						<ul>
 							<li>HTML 1.0 - first version of HTML</li>
 							<li>HTML 2.0 - embodied in a technical document (<a href="https://tools.ietf.org/html/rfc1866" target="_blank">RFC in 1866</a>) and was the first standard HTML which was published in November 1995.</li>
@@ -103,9 +112,15 @@
 						 <img src="./images/htmlstart.png" class="img-responsive" alt="html_start">
 					</div>
 					</section>
-					
+				</div>	
+
+				<div class="row">
+					<div>
+						<button data-toggle="collapse" data-target="#xhtml" class="btn btn-primary col-md-12" style="font-size: 20px;margin: 10px;">Extensible Hypertext Markup Language </button>
+					</div>
+				</div>
+				<div id="xhtml">
 					<section>
-						<h2 id="xhtml">Extensible Hypertext Markup Language</h2>
 						<p> Extensible Hypertext Markup Language is the reformulation of HTML to XML</p>
 						<p> It was developed by the World Wide Web Consortium (W3C) to help web developers to make transition from HTML to XML</p>
 						<p> XHTML is almost identical to HTML 4.01</p>
@@ -161,9 +176,14 @@
 							  </table>
 						</section>
 					</section>
-					
+				</div>
+				<div class="row">
+					<div>
+						<button data-toggle="collapse" data-target="#html-el" class="btn btn-primary col-md-12" style="font-size: 20px;margin: 10px;">Content Model</button>
+					</div>
+				</div>
+				<div id="html-el">
 					<section>
-			            <h2 id="html-el">Content Model</h2>
 			            <ul>
 			                <li data-toggle="collapse" data-target="#head" class="li-none"><b><a>Heading</a></b></li>
 							<div id="head" class="collapse">
@@ -216,9 +236,15 @@
 							</div>
 						</ul>
 			        </section>
-					
+				</div>
+
+				<div class="row">
+					<div>
+						<button data-toggle="collapse" data-target="#content-attr" class="btn btn-primary col-md-12" style="font-size: 20px;margin: 10px;">Content Attributes</button>
+					</div>
+				</div>
+				<div id="content-attr">
 					<section>
-			            <h2 id="html-el">Content Attributes</h2>
 			            <ul>
 			                <li><b>Global Attributes</b></li>
 							<li><b>Element Specific Attributes</b></li>
@@ -226,11 +252,17 @@
 							<li><b>Role, Aria Attributes</b></li>
 			            </ul>
 			        </section>
+			    </div>
 
+			    <div class="row">
+					<div>
+						<button data-toggle="collapse" data-target="#html-elements" class="btn btn-primary col-md-12" style="font-size: 20px;margin: 10px;">HTML Elements</button>
+					</div>
+				</div>
+				<div id="html-elements">
 			        <section>
-			            <h2 id="html-el">HTML Elements</h2>
-			            
-			                <li>Head</li>
+			        	<ul>
+			            <li>Head</li>
 						<ul>
 							<li data-toggle="collapse" data-target="#ti" class="li-none"><b><a>title</a></b></li>
 							<div id="ti" class="collapse">
@@ -293,126 +325,198 @@
 							<div id="frm" class="collapse">(for frameset DTD)</div>
 							
 						</ul>
+					</ul>
 			        </section>
-				</div>
-
+			    </div>
+			</div>
+		<!--END OF HTML-->
+		<div class="row">
+			<div>
+				<button data-toggle="collapse" data-target="#CSS" class="btn btn-primary col-md-12" style="font-size: 35px;margin: 10px;">Cascading Style Sheets</button>
+			</div>
+		</div>
 		<div id="CSS">
 	       	<section>
-			
-	            <h2 id="html-el">Cascading Style Sheets</h2>
 	            <p>Language used to specify the presentation aspects of structurally marked up document.</p>
 	            <p>Developed by <i>Hakon Wium Lie and Bert Boss</i></p>
-	            <img src="./images/hakonwiumlie.jpg" class="img-responsive" alt="hakon_wium_lie" style="height:280px;width:240px;"></div>       
-
-			<section>	
-			
-			</section>
-				<h4>Versions:</h4>
+	            <img src="./images/hakonwiumlie.jpg" class="img-responsive" alt="hakon_wium_lie" style="height:280px;width:240px;">       
+			</section>	
+		
+		<div class="row">
+			<div>
+				<button data-toggle="collapse" data-target="#css-ver" class="btn btn-primary col-md-12" style="font-size: 20px;margin: 10px;">Versions</button>
+			</div>
+		</div>	
+		<div id="css-ver">
+			<section>
 				<ul>
 					<li>CSS 1 - W3C recommendation December 1996</li>
 					<li>CSS 2 - W3C recommendation May 1998</li>
 					<li>CSS 3 - W3C recommendation June 1999</li>
 				</ul>
 			</section>
-			
+		</div>	
+
+		<div class="row">
+			<div>
+				<button data-toggle="collapse" data-target="#css-pages" class="btn btn-primary col-md-12" style="font-size: 20px;margin: 10px;">Associating CSS Stylesheets with Web Pages</button>
+			</div>
+		</div>
+		<div id="css-pages">
 			<section>	
-				<h2 id="html-el">Associating CSS Stylesheets with Web Pages</h2>
 				<div class="well">
 					<h4>External Stylesheets</h4>
 					<img src="./images/externalstyle.png" class="img-responsive" alt="external_style">
 				</div>	
 				<div class="well">	
-					<h4>Embedded Style</h4>
+					<h4>Embedded Stylesheets</h4>
 					<img src="./images/embeddedstyle.png" class="img-responsive" alt="embedded_style">
 				</div>	
 				<div class="well">	
-					<h4>Inline Style</h4>
+					<h4>Inline Stylesheets</h4>
 					<img src="./images/inlinestyle.png" class="img-responsive" alt="inline_style">
 				</div>	
 			</section>
-			
-				<h2 id="html-el">CSS Statement</h2>
+		</div>
+
+		<div class="row">
+			<div>
+				<button data-toggle="collapse" data-target="#css-statement" class="btn btn-primary col-md-12" style="font-size: 20px;margin: 10px;">CSS Statement</button>
+			</div>
+		</div>
+		<div id="css-statement">
+			<section>
+			<ul>
 	                <li>CSS Selectors</li>
-					<li>Selector Syntax</li>
-				<ul>
-					<li><b>Simple Selector</b></li>
-					<ul>
-						<li><b>Type Selector</b></li>
-						<li><b>Universal Selector</b></li>
-						<li><b>Attribute Selector</b></li>
-						<li><b>Class Selector</b></li>
-						<li><b>ID Selector</b></li>
-						<li><b>Pseudo Class</b></li>
-						<ul>
-							<li class="li-none">Dynamic Pseudo Class</b></li>
-							<li class="li-none">Link Pseudo Class</b></li>
+					<li data-toggle="collapse" data-target="#selector"><b><a>Selector Syntax</a></b></li>
+						<div id="selector" class="collapse">	
+						
 							<ul>
-								<li class="li-none">:link</li>
-								<li class="li-none">:visited</li>
+							
+							<li data-toggle="collapse" data-target="#simple"><b><a>Simple Selector</a></b></li>
+								
+								<div class="collapse" id="simple">
+									<ul>
+										<li><b>Type Selector</b></li>
+										<li><b>Universal Selector</b></li>
+										<li><b>Attribute Selector</b></li>
+										<li><b>Class Selector</b></li>
+										<li><b>ID Selector</b></li>
+										
+										<li data-toggle="collapse" data-target="#pseudo"><b><a>Pseudo Class</a></b></li>
+										<div class="collapse" id="pseudo">
+										<ul>
+											<li><b>Dynamic Pseudo Class</b></li>
+											<li data-toggle="collapse" data-target="#link-pseudo"><b><a>Link Pseudo Class</a></b></li>
+												<div id="link-pseudo" class="collapse">
+													<ul>
+														<li class="li-none">:link</li>
+														<li class="li-none">:visited</li>
+													</ul>
+												</div>
+											
+											<li data-toggle="collapse" data-target="#useract-pseudo"><b><a>User Action Pseudo Class</a></b></li>
+												<div id="useract-pseudo" class="collapse">
+													<ul>
+														<li class="li-none">:hover</li>
+														<li class="li-none">:active</li>
+														<li class="li-none">:focus</li>
+													</ul>
+												</div>
+											
+											<li data-toggle="collapse" data-target="#target-pseudo"><b><a>Target Pseudo Class</a></b></li>
+												<div class="collapse" id="target-pseudo">
+													<ul>
+														<li class="li-none">:target</li>
+													</ul>
+												</div>
+
+											<li data-toggle="collapse" data-target="#lang"><b><a>Language</a></b></li>
+												<div id="lang" class="collapse">
+													<ul>
+														<li class="li-none">:lang()</li>
+													</ul>
+												</div>
+											
+											<li data-toggle="collapse" data-target="#uies"><b><a>UI Element State</a></b></li>
+												<div id="uies" class="collapse">
+													<ul>
+														<li class="li-none">:enabled</li>
+														<li class="li-none">:disabled</li>
+														<li class="li-none">:checked</li>
+														<li class="li-none">:indeterminate</li>
+													</ul>
+												</div>
+											
+											<li data-toggle="collapse" data-target="#struct-pseudo"><b><a>Structural Pseudo Class</a></b></li>
+												<div class="collapse" id="struct-pseudo">
+													<ul>
+														<li class="li-none">:root</li>
+														<li class="li-none">:first-child</li>
+														<li class="li-none">:last-child</li>
+														<li class="li-none">:only-child</li>
+														<li class="li-none">:nth-child ()</li>
+														<li class="li-none">:nth-last-child ()</li>
+														<li class="li-none">:first-of-type</li>
+														<li class="li-none">:last-of-type</li>
+														<li class="li-none">:only-of-type</li>
+														<li class="li-none">:nth-of-type ()</li>
+														<li class="li-none">:nth-last-of-type ()</li>
+														<li class="li-none">:empty</li>
+													</ul>
+												</div>
+												
+											<li><b>Negation Pseudo Class</b></li>
+										</ul>
+										</div>
+									</ul>
+								</div>
+							
 							</ul>
-							<li><b>User Action Pseudo Class</b></li>
-							<ul>
-								<li class="li-none">:hover</li>
-								<li class="li-none">:active</li>
-								<li class="li-none">:focus</li>
-							</ul>
-							<li><b>Target Pseudo Class</b></li>
-							<ul>
-								<li class="li-none">:target</li>
-							</ul>
-							<li><b>Language</b></li>
-							<ul>
-								<li class="li-none">:lang()</li>
-							</ul>
-							<li><b>UI Element State</b></li>
-							<ul>
-								<li class="li-none">:enabled</li>
-								<li class="li-none">:disabled</li>
-								<li class="li-none">:checked</li>
-								<li class="li-none">:indeterminate</li>
-							</ul>
-							<li><b>Structural Pseudo Class</b></li>
-							<ul>
-								<li class="li-none">:root</li>
-								<li class="li-none">:first-child</li>
-								<li class="li-none">:last-child</li>
-								<li class="li-none">:only-child</li>
-								<li class="li-none">:nth-child ()</li>
-								<li class="li-none">:nth-last-child ()</li>
-								<li class="li-none">:first-of-type</li>
-								<li class="li-none">:last-of-type</li>
-								<li class="li-none">:only-of-type</li>
-								<li class="li-none">:nth-of-type ()</li>
-								<li class="li-none">:nth-last-of-type ()</li>
-								<li class="li-none">:empty</li>
-							</ul>
-							<li><b>Negation Pseudo Class</b></li>
-						</ul>
-					</ul>
+						</div>
+							
+						
 					<li><b>Type Selector</b></li>
 					<li><b>Group Selector</b></li>
-					<li><b>Combinators</b></li>
-					<ul>
-						<li>Decendant Combinator</li>
-						<li>Child Combinator</li>
-						<li>Sibling Combinator</li>
+					
+					<li data-toggle="collapse" data-target="#combi"><b><a>Combinators</a></b></li>
+					<div id="combi" class="collapse">
 						<ul>
-							<li class="li-none">Adjacent Sibling Combinator</li>
-							<li class="li-none">General Sibling Combinator</li>
+							<li>Decendant Combinator</li>
+							<li>Child Combinator</li>
+							<li data-toggle="collapse" data-target="#siblingcombi"><b><a>Combinators</a></b></li>
+								<div class="collapse" id="siblingcombi">
+									<ul>
+										<li class="li-none">Adjacent Sibling Combinator</li>
+										<li class="li-none">General Sibling Combinator</li>
+									</ul>
+								</div>
+								
+							
+							<li data-toggle="collapse" data-target="#pseudo-elem"><b><a>Pseudo Elements</a></b></li>
+							<div id="pseudo-elem" class="collapse">
+								<ul>
+									<li class="li-none">::first-letter, :first-letter</li>
+									<li class="li-none">::first-line, :first-line</li>
+									<li class="li-none">::before, :before</li>
+									<li class="li-none">::after, :after</li>
+								</ul>
+							</div>
+							
 						</ul>
-						<li>Pseudo Elements</li>
-						<ul>
-							<li class="li-none">::first-letter, :first-letter</li>
-							<li class="li-none">::first-line, :first-line</li>
-							<li class="li-none">::before, :before</li>
-							<li class="li-none">::after, :after</li>
-						</ul>
-					</ul>
+					</div>
 				</ul>
+				</div>
 			</section>
-			
+		</div>
+
+		<div class="row">
+			<div>
+				<button data-toggle="collapse" data-target="#rule-p" class="btn btn-primary col-md-12" style="font-size: 20px;margin: 10px;">CSS Rule Precedence</button>
+			</div>
+		</div>
+		<div id="rule-p">
 			<section>
-				<h2 id="html-el">CSS Rule Precedence</h2>
 				<ul>
 					<li data-toggle="collapse" data-target="#css-rule"><b><a>By Origin and Importance</a></b></li>
 					<div id="css-rule" class="collapse">
@@ -445,44 +549,70 @@
 
 				</ul>
 			</section>
-			
+		</div>
+
+		<div class="row">
+			<div>
+				<button data-toggle="collapse" data-target="#declaration" class="btn btn-primary col-md-12" style="font-size: 20px;margin: 10px;">Declaration Block</button>
+			</div>
+		</div>
+		<div id="declaration">
 			<section>
-				<h2 id="html-el">Declaration Block</h2>
-	                <li><b>Properties</b></li>
 				<ul>
-					<li>Visual, aural, paged, interactive</li>
-					<li>Margins, borders, and paddings</li>
-					<li>Colors and background</li>
-					<li>Fonts</li>
-					<li>Text formatting</li>
-					<li>Lists and tables</li>
-					<li>Positioning and dimensions</li>
-					<li>Miscellaneous</li>
-				</ul>
-					<li><b>Values</b></li>
-					<ul>
-						<li>Keywords</li>
-						<li>Numbers</li>
-						<li>Dimensions</li>
-						<ul>
-							<li>Length, angle, duration, frequency, resolution</li>
-							<li>Length units:</li>
-							<ul>
-								<li>Font-Relative - em, ex, px</li>
-								<li>Viewport-Percentage - vm, vh, vmin, vmax</li>
-								<li>Absolute Lenths - in, an, nm, pt, pc</li>
-							</ul>
+	                <li data-toggle="collapse" data-target="#properties"><b><a>Properties</a></b></li>
+	                <div class="collapse" id="properties">
+	                	<ul>
+							<li>Visual, aural, paged, interactive</li>
+							<li>Margins, borders, and paddings</li>
+							<li>Colors and background</li>
+							<li>Fonts</li>
+							<li>Text formatting</li>
+							<li>Lists and tables</li>
+							<li>Positioning and dimensions</li>
+							<li>Miscellaneous</li>
 						</ul>
-						<li><b>Percentages</b></li>
-						<li><b>Colors</b></li>
-						<li><b>Strings</b></li>
-						<li><b>URLs</b></li>
-						<li><b>Initial values, inherited values, !important rules</b></li>
-					</ul>
+	                </div>
+					
+					<li data-toggle="collapse" data-target="#values"><b><a>Values</a></b></li>
+					<div id="values" class="collapse">
+						<ul>
+							<li>Keywords</li>
+							<li>Numbers</li>
+							<li data-toggle="collapse" data-target="#dimensions"><b><a>Dimensions</a></b></li>
+								<div id="dimensions" class="collapse">
+									<ul>
+										<li>Length, angle, duration, frequency, resolution</li>
+										
+										<li data-toggle="collapse" data-target="#lu"><b><a>Length units</a></b></li>
+										
+										<div class="collapse" id="lu">
+											<ul>
+												<li>Font-Relative - em, ex, px</li>
+												<li>Viewport-Percentage - vm, vh, vmin, vmax</li>
+												<li>Absolute Lenths - in, an, nm, pt, pc</li>
+											</ul>
+										</div>
+									</ul>
+								</div>
+								
+							<li><b>Percentages</b></li>
+							<li><b>Colors</b></li>
+							<li><b>Strings</b></li>
+							<li><b>URLs</b></li>
+							<li><b>Initial values, inherited values, !important rules</b></li>
+						</ul>
+					</div>
+					
+				</ul>
 			</section>
-			
-			<section>	
-				<h2 id="html-el">CSS Preprocessor and CSS Framework</h2>
+		</div>
+
+		<div class="row">
+			<div>
+				<button data-toggle="collapse" data-target="#prep-frm" class="btn btn-primary col-md-12" style="font-size: 20px;margin: 10px;">CSS Preprocessor and CSS Framework</button>
+			</div>
+		</div>
+			<div id="prep-frm">	
 				<ul>
 					<li><b>Saas</b></li>
 					<li><b>Less</b></li>
@@ -491,10 +621,16 @@
 					<li><b>Foundation</b></li>
 					<li><b>Materialize</b></li>
 				</ul>		
-	        </section>
-
+	       </div>
+	    
+	    <!--END OF CSS-->
+	    <div class="row">
+			<div>
+				<button data-toggle="collapse" data-target="#javascript" class="btn btn-primary col-md-12" style="font-size: 35px;margin: 10px;">Javascript</button>
+			</div>
+		</div>
+	    <div id="javascript">
 	       	<section>
-	            <h2 id="html-el">Javascript</h2>
 	            <p>Developed by <i>Brendan Eich</i> at Netscape Communications as the scripting language for the Netscape Navigator Browser</p>
 				
 	            <img src="./images/brendaneich.jpg" class="img-responsive" alt="brendan_eich" style="height:280px;width:240px;">
@@ -505,8 +641,12 @@
 				<ul>
 					<li>script.aculo.us, JQuery, Mootools, Prototype, Dojo Toolkit, etc.</li>
 				</ul>
-	       
-				<h2 id="html-el">Placement in HTML File</h2>
+	        <div class="row">
+				<div>
+					<button data-toggle="collapse" data-target="#js-placement" class="btn btn-primary col-md-12" style="font-size: 20px;margin: 10px;">Placement in HTML File</button>
+				</div>
+			</div>
+	        <div id="js-placement">
 				<div class="well">
 					<h4>Externally Linked Script</h4>
 					<img src="./images/externalscript.png" class="img-responsive" alt="external_script">
@@ -519,11 +659,16 @@
 					<h4>Inline Script</h4>
 					<img src="./images/inlinescript.png" class="img-responsive" alt="inline_script">
 				</div>
+			</div>
 			</section>	
 
+			<div class="row">
+				<div>
+					<button data-toggle="collapse" data-target="#js-statement" class="btn btn-primary col-md-12" style="font-size: 20px;margin: 10px;">Javascript Statement</button>
+				</div>
+			</div>
+			<div id="js-statement">
 			<section>	
-				<h2 id="html-el">Javascript Statement</h2>
-				<p>Defines what the script will do and how it will be done</p>
 				<ul>
 					<li >Control flow</li>
 				<ul>
@@ -634,35 +779,41 @@
 
 				</ul>
 			</section>
+		</div>
 
+		<div class="row">
+			<div>
+				<button data-toggle="collapse" data-target="#js-expr-opr" class="btn btn-primary col-md-12" style="font-size: 20px;margin: 10px;">Expressions and operators</button>
+			</div>
+		</div>
+		<div id="js-expr-opr">
 			<section>
-		
-
-			<h2 id="html-el">Expressions and operators</h2>
 				<p>Expressions are valid codes that resolves to a value. Operators are used tot assign values, compare values, perform arithmetic operations, etc.</p>
-
 				<ul>				
-					<li>Primary expressions</li>
-				<p>Basic keywords and general expressions</p>
-				<ul>
-					<li>this</li>
-					<li>function</li>
-					<li>class</li>
-					<li>yield</li>
-					<li>{}</li>
-					<li>/ab+c/i</li>
-					<li>()</li>
-				</ul>
-				
-					<li>Left-hand-side-expressions</li>
-				<p>The values on the left side of the statement are the target destination of an assignment</p>
-				<ul>
-					<li>Property accessors</li>
-					<li>new</li>
-					<li>new.target</li>
-					<li>super</li>
-					<li>...obj</li>
-
+					<li data-toggle="collapse" data-target="#pe"><b><a>Primary expressions</a></b></li>
+					<div class="collapse" id="pe">
+						<p>Basic keywords and general expressions</p>
+						<ul>
+							<li>this</li>
+							<li>function</li>
+							<li>class</li>
+							<li>yield</li>
+							<li>{}</li>
+							<li>/ab+c/i</li>
+							<li>()</li>
+						</ul>
+					</div>
+					<li data-toggle="collapse" data-target="#lhse"><b><a>Left-handside expressions</a></b></li>
+					<div class="collapse" id="lhse">
+						<p>The values on the left side of the statement are the target destination of an assignment</p>
+						<ul>
+							<li>Property accessors</li>
+							<li>new</li>
+							<li>new.target</li>
+							<li>super</li>
+							<li>...obj</li>
+						</ul>
+					</div>
 				</ul>	
 
 					<li>Operators</li>
@@ -759,70 +910,98 @@
 								<li>instanceof</li>
 							</ul>
 						</div>
+				</ul>			
 				</ul>
-					
 				</ul>
-				</ul>
-				
-
 			</section>
-			
-			<section>
+		</div>	
 
-			<h2 id="html-el">Standard Objects</h2>
-				<p>Standard, built-in objects of JavaScript</p>
-
-				<ul>
-					<li>Array - list-like objects</li>
-					<li>Boolean - an object for a boolean value</li>
-					<li>Date - objects based on a time value</li>
-					<li>Error - error objects are thrown when runtime errors occur</li>
-					<li>Function - every function is a Function object in JavaScript</li>
-					<li>JSON - contains methods for parsing JavaScript Object Notation and converting values to JSON</li>
-					<li>Math - has properties and methods that can be used for mathematical constants and functions</li>
-					<li>Number - an object that allows working with numerical values</li>
-					<li>Object - creates an object</li>
-					<li>RegExp - creates a regular expression that can be used to match string values to a pattern</li>
-					<li>String - constructor for strings</li>
-					<li>Map - a key/value map</li>
-					<li>Set - values of different types whether a primitive value or an object can be stored</li>
-					<li>WeakMap - same as Map but is not iterable and can only contain objects as its keys</li>
-					<li>WeakSet - same as Set but is not iterable and the values must be unique object references. Primitive types cannot be used</li>
-				</ul>
-			
+		<div class="row">
+			<div>
+				<button data-toggle="collapse" data-target="#standard-obj" class="btn btn-primary col-md-12" style="font-size: 20px;margin: 10px;">Standard Objects</button>
+			</div>
+		</div>
+		<div id="standard-obj">
 			<section>
-				<h2 id="html-el">Asynchronous JavaScript and XML</h2>
+					<p>Standard, built-in objects of JavaScript</p>
+
+					<ul>
+						<li>Array - list-like objects</li>
+						<li>Boolean - an object for a boolean value</li>
+						<li>Date - objects based on a time value</li>
+						<li>Error - error objects are thrown when runtime errors occur</li>
+						<li>Function - every function is a Function object in JavaScript</li>
+						<li>JSON - contains methods for parsing JavaScript Object Notation and converting values to JSON</li>
+						<li>Math - has properties and methods that can be used for mathematical constants and functions</li>
+						<li>Number - an object that allows working with numerical values</li>
+						<li>Object - creates an object</li>
+						<li>RegExp - creates a regular expression that can be used to match string values to a pattern</li>
+						<li>String - constructor for strings</li>
+						<li>Map - a key/value map</li>
+						<li>Set - values of different types whether a primitive value or an object can be stored</li>
+						<li>WeakMap - same as Map but is not iterable and can only contain objects as its keys</li>
+						<li>WeakSet - same as Set but is not iterable and the values must be unique object references. Primitive types cannot be used</li>
+					</ul>
+			</section>
+		</div>
+
+		<div class="row">
+			<div>
+				<button data-toggle="collapse" data-target="#async-js-xml" class="btn btn-primary col-md-12" style="font-size: 20px;margin: 10px;">Asynchronous JavaScript and XML</button>
+			</div>
+		</div>
+		<div id="async-js-xml">
+			<section>
 				<p>Synchronous Request – recommended for few small requests. JavaScript will not continue to execute until the server response is ready. If the server is busy or slow the application will stop or terminate. </p>
 				<p>Asynchronous Request – JavaScript does not have to wait for the server response. It can execute other scripts while waiting for the server response and deal with the response when the response is ready.</p>
 			</section>
+		</div>
 
+		<div class="row">
+			<div>
+				<button data-toggle="collapse" data-target="#xhtml-req-obj" class="btn btn-primary col-md-12" style="font-size: 20px;margin: 10px;">Three important properties of XHTMLRequest Object</button>
+			</div>
+		</div>
+		<div id="xhtml-req-obj">
 			<section>
-				<h2 id="html-el">Three important properties of XHTMLRequest Object</h2>
+				<ul>
 					<li><b>onReadyStateChange</b> – stores a function to be called automatically each tie readyState changes</li>
 					<br>
-					<li><b>readyState</b>
-					<ul>
-						<li class="li-none">0: request not initialized</li>
-						<li class="li-none">1: server connection established</li>
-						<li class="li-none">2: request received</li>
-						<li class="li-none">3: processing request</li>
-						<li class="li-none">4: request finished and response is ready</li>
-					</ul>
-					</li>
+					
+					<li data-toggle="collapse" data-target="#rs"><b><a>readyState</a></b></li>
+						<div class="collapse" id="rs">
+							<ul>
+								<li class="li-none">0: request not initialized</li>
+								<li class="li-none">1: server connection established</li>
+								<li class="li-none">2: request received</li>
+								<li class="li-none">3: processing request</li>
+								<li class="li-none">4: request finished and response is ready</li>
+							</ul>
+						</div>
+					
 					<br>
 					<li><b>status</b> – stores a function to be called automatically each tie readyState changes</li>
 					<br>
-					<li><b>readyState</b>
-					<ul>
-						<li class="li-none">200: OK</li>
-						<li class="li-none">404: Not Found</li>
-
-					</ul>
-					</li>
+					
+					<li data-toggle="collapse" data-target="#rs2"><b><a>readyState</a></b></li>
+						<div class="collapse" id="rs2">
+							<ul>
+								<li class="li-none">200: OK</li>
+								<li class="li-none">404: Not Found</li>
+							</ul>
+						</div>
+					
+				</ul>
 			</section>
+		</div>
 
+		<div class="row">
+			<div>
+				<button data-toggle="collapse" data-target="#dom" class="btn btn-primary col-md-12" style="font-size: 20px;margin: 10px;">Document Object Model or DOM</button>
+			</div>
+		</div>
+		<div id="dom">
 			<section>
-			<h2 id="html-el">Document Object Model or DOM</h2>
 				<p>A programming interface for HTML and XML documents. It provides a representation of the document and defines a way that the structure can be accessed from programs so that they can change the document structure, style and content. It's presented as a structured group of nodes and objects that have properties and methods.</p>
 
 				<p><strong>Document Methods</strong></p>
@@ -951,17 +1130,27 @@
 				</ol>
 
 			</section>
-			
-			<h2 id="html-el">Three Categories of Methods</h2>
+		</div>
+
+		<div class="row">
+			<div>
+				<button data-toggle="collapse" data-target="#method-catg" class="btn btn-primary col-md-12" style="font-size: 20px;margin: 10px;">Three Categories of Method</button>
+			</div>
+		</div>
+		<div id="method-catg">	
+			<section>
 				<li>Mutator Method</li>
 				<p>Methods that can modify the target array</p>  
+					<ul>
 					<li data-toggle="collapse" data-target="#a-cop"><b><a>Array.prototype.copyWithin()</a></b></li>
 						<div id="a-cop" class="collapse">
 							<p>- The copyWithin works like C and C++'s memmove, and is a high-performance method to shift the data of an Array. This especially applies to the Typed Array method of the same name. The sequence is copied and pasted as one operation; pasted sequence will have the copied values even when the copy and paste region overlap.
 								The copyWithin function is intentionally generic, it does not require that its this value be an Array object.</p>
 						<img src="./images/copywithin.png" class="img-responsive" alt="copy_within">
 						</div>
+					</ul>
 				<li>Accessor Method</li>
+				<ul>
 				<p>Methods that does not modify the array but returns a value when invoked</p>
 					<li data-toggle="collapse" data-target="#a-con"><b><a>Array.prototype.concat()</a></b></li>
 						<div id="a-con" class="collapse">
@@ -996,8 +1185,10 @@
 						<div id="a-st" class="collapse">
 							<p>- The Array object overrides the toString method of Object. For Array objects, the toString method joins the array and returns one string containing each array element separated by commas.</p>
 						</div>
+					</ul>
 				<li>Iteration or Iterator Method</li>
 				<p>When these methods are called, functions that take three arguments (array item value, position of the item in the array, the array object) are taken as the argument of the method and does not modify the values in the array</p>
+					<ul>
 					<li data-toggle="collapse" data-target="#a-fi"><b><a>Array.prototype.filter()</a></b></li>
 						<div id="a-fi" class="collapse">
 							<p>- filter() calls a provided callback function once for each element in an array, and constructs a new array of all the values for which callback returns a value that coerces to true. callback is invoked only for indexes of the array which have assigned values; it is not invoked for indexes which have been deleted or which have never been assigned values. Array elements which do not pass the callback test are simply skipped, and are not included in the new array.
@@ -1049,8 +1240,11 @@
 							<p>-The initial value of the @@iterator property is the same function object as the initial value of the values() property.</p>
 						<img src="./images/iterator.png" class="img-responsive" alt="iterator">
 						</div>
+				</ul>
 			</section>
 		</div>
+	</div>
+	<!--END OF JAVASCRIPT-->
 	<br>
 	<br>
 	<br>
@@ -1066,4 +1260,3 @@
 </footer>
 </body>
 </html>
-

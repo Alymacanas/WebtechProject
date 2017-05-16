@@ -40,7 +40,7 @@
 		<div id="myCarousel" class="carousel slide" data-ride="carousel">
 			<!-- Indicators -->
 			<ol class="carousel-indicators">
-			  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			  <li data-target="#myCarousel" data-slide-to="0"></li>
 			  <li data-target="#myCarousel" data-slide-to="1"></li>
 			  <li data-target="#myCarousel" data-slide-to="2"></li>
 			</ol>
@@ -66,12 +66,13 @@
 			</a>
 		  </div>
 		</div>
-
-
-
 	<div class="container">
+		<div class="row">
+			<div>
+				<button data-toggle="collapse" data-target="#internet" class="btn btn-primary col-md-12" style="font-size: 35px;margin: 10px;">Internet</button>
+			</div>
+		</div>
 		<div id="internet">
-			<h1>Internet</h1>
 				<ul>
 					<h3>FATHER OF INTERNET</h3>
 					<p>Vinton Gray "Vint" Cerf</p>
@@ -88,18 +89,18 @@
 				</ul>
 		</div>
 
+		<div class="row">
+			<div>
+				<button data-toggle="collapse" data-target="#WWW" class="btn btn-primary col-md-12" style="font-size: 35px;margin: 10px;">World Wide Web(WWW)</button>
+			</div>
+		</div>
 		<div id="WWW">
-			<h1>World Wide Web(WWW)</h1>
 				<ul>
-
-
 					<h3>FATHER OF WEB</h3>
 					<p>Tim Berners-Lee</p>
 					<p>Born: 8 June 1955, London, United Kingdom</p>
 					<img src="./images/timbernerslee.jpg" class="img-responsive" alt="timbernerslee"  style="height:280px;width:250px;">
 					<p>World Wide Web began in 1989</p>
-
-
 					<li>A global information medium which users can read and write via computers connected to the Internet.<br>
     				The term is often mistakenly used as a synonym for the Internet itself, but the Web is a service that operates over Internet as E-mail does.</li>
 					<li>in September 1994, Berners-Lee founded the World Wide Web Consortium (W3C) at the Massachusetts Institute of Technology
@@ -107,19 +108,24 @@
 				</ul>
 		</div>
 
+		<div class="row">
+			<div>
+				<button data-toggle="collapse" data-target="#http" class="btn btn-primary col-md-12" style="font-size: 35px;margin: 10px;">Hypertext Transfer Protocol (HTTP)</button>
+			</div>
+		</div>
 		<div id="http">
-			<h1>Hypertext Transfer Protocol (HTTP)</h1>
 				<ul>
-
 					<li>Application layer used primarily to retrieve hypertext (on hypermedia) documents and resources on the World Wide Web</li>
 					<li>Jointly developed by the W3C and the IETF</li>
 					<li>Protocol - Set of rules needs to be followed</li>
 					<li>HTTP 1.1 requires atleast the HOST request</li>
-
-
 				</ul>
 
-			<h1>Fundamentals</h1>
+			<div id="fundamentals" class="collapse">
+				<div>
+					<button data-toggle="collapse" data-target="#fundamentals" class="btn btn-primary col-md-12" style="font-size: 20px;margin: 10px;">Fundamentals</button>
+				</div>
+			</div>
 			<img src="./images/fundamentals.png" class="img-responsive" alt="fundamentals">
 				<ul>
 				  <li>HTTP typically runs on the top of TCP/IP, using TCP port 80 by default (TCP port 443 for HTTPS)</li>
@@ -146,14 +152,31 @@
 				  <li>HTTP provides suport for other functionalities such as cahe control, content media type (MIME) specification, language and character set specification,<br>
 				  content/transfer coding, client-server protocol negotiatons, persistent connections, request pipelining, etc.</li>
 				</ul>
-			<h1>Cookie</h1>
+			<div class="row">
+				<div>
+					<button data-toggle="collapse" data-target="#cookie" class="btn btn-primary col-md-12" style="font-size: 20px;margin: 10px;">Cookie</button>
+				</div>
+			</div>
+			<div id="cookie" class="collapse">
 				<p> HTTP Cookie which is also called web cookie, Internet cookie, browser cookie or simply cookie is small piece of data sent from a website and stored on the user's computer by the user's web browser while user is browsing. </p>
+			</div>
 
-			<h1>Cache</h1>
+			<div class="row">
+				<div>
+					<button data-toggle="collapse" data-target="#cache" class="btn btn-primary col-md-12" style="font-size: 20px;margin: 10px;">Cache</button>
+				</div>
+			</div>
+			<div id="cache" class="collapse">
 				<p>HTTP Cache is an information technology for the temporary local storage or copy of resource that is fetched from a server.</p>
 			<img src="./images/cache.png" class="img-responsive" alt="cache">
+			</div>
 
-			<h1>HTTP Request Methods</h1>
+			<div class="row">
+				<div>
+					<button data-toggle="collapse" data-target="#http-requests" class="btn btn-primary col-md-12" style="font-size: 20px;margin: 10px;">HTTP Request Methods</button>
+				</div>
+			</div>
+			<div id="http-requests" class="collapse">
 				<ul>
 				<li data-toggle="collapse" data-target="#get"><b><a>GET</a></b></li>
 				<div id="get" class="collapse">
@@ -204,8 +227,14 @@
 					</ul>
 				</div>	
 				</ul>
+			</div>
 
-			<h1>HTTP Request-Response Header</h1>
+			<div class="row">
+				<div>
+					<button data-toggle="collapse" data-target="#http-request-response" class="btn btn-primary col-md-12" style="font-size: 20px;margin: 10px;">HTTP Request-Response Header</button>
+				</div>
+			</div>
+			<div class="collapse" id="http-request-response">
 				<ul>
 				  <h4>Request Header</h4>
 				  	<li>Methods – HEAD, GET, POST, PUT, DELETE, TRACE, CONNECT, OPTION</li>
@@ -259,8 +288,14 @@
 					<p>Message Body (optional)</p>
 				  </li>
 				</ul>
+			</div>
 
-			<h1>HTTP Message Headers</h1>
+			<div class="row">
+				<div>
+					<button data-toggle="collapse" data-target="#http-message" class="btn btn-primary col-md-12" style="font-size: 20px;margin: 10px;">HTTP Message Headers</button>
+				</div>
+			</div>
+			<div class="collapse" id="http-message">
 				<ul>
 				  <h4>General Header Fields</h4><dl>It is an HTTP header that can be used for the request and response methods but it doesn't apply to the content itself.</dl>
 					<ul>
@@ -327,9 +362,12 @@
 						</ul>
 					</div>			
 				  </ul>
-			  <h4>Request Header Fields</h4>
-			  <ul>
-			  <li data-toggle="collapse" data-target="#acp"><b><a>Accept</a></b></li>
+			  	<div class="row">
+					<div>
+						<button data-toggle="collapse" data-target="#responsehf" class="btn btn-primary col-md-12" style="font-size: 20px;margin: 10px;">Response Header Fields</button>
+					</div>
+				</div>
+			  	<li data-toggle="collapse" data-target="#acp"><b><a>Accept</a></b></li>
 					<div id="acp" class="collapse">
 						<ul>
 							<li class="li-none">It can be used to specify certain media types which are acceptable for the response.</li>
@@ -456,8 +494,13 @@
 					</div>	
 			  </ul>
 
-			  <h4>Response Header Fields</h4>
-			  <ul>
+			  	<div class="row">
+					<div>
+						<button data-toggle="collapse" data-target="#responsehf" class="btn btn-primary col-md-12" style="font-size: 20px;margin: 10px;">Response Header Fields</button>
+					</div>
+				</div>
+				<div class="collapse" id="responsehf">
+			 	<ul>
 				<li data-toggle="collapse" data-target="#acr"><b><a>Accept-Range</a></b></li>
 					<div id="acr" class="collapse">
 						<ul>
@@ -520,12 +563,15 @@
 							<li class="li-none">The value might contain more than one challenge, or if more than one WWW-Authenticate header field is provided, the contents of a challenge itself can contain a comma-separated list of authentication parameters.</li>
 						</ul>
 				</div>	
-			
-
-			  
 			</ul>
+			</div>
 
-			<h4>Entity Header Fields</h4>
+			<div class="row">
+				<div>
+					<button data-toggle="collapse" data-target="#entityhf" class="btn btn-primary col-md-12" style="font-size: 20px;margin: 10px;">Entity Header Fields</button>
+				</div>
+			</div>
+			<div class="collapse" id="entityhf">
 			  <ul>
 
 			  	<li data-toggle="collapse" data-target="#allow"><b><a>Allow</a></b></li>
@@ -601,8 +647,14 @@
 				</div>
 
 			  </ul>
+			</div>
 
-			<h1>HTTP Status Codes</h1>
+			<div class="row">
+				<div>
+					<button data-toggle="collapse" data-target="#status-codes" class="btn btn-primary col-md-12" style="font-size: 20px;margin: 10px;">HTTP Status Codes</button>
+				</div>
+			</div>
+			<div id="status-codes" class="collapse">
 			<ul>
 			  <li style="list-style: none; display: inline">
 			  <li>Informational (1xx)</li> <dl> - indicates an interim response for communicating connection status or request progress prior to completing the requested action and sending a final response.</dl>
@@ -723,6 +775,7 @@
 				</ul>
 			  </li>
 			</ul>
+			</div>
 		</div>
 	</div>
 	<br>

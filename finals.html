@@ -70,9 +70,12 @@
 		</div>
 		
     <div class="container">
-        <article id="internet">
-	        <h2>Servlet</h2> 
-
+    	<div class="row">
+			<div>
+				<button data-toggle="collapse" data-target="#servlet" class="btn btn-primary col-md-12" style="font-size: 35px;margin: 10px;">Servlet</button>
+			</div>
+		</div>
+        <article id="servlet">
 	        <section>
 	        <p>Java Servlets are programs that run on an Web Application server and act as a middle layer between a request coming from a Web browser or other HTTP client and databases or applications on the HTTP server.Servlets can be created using the javax.servlet and javax.servlet.http packages , which are a standard part of the Java's enterprise edition, an expanded version of the Java class library that supports large-scale development projects</p>
 	        </section>
@@ -130,7 +133,7 @@
 				</div>
 			</section>
 
-<section>
+			<section>
 				<p data-toggle="collapse" data-target="#servlet-req"><b><a>Servlet Request Processing (HttpServletRequest)</a></b></p>
 	        	<div id="servlet-req" class="collapse">
 					<ul>
@@ -198,15 +201,18 @@
 
 	    </article>
 
-	    <div class="container">
-        <article id="internet">
-	        <h2>Java Server Pages</h2> 
+	    <div class="row">
+			<div>
+				<button data-toggle="collapse" data-target="#java-pages" class="btn btn-primary col-md-12" style="font-size: 20px;margin: 10px;">Java Server Pages</button>
+			</div>
+		</div>
 
+        <article id="java-pages">
 	        <section>
 	        <p>Simply an HTML web page that contains additional bits of code that execute application logic to generate dynamic content. </p>
 	        </section>
 
-	      <section>
+	      	<section>
 				<p data-toggle="collapse" data-target="#feat"><b><a>Features</a></b></p>
 	        	<div id="feat" class="collapse">
 					<ul>
@@ -218,7 +224,7 @@
 				</div>
 			</section>
 
-	   <section>
+	   		<section>
 				<p data-toggle="collapse" data-target="#comp"><b><a>Components </a></b></p>
 	        	<div id="comp" class="collapse">
 					<ul>
@@ -247,10 +253,7 @@
 							<li>session </li>
 
 						</ul>
-
-						
-					
-					</ul>
+						</ul>
 
 						<ul>
 							
@@ -297,15 +300,16 @@
 								<li> <% for(int i = 0; i < 10 ; i++) { out.println(i); } %> </li>
 							</ul>
 						</ul>
-
-					
-
 				</div>
 			</section>
+		</article>
 
-
-	    <section>
-			<h2 id="html-el">Web Security</h2>
+		<div class="row">
+			<div>
+				<button data-toggle="collapse" data-target="#web-sec" class="btn btn-primary col-md-12" style="font-size: 20px;margin: 10px;">Web Security</button>
+			</div>
+		</div>
+	    <section id="web-sec">
 				<p>Web Security, also known as "Cyber security" involves protecting information by preventing, detecting, and responding to attacks. </p>
 
 			<div class="well" >
@@ -321,8 +325,8 @@
 				<div id="le" class="collapse">
 					Let's Encrypt provides free certificate for Transport Layer Security(TLS) encryption to serve HTTPS traffic.
 				</div>
-          
-    </div>
+        </section>
+
 	<!-- Footer -->
     <br>
 	<br>
