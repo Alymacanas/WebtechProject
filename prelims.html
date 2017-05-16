@@ -471,30 +471,136 @@
 							<li class="li-none">It conveys the sender's estimate of the amount of time since the response (or its revalidation) was generated at the origin server. </li>
 						</ul>
 					</div>
-					
-				<p>E-tag</p><dl>It provides the current value of the entity tag for the requested variant.</dl>
-				<p>Location</p><dl>It is used to redirect the recipient to a location other than the Request-URI for completion.</dl>
-				<p>Proxy-Authenticate</p><dl>It must be included as a part of a 407 (Proxy Authentication Required) response.</dl>
-				<p>Retry-After</p><dl>It can be used with a 503 (Service Unavailable) response to indicate how long the service is expected to be unavailable to the requesting client.</dl>
-				<p>Server</p><dl>It contains information about the software used by the origin server to handle the request.</dl>
-				<p>Vary</p><dl>It specifies that the entity has multiple sources and may therefore vary according to the specified list of request header(s). </dl>
-				<p>WWW-Authenticate</p><dl>The value might contain more than one challenge, or if more than one WWW-Authenticate header field is provided, the contents of a challenge itself can contain a comma-separated list of authentication parameters.</dl>
-			  </ul>
 
-			  <h4>Entity Header Fields</h4>
-			  <ul>
-				<p>Allow</p><dl>It will list the set of methods supported by the resource identified by the Request-URI.</dl>
-				<p>Content-encoding</p><dl>It is used as a modifier to the media-type. </dl>
-				<p>Content-Languge</p><dl>It describes the natural language of the intended audience for the enclosed entity. </dl>
-				<p>Content-length</p><dl>It indicates the size of the entity-body, in decimal number of OCTETs, sent to the recipient or, in the case of the HEAD method, the size of the entity-body that would have been sent, had the request been a GET.</dl>
-				<p>Content-location</p><dl>It indicates the size of the entity-body, in decimal number of OCTETs, sent to the recipient or, in the case of the HEAD method, the size of the entity-body that would have been sent, had the request been a GET.</dl>
-				<p>Content-MD5</p><dl>It may be used to supply an MD5 digest of the entity for checking the integrity of the message upon receipt. </dl>
-				<p>Content-type</p><dl>It indicates the media type of the entity-body sent to the recipient or, in the case of the HEAD method, the media type that would have been sent, had the request been a GET. </dl>
-				<p>Content-range</p><dl>It is sent with a partial entity-body to specify where in the full entity-body the partial body should be applied.</dl>
-				<p>Expires</p><dl>It gives the date or the time after which the response is considered stale.</dl>
-				<p>Last-modified</p><dl>It indicates the date and time of the modification of the origin server.</dl>
-			  </ul>
+				<li data-toggle="collapse" data-target="#etag"><b><a>E-tag</a></b></li>
+					<div id="etag" class="collapse">
+						<ul>
+							<li class="li-none">It provides the current value of the entity tag for the requested variant. </li>
+						</ul>
+					</div>
+
+				<li data-toggle="collapse" data-target="#loc"><b><a>Location</a></b></li>
+					<div id="loc" class="collapse">
+						<ul>
+							<li class="li-none">It is used to redirect the recipient to a location other than the Request-URI for completion.</li>
+						</ul>
+				</div>
+
+				<li data-toggle="collapse" data-target="#prox"><b><a>Proxy-Authenticate</a></b></li>
+					<div id="prox" class="collapse">
+						<ul>
+							<li class="li-none">It must be included as a part of a 407 (Proxy Authentication Required) response.</li>
+						</ul>
+				</div>
+					
+				<li data-toggle="collapse" data-target="#re"><b><a>Retry-After</a></b></li>
+					<div id="re" class="collapse">
+						<ul>
+							<li class="li-none">It can be used with a 503 (Service Unavailable) response to indicate how long the service is expected to be unavailable to the requesting client.</li>
+						</ul>
+				</div>	
+			
+				<li data-toggle="collapse" data-target="#ser"><b><a>Server</a></b></li>
+					<div id="ser" class="collapse">
+						<ul>
+							<li class="li-none">It contains information about the software used by the origin server to handle the request.</li>
+						</ul>
+				</div>	
+
+				<li data-toggle="collapse" data-target="#var"><b><a>Vary</a></b></li>
+					<div id="var" class="collapse">
+						<ul>
+							<li class="li-none">It specifies that the entity has multiple sources and may therefore vary according to the specified list of request header(s).</li>
+						</ul>
+				</div>	
+
+				<li data-toggle="collapse" data-target="#www"><b><a>WWW-Authenticate</a></b></li>
+					<div id="www" class="collapse">
+						<ul>
+							<li class="li-none">The value might contain more than one challenge, or if more than one WWW-Authenticate header field is provided, the contents of a challenge itself can contain a comma-separated list of authentication parameters.</li>
+						</ul>
+				</div>	
+			
+
+			  
 			</ul>
+
+			<h4>Entity Header Fields</h4>
+			  <ul>
+
+			  	<li data-toggle="collapse" data-target="#allow"><b><a>Allow</a></b></li>
+					<div id="allow" class="collapse">
+						<ul>
+							<li class="li-none">It will list the set of methods supported by the resource identified by the Request-URI.</li>
+						</ul>
+				</div>	
+
+				<li data-toggle="collapse" data-target="#encoding"><b><a>Content-encoding</a></b></li>
+					<div id="encoding" class="collapse">
+						<ul>
+							<li class="li-none">It is used as a modifier to the media-type.</li>
+						</ul>
+				</div>
+				
+				<li data-toggle="collapse" data-target="#language"><b><a>Content-Languge</a></b></li>
+					<div id="language" class="collapse">
+						<ul>
+							<li class="li-none">It describes the natural language of the intended audience for the enclosed entity.</li>
+						</ul>
+				</div>
+
+
+				<li data-toggle="collapse" data-target="#lenght"><b><a>Content-length</a></b></li>
+					<div id="lenght" class="collapse">
+						<ul>
+							<li class="li-none">It indicates the size of the entity-body, in decimal number of OCTETs, sent to the recipient or, in the case of the HEAD method, the size of the entity-body that would have been sent, had the request been a GET.</li>
+						</ul>
+				</div>
+
+				<li data-toggle="collapse" data-target="#conloc"><b><a>Content-location</a></b></li>
+					<div id="conloc" class="collapse">
+						<ul>
+							<li class="li-none">It indicates the size of the entity-body, in decimal number of OCTETs, sent to the recipient or, in the case of the HEAD method, the size of the entity-body that would have been sent, had the request been a GET.</li>
+						</ul>
+				</div>
+
+				<li data-toggle="collapse" data-target="#md"><b><a>Content-MD5</a></b></li>
+					<div id="md" class="collapse">
+						<ul>
+							<li class="li-none">It may be used to supply an MD5 digest of the entity for checking the integrity of the message upon receipt.</li>
+						</ul>
+				</div>
+
+				<li data-toggle="collapse" data-target="#type"><b><a>Content-type</a></b></li>
+					<div id="type" class="collapse">
+						<ul>
+							<li class="li-none">It indicates the media type of the entity-body sent to the recipient or, in the case of the HEAD method, the media type that would have been sent, had the request been a GET. </li>
+						</ul>
+				</div>
+
+				<li data-toggle="collapse" data-target="#range"><b><a>Content-range</a></b></li>
+					<div id="range" class="collapse">
+						<ul>
+							<li class="li-none">It is sent with a partial entity-body to specify where in the full entity-body the partial body should be applied.</li>
+						</ul>
+				</div>
+
+
+				<li data-toggle="collapse" data-target="#exp"><b><a>Expires</a></b></li>
+					<div id="exp" class="collapse">
+						<ul>
+							<li class="li-none">It gives the date or the time after which the response is considered stale.</li>
+						</ul>
+				</div>
+
+				<li data-toggle="collapse" data-target="#last"><b><a>Last-modified</a></b></li>
+					<div id="last" class="collapse">
+						<ul>
+							<li class="li-none">It indicates the date and time of the modification of the origin server.</li>
+						</ul>
+				</div>
+
+			  </ul>
 
 			<h1>HTTP Status Codes</h1>
 			<ul>
