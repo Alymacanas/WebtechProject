@@ -308,30 +308,104 @@
 		<section>
 			<li data-toggle="collapse" data-target="#supglo"><b><a>Superglobals</a></b></li>	
 			<div id="supglo" class="collapse">
+			<p> Superglobals are available in all scopes throughout a script. There is no need to do global $variable; to access them within functions or methods.</p>
 				<ul>
-					<li><b>$GLOBALS</b></li>
-					<li><b>$_SERVER</b></li>
-					<li><b>$_GET</b></li>
-					<li><b>$_POST</b></li>
-					<li><b>$_FILES</b></li>
-					<li><b>$_COOKIE</b></li>
-					<li><b>$_SESSION</b></li>
-					<li><b>$_REQUEST</b></li>
-					<li><b>$_ENV</b></li>
+				
+					<li data-toggle="collapse" data-target="#global" class="li"><b><a>$GLOBALS</a></b></li>
+					<div id="global" class="collapse">
+						References all variables available in global scope
+					</div>
+					
+					<li data-toggle="collapse" data-target="#server" class="li"><b><a>$_SERVER</a></b></li>
+					<div id="server" class="collapse">
+						Server and execution environment information
+					</div>
+					
+					<li data-toggle="collapse" data-target="#get" class="li"><b><a>$_GET</a></b></li>
+					<div id="get" class="collapse">
+						HTTP GET variables
+					</div>
+					
+					<li data-toggle="collapse" data-target="#posts" class="li"><b><a>$_POST</a></b></li>
+					<div id="posts" class="collapse">
+						HTTP POST variables
+					</div>
+					
+					<li data-toggle="collapse" data-target="#filu" class="li"><b><a>$_FILES</a></b></li>
+					<div id="filu" class="collapse">
+						HTTP File Upload variables
+					</div>
+					
+					<li data-toggle="collapse" data-target="#cookies" class="li"><b><a>$_COOKIE</a></b></li>
+					<div id="cookies" class="collapse">
+						HTTP Cookies
+					</div>
+				
+					<li data-toggle="collapse" data-target="#sessions" class="li"><b><a>$_SESSION</a></b></li>
+					<div id="sessions" class="collapse">
+						Session variables
+					</div>
+
+					<li data-toggle="collapse" data-target="#request" class="li"><b><a>$_REQUEST</a></b></li>
+					<div id="request" class="collapse">
+						HTTP Request variables
+					</div>
+					
+					<li data-toggle="collapse" data-target="#env" class="li"><b><a>$_ENV</a></b></li>
+					<div id="env" class="collapse">
+						Environment variables
+					</div>
+					
 				</ul>
 			</div>
 			<li data-toggle="collapse" data-target="#sesrlf"><b><a>Session-Related Functions</a></b></li>	
 			<div id="sesrlf" class="collapse">
 				<ul>
-					<li><b>session_abort</b></li>
-					<li><b>session_commit</b></li>
-					<li><b>session_destroy</b></li>
-					<li><b>session_start</b></li>
-					<li><b>session_status</b></li>
-					<li><b>session_reset</b></li>
-					<li><b>session_unset</b></li>
-					<li><b>session_id</b></li>
-					<li><b>session_name</b></li>	
+					<li data-toggle="collapse" data-target="#sesab" class="li"><b><a>session_abort</a></b></li>
+					<div id="sesab" class="collapse">
+						Discard session array changes and finish session
+					</div>
+					
+					<li data-toggle="collapse" data-target="#secom" class="li"><b><a>session_commit</a></b></li>
+					<div id="secom" class="collapse">
+						Alias of session_write_close
+					</div>
+					
+					<li data-toggle="collapse" data-target="#sedes" class="li"><b><a>session_destroy</a></b></li>
+					<div id="sedes" class="collapse">
+						Destroys all data registered to a session
+					</div>
+					
+					<li data-toggle="collapse" data-target="#sestr" class="li"><b><a>session_start</a></b></li>
+					<div id="sestr" class="collapse">
+						Start new or resume existing session
+					</div>
+					
+					<li data-toggle="collapse" data-target="#sesta" class="li"><b><a>session_status</a></b></li>
+					<div id="sesta" class="collapse">
+						Returns the current session status
+					</div>
+					
+					<li data-toggle="collapse" data-target="#seres" class="li"><b><a>session_reset</a></b></li>
+					<div id="seres" class="collapse">
+						Re-initialize session array with original values
+					</div>
+										
+					<li data-toggle="collapse" data-target="#seuns" class="li"><b><a>session_unset</a></b></li>
+					<div id="seuns" class="collapse">
+						Free all session variables
+					</div>
+					
+					<li data-toggle="collapse" data-target="#seid" class="li"><b><a>session_id</a></b></li>
+					<div id="seid" class="collapse">
+						Get and/or set the current session id
+					</div>
+					
+					<li data-toggle="collapse" data-target="#sename" class="li"><b><a>session_name</a></b></li>
+					<div id="sename" class="collapse">
+						Get and/or set the current session name
+					</div>
+					
 				</ul>		
 		</section>		
 		</article>
