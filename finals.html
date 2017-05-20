@@ -12,6 +12,7 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	</head>
 	<body>
+
 		<div id="fin">
 			<nav class="navbar navbar-default navbar-fixed-top">
 					<div class="container-fluid">
@@ -68,6 +69,8 @@
 			</a>
 		  </div>
 		</div>
+
+ 
 		
     <div class="container">
     	<div class="row">
@@ -326,6 +329,27 @@
 					Let's Encrypt provides free certificate for Transport Layer Security(TLS) encryption to serve HTTPS traffic.
 				</div>
         </section>
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
+
+        
+		<script >
+				window.onscroll = function() {scrollFunction()};
+
+				function scrollFunction() {
+   					 if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      				   document.getElementById("myBtn").style.display = "block";
+   					 } else {
+     				   document.getElementById("myBtn").style.display = "none";
+  				  }		
+				}	
+
+// When the user clicks on the button, scroll to the top of the document
+				function topFunction() {
+    					document.body.scrollTop = 0; // For Chrome, Safari and Opera 
+    					document.documentElement.scrollTop = 0; // For IE and Firefox
+					}
+		</script>
 
 	<!-- Footer -->
     <br>
