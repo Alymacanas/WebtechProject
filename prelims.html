@@ -364,9 +364,11 @@
 				  </ul>
 			  	<div class="row">
 					<div>
-						<button data-toggle="collapse" data-target="#responsehf" class="btn btn-primary col-md-12" style="font-size: 20px;margin: 10px;">Response Header Fields</button>
+						<button data-toggle="collapse" data-target="#requesthf" class="btn btn-primary col-md-12" style="font-size: 20px;margin: 10px;">Request Header Fields</button>
 					</div>
 				</div>
+				<div class="collapse" id="requesthf">
+				<ul>
 			  	<li data-toggle="collapse" data-target="#acp"><b><a>Accept</a></b></li>
 					<div id="acp" class="collapse">
 						<ul>
@@ -493,7 +495,7 @@
 						</ul>
 					</div>	
 			  </ul>
-
+		</div>
 			  	<div class="row">
 					<div>
 						<button data-toggle="collapse" data-target="#responsehf" class="btn btn-primary col-md-12" style="font-size: 20px;margin: 10px;">Response Header Fields</button>
@@ -656,124 +658,138 @@
 			</div>
 			<div id="status-codes" class="collapse">
 			<ul>
-			  <li style="list-style: none; display: inline">
-			  <li>Informational (1xx)</li> <dl> - indicates an interim response for communicating connection status or request progress prior to completing the requested action and sending a final response.</dl>
-			  <ul>
-				  <li> 	100 Continue<dl>- request has been received and has not yet been rejected by the server.</dl></li>
-				  <li>101 Switching Protocols<dl> - server understands and is willing to comply with the client's request, via the Upgrade header field for a change in the application protocol being used on this connection. </dl>
-			  </ul>
-		   	</li>
-			<li style="list-style: none; display: inline">
+			
+			  <li data-toggle="collapse" data-target="#infor"><b><a>Informational (1xx)</a></b></li>
+			  <div id="infor" class="collapse">
+					<ul>
+						<li class="li-none"> - indicates an interim response for communicating connection status or request progress prior to completing the requested action and sending a final response.</li>
+					</ul>
+					<ul>		
+					    <li><b>100 Continue</b><dl>- request has been received and has not yet been rejected by the server.</dl></li>
+					    <li><b>101 Switching Protocols</b><dl> - server understands and is willing to comply with the client's request, via the Upgrade header field for a change in the application protocol being used on this connection. </dl></li>
+					</ul>
+			 </div>
 
-			 <li>Success (2xx)</li> <dl>- indicates that the client's request was successfully received, understood, and accepted.</dl>
-				 <ul>
-				   <li>200 Ok</li><dl> - request has succeeded. </dl>
-				   <li>201 Created</li><dl>  - request has been fulfilled and has resulted in one or more new resources being created.</dl>
-				   <li>202 Accepted</li><dl> - the request has been accepted for processing, but the processing has not been completed. </dl>
-				   <li>203 Non-Authoritative Information</li><dl> -  the request was successful but the enclosed payload has been modified from that of the origin server's 200 (OK) response by a transforming proxy. </dl>
-				   <li>204 No Content</li><dl> - the server has successfully fulfilled the request and that there is no additional content to send in the response payload body.</dl>
-				   <li>205 Reset Content</li><dl> - user agent reset the "document view".</dl>
-				   <li>206 Partial Content</li><dl> - partial content - the server has fulfilled the partial GET request for the resource. </dl>
-				</ul>
-			  </li>
-			  <li style="list-style: none; display: inline">
+			 <li data-toggle="collapse" data-target="#succ"><b><a>Success (2xx)</a></b></li>
+			<div id="succ" class="collapse">
+					<ul>
+						<li class="li-none"> - indicates that the client's request was successfully received, understood, and accepted.</li>
+					</ul>
+					<ul>	
+					   <li><b>200 Ok</b><dl> - request has succeeded. </dl>
+					   <li><b>201 Created</b><dl>  - request has been fulfilled and has resulted in one or more new resources being created.</dl></li>
+					   <li><b>202 Accepted</b><dl> - the request has been accepted for processing, but the processing has not been completed. </dl></li>
+					   <li><b>203 Non-Authoritative Information</b><dl> -  the request was successful but the enclosed payload has been modified from that of the origin server's 200 (OK) response by a transforming proxy. </dl></li>
+					   <li><b>204 No Content</b><dl> - the server has successfully fulfilled the request and that there is no additional content to send in the response payload body.</dl></li>
+					   <li><b>205 Reset Content</b><dl> - user agent reset the "document view".</dl></li>
+					   <li><b>206 Partial Content</b><dl> - partial content - the server has fulfilled the partial GET request for the resource. </dl></li>
+					</ul>
+			 </div>
 
-			  <li>Redirection (3xx)</li><dl> - indicates that further action needs to be taken by the user agent in order to fulfill the request.</dl>
-			  	<ul>
-				   <li>300 Multiple Choices</li><dl> - the target resource has more than one representation, each with its own more specific identifier, user can select a preferred representation.</dl>
-				   <li>301 Moved Permanently</li><dl>  - the target resource has been assigned a new permanent URI.</dl>
-				   <li>302 Found</li><dl> - the target resource resides temporarily under a different URI.</dl>
-				   <li>303 See Other</li><dl> - the server is redirecting the user agent to a different resource.</dl>
-				   <li>304 Not Modified</li><dl> - the client has performed a conditional GET request and access is allowed, but the document has not been modified.</dl>
-				   <li>305 Use Proxy</li><dl> - The requested resource must be accessed through the proxy given by the Location field. </dl>
-				   <li>307 Temporary Redirect</li><dl> - the target resource resides temporarily under a different URI and performs an automatic redirection to that URI.</dl>
-				</ul>
-			  </li>
+			 <li data-toggle="collapse" data-target="#redi"><b><a>Redirection (3xx)</a></b></li>
+			 <div id="redi" class="collapse">
+					<ul>
+						<li class="li-none">- indicates that further action needs to be taken by the user agent in order to fulfill the request.</li>
+					</ul>
+					<ul>
+					   <li><b>300 Multiple Choices</b><dl> - the target resource has more than one representation, each with its own more specific identifier, user can select a preferred representation.</dl></li>
+					   <li><b>301 Moved Permanently</b><dl>  - the target resource has been assigned a new permanent URI.</dl></li>
+					   <li><b>302 Found</b><dl> - the target resource resides temporarily under a different URI.</dl></li>
+					   <li><b>303 See Othe</b><dl> - the server is redirecting the user agent to a different resource.</dl></li>
+					   <li><b>304 Not Modified</b><dl> - the client has performed a conditional GET request and access is allowed, but the document has not been modified.</dl></li>
+					   <li><b>305 Use Proxy</b><dl> - The requested resource must be accessed through the proxy given by the Location field. </dl></li>
+					   <li><b>307 Temporary Redirect</b><dl> - the target resource resides temporarily under a different URI and performs an automatic redirection to that URI.</dl></li>
+					</ul>
+			  </div>
 
-			  <li style="list-style: none; display: inline">
-			  <li>Client Error (4xx)</li>
-				<dl>- indicates that the client made a mistake which resulted to an error</dl>
-				<ul>
-					<li>400 Bad Request</li>
-						<dl>- the server cannot process the request due to a client error</dl>
+			<li data-toggle="collapse" data-target="#clie"><b><a>Client Error (4xx)</a></b></li>
+			<div id="clie" class="collapse">
+					<ul>
+						<li class="li-none">- indicates that the client made a mistake which resulted to an error</dl>
+					</ul>
+					<ul>
+						<li><b>400 Bad Request</b>
+							<dl>- the server cannot process the request due to a client error</dl></li>
 
-					<li>401 Unauthorized</li>
-						<dl>- the request is not accepted because it is not authenticated</dl>
+						<li><b>401 Unauthorized</b>
+							<dl>- the request is not accepted because it is not authenticated</dl></li>
 
-					<li>402 Payment Required</li>
-						<dl>- reserved for future use</dl>
+						<li><b>402 Payment Required</b>
+							<dl>- reserved for future use</dl></li>
 
-					<li>403 Forbidden</li>
-						<dl>- it indicates that the server understood the request but it doesn't want to authorize it</dl>
+						<li><b>403 Forbidden</b>
+							<dl>- it indicates that the server understood the request but it doesn't want to authorize it</dl></li>
 
-					<li>404 Not Found</li>
-						<dl>- the server could not find a current representation for the requested resource</dl>
+						<li><b>404 Not Found</b>
+							<dl>- the server could not find a current representation for the requested resource</dl></li>
 
-					<li>405 Method Not Allowed</li>
-						<dl>- it indicates that the method received in the request-line is recognized by the server but not supported by the target resource</dl>
+						<li><b>405 Method Not Allowed</b>
+							<dl>- it indicates that the method received in the request-line is recognized by the server but not supported by the target resource</dl></li>
 
-					<li>406 Not Acceptable</li>
-						<dl>- the target resource is unwilling to supply a representation of the resource because it is not in accordance with the negotiation header 
-						fields received in the request</dl>
+						<li><b>406 Not Acceptable</b>
+							<dl>- the target resource is unwilling to supply a representation of the resource because it is not in accordance with the negotiation header 
+							fields received in the request</dl></li>
 
-					<li>407 Proxy Authentication Required</li>
-						<dl>- similar to 401 but it indicates that the client needs to authenticate itself so they can use a proxy</dl>
+						<li><b>407 Proxy Authentication Required</b>
+							<dl>- similar to 401 but it indicates that the client needs to authenticate itself so they can use a proxy</dl></li>
 
-					<li>408 Request Time-out</li>
-						<dl>- the server did not receive a complete request message within the waiting time</dl>
+						<li><b>408 Request Time-out</b>
+							<dl>- the server did not receive a complete request message within the waiting time</dl></li>
 
-					<li>409 Conflict</li>
-						<dl>- the request could not be completed because of a conflict with the target resource</dl>
+						<li><b>409 Conflict</b>
+							<dl>- the request could not be completed because of a conflict with the target resource</dl></li>
 
-					<li>410 Gone</li>
-						<dl>- the requested resource is no longer available at the server</dl>
+						<li><b>410 Gone</b>
+							<dl>- the requested resource is no longer available at the server</dl></li>
 
-					<li>411 Length Required</li>
-						<dl>- the server won't accept the request without the Content-Length header field</dl>
+						<li><b>411 Length Required</b>
+							<dl>- the server won't accept the request without the Content-Length header field</dl></li>
 
-					<li>412 Precondition Failed</li>
-						<dl>- one or more conditions given in the request header fields resulted to false</dl>
+						<li><b>412 Precondition Failed</b>
+							<dl>- one or more conditions given in the request header fields resulted to false</dl></li>
 
-					<li>413 Request Entity Too Large</li>
-						<dl>- the server is refusing to process the request because it is larger than what the server can process</dl>
+						<li><b>413 Request Entity Too Large</b>
+							<dl>- the server is refusing to process the request because it is larger than what the server can process</dl></li>
 
-					<li>414 Request-URI Too Long</li>
-						<dl>- the server is refusing the request because the resource's URI is longer than the URI length the server can interpret</dl>
+						<li><b>414 Request-URI Too Long</b>
+							<dl>- the server is refusing the request because the resource's URI is longer than the URI length the server can interpret</dl></li>
 
-					<li>415 Unsupported Media Type</li>
-						<dl>- the server is refusing to serve the request because it is not in a format that is supported on the target resource</dl>
+						<li><b>415 Unsupported Media Type</b>
+							<dl>- the server is refusing to serve the request because it is not in a format that is supported on the target resource</dl></li>
 
-					<li>416 Request Range Not Satisfiable</li>
-						<dl>- the ranges specified in the Range header field is invalid</dl>
+						<li><b>416 Request Range Not Satisfiable</b>
+							<dl>- the ranges specified in the Range header field is invalid</dl></li>
 
-					<li>417 Expectation Failed</li>
-						<dl>- the expectation given in the Expect header field could not be met by the servers</dl>
-				</ul>
-			  </li>
+						<li><b>417 Expectation Failed</b>
+							<dl>- the expectation given in the Expect header field could not be met by the servers</dl></li>
+					</ul>
+			  </div>
 
-			  <li style="list-style: none; display: inline">
-			  <li>Server Error (5xx)</li>
-				<dl>- the server is aware of the error it caused or is unable of serving the request</dl>
-				<ul>
-					<li>500 Internal Server Error</li>
-						<dl>- the server encountered a problem that prevented it from serving the request</dl>
+			 <li data-toggle="collapse" data-target="#serv"><b><a>Server Error (5xx)</a></b></li>
+			<div id="serv" class="collapse">
+					<ul>
+						<li class="li-none">- the server is aware of the error it caused or is unable of serving the request</dl>
+					</ul>
+					<ul>
+						<li><b>500 Internal Server Error</b>
+							<dl>- the server encountered a problem that prevented it from serving the request</dl></li>
 
-					<li>501 Not Implemented</li>
-						<dl>- the server does not recognize the request method and could not give it any resource</dl>
+						<li><b>501 Not Implemented</b>
+							<dl>- the server does not recognize the request method and could not give it any resource</dl></li>
 
-					<li>502 Bad Gateway</li>
-						<dl>- the gateway or proxy received an invalid response from the server it accessed while trying to serve the request</dl>
+						<li><b>502 Bad Gateway</b>
+							<dl>- the gateway or proxy received an invalid response from the server it accessed while trying to serve the request</dl></li>
 
-					<li>503 Service Unavailable</li>
-						<dl>- indicates that the server is currently unavailable because of an overload or ongoing maintenance which will likely be gone after some time</dl>
+						<li><b>503 Service Unavailable</b>
+							<dl>- indicates that the server is currently unavailable because of an overload or ongoing maintenance which will likely be gone after some time</dl></li>
 
-					<li>504 Gateway Time-out</li>
-						<dl>- the gateway or proxy did not receive a response needed from the server within the time given to complete the request</dl>
+						<li><b>504 Gateway Time-out</b>
+							<dl>- the gateway or proxy did not receive a response needed from the server within the time given to complete the request</dl></li>
 
-					<li>505 HTTP Version Not Supported</li>
-						<dl>- the server does not support the version of the HTTP that was used in the request message</dl>
-				</ul>
-			  </li>
+						<li><b>505 HTTP Version Not Supported</b>
+							<dl>- the server does not support the version of the HTTP that was used in the request message</dl></li>
+					</ul>
+			  </div>
 			</ul>
 			</div>
 		</div>
