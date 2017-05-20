@@ -5,31 +5,32 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
 		<title>Web-Tech</title>
-		
+
 		<link rel="icon" type="image/png" href="./images/favicon.ico" />
 		<link rel="stylesheet" href="css/bootstrap.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	</head>
 	<body>
-		<div id="mid">
+
+		<div id="fin">
 			<nav class="navbar navbar-default navbar-fixed-top">
-				<div class="container-fluid">
-					<div class="navbar-header">
-						<a class="navbar-brand" href="index.html">Web Systems and Technologies</a>
-					</div>
-					<ul class="nav navbar-nav navbar-right">
-					  <li><a href="index.html">Home</a></li>
-					  <li><a href="prelims.html">Prelims</a></li>
-					  <li class="active"><a href="midterms.html">Midterms</a></li>
-					  <li><a href="finals.html">Finals</a></li>
-					  <li><a href="glossary.html">Glossary</a></li>
-					  <li><a href="sources.html">Sources</a></li>
-					</ul>
-				</div>	
-			</nav>	
-		</div>	
-		
+					<div class="container-fluid">
+						<div class="navbar-header">
+							<a class="navbar-brand" href="index.html">Web Systems and Technologies</a>
+						</div>
+						<ul class="nav navbar-nav navbar-right">
+						  <li><a href="index.html">Home</a></li>
+						  <li><a href="prelims.html">Prelims</a></li>
+						  <li><a href="midterms.html">Midterms</a></li>
+						  <li class="active"><a href="finals.html">Finals</a></li>
+						  <li><a href="glossary.html">Glossary</a></li>
+						  <li><a href="sources.html">Sources</a></li>
+						</ul>
+					</div>	
+				</nav>	
+			</div>	
+			
 		<div id="myCarousel" class="carousel slide" data-ride="carousel">
 			<!-- Indicators -->
 			<ol class="carousel-indicators">
@@ -39,14 +40,15 @@
 			</ol>
 
 			<!-- Wrapper for slides -->
-			<div class="carousel-inner" role="listbox" width="1920" height="1080">
+			<div class="carousel-inner" role="listbox">
 			  <div class="item active">
-				<img src="images/7.jpg" alt="photo7" width="1920" height="1080">
+				<img src="images/10.jpg" alt="Chania" width="1920" height="1080">
 			  </div>
 
 			  <div class="item">
-			  	<img src="images/9.jpg" alt="photo9" width="1920" height="1080">
+				<img src="images/11.png" alt="Chania" width="1920" height="1080">
 			  </div>
+			
 
 			<!-- Left and right controls -->
 			<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
@@ -60,1217 +62,642 @@
 		  </div>
 		</div>
 
-
-		<div class="container">
-			<div class="row">
-				<div>
-					<button data-toggle="collapse" data-target="#HTML" class="btn btn-primary col-md-12" style="font-size: 35px;margin: 10px;">Hypertext Markup Language</button>
-				</div>
+ 
+		
+    <div class="container">
+    	<div class="row">
+			<div>
+				<button data-toggle="collapse" data-target="#servlet" class="btn btn-primary col-md-12" style="font-size: 35px;margin: 10px;">Servlet</button>
 			</div>
-			<div id="HTML" class="collapse">
-				
-			    <div id="definition">
-			        <section>
-			            <p>Hypertext Markup Language is the language used to markup the structure and content of documents(i.e. webpages) in the WWW.</a></p>
-						<p>It was created by Tim Berners-Lee</p>
-			            <ul>
-							<p><strong>Aspects:</strong></p>
-			                <li>structure and content</li>
-			                <li>aesthetics/presentation - well layed-out</li>
-							<li>behavioral - client-side (JavaScript)</li>
-			            </ul>
-			        </section>
-			    </div>
-				<div class="row">
-					<div>
-						<button data-toggle="collapse" data-target="#html-version" class="btn btn-primary col-md-12" style="font-size: 20px;margin: 10px;">Versions and History</button>
-					</div>
-				</div>
-				<div id="html-version" class="collapse">
-					<section>
-						<ul>
-							<li>HTML 1.0 - first version of HTML</li>
-							<li>HTML 2.0 - embodied in a technical document (<a href="https://tools.ietf.org/html/rfc1866" target="_blank">RFC in 1866</a>) and was the first standard HTML which was published in November 1995.</li>
-							<li>HTML 3.0 - W3C Recommendation</li>
-							<li>HTML 3.2</li>
-							<li>HTML 4.0</li>
-							<li>HTML 4.01 - <a href="https://www.w3.org/" target="_blank">W3C Recommendation</a> (December 24 1999)</li>
-							<li>Web Hypertext Technology Group (WHATWG) - Ian Hickson started this group and develop the next version of HTML since XHTML is not that great because of the strict syntax.</li>
-							<li>HTML 5.0 (2014) -  supports HTML flexible syntax and XHTML strict syntax</li>
-							<li>HTML 5.1 (2016)</li>
-						</ul>
-					<div class="well">
-						<h4>Typical Start of HTML</h4>
-						 <img src="./images/htmlstart.png" class="img-responsive" alt="html_start">
-					</div>
-					</section>
-				</div>	
-
-				<div class="row">
-					<div>
-						<button data-toggle="collapse" data-target="#xhtml" class="btn btn-primary col-md-12" style="font-size: 20px;margin: 10px;">Extensible Hypertext Markup Language </button>
-					</div>
-				</div>
-				<div id="xhtml" class="collapse">
-					<section>
-						<p> Extensible Hypertext Markup Language is the reformulation of HTML to XML</p>
-						<p> It was developed by the World Wide Web Consortium (W3C) to help web developers to make transition from HTML to XML</p>
-						<p> XHTML is almost identical to HTML 4.01</p>
-						<p> The rules are very strict (case sensitive)</p>
-						<ul>
-							 <li data-toggle="collapse" data-target="#str" class="li-none"><b><a>strict</a></b></li>
-							 <div id="str" class="collapse">
-							 - deprecate presentational aspects.
-							 </div>
-							 <li data-toggle="collapse" data-target="#tra" class="li-none"><b><a>transitional</a></b></li>
-							 <div id="tra" class="collapse">
-							 - you can still use deprecated presentation aspect.
-							 </div>
-							 <li data-toggle="collapse" data-target="#fra" class="li-none"><b><a>frameset</a></b></li>
-							 <div id="fra" class="collapse">
-							  - to partition the browser into multiple frames.
-							 </div> 
-							 <br>
-						</ul>
-						<section>
-						<h4>HTML vs XHTML</h4>         
-							  <table class="table table-bordered">
-								<thead> 
-								
-								  <tr>
-									<th>HTML</th>
-									<th>XHTML</th>
-								  </tr>
-
-								</thead>
-								<tbody>
-								  <tr>
-									<td>Case incensitive.</td>
-									<td>Case sensitive tags and values must be in lowercase.</td>
-								  </tr>
-								  <tr>
-									<td>Can have open tags.</td>
-									<td>All tags must be closed.</td>
-								  </tr>
-								  <tr>
-									<td>Not strict when it comes to the structure of an element.</td>
-									<td>Structure of the element must be followed.</td>
-								  </tr>
-								  <tr>
-									<td>Attributes quotes are optional.</td>
-									<td>Attributes must be quoted.</td>
-								  </tr>
-								  <tr>
-									<td>Attributes values are not significant.</td>
-									<td>Attributes values are important.</td>
-								  </tr>
-								</tbody>
-							  </table>
-						</section>
-					</section>
-				</div>
-				<div class="row">
-					<div>
-						<button data-toggle="collapse" data-target="#html-el" class="btn btn-primary col-md-12" style="font-size: 20px;margin: 10px;">Content Model</button>
-					</div>
-				</div>
-				<div id="html-el" class="collapse">
-					<section>
-			            <ul>
-			                <li data-toggle="collapse" data-target="#head" class="li-none"><b><a>Heading</a></b></li>
-							<div id="head" class="collapse">
-							- the header of a section.
-							<ul>
-								<li>h1, h2, h3, h4, h5, h6</li>
-							</ul>
-							</div>
-			                <li data-toggle="collapse" data-target="#sec" class="li-none"><b><a>Sectioning</a></b></li>
-							<div id="sec" class="collapse">
-							 - content that defines the scope of the headings and footers.
-			                <ul>
-								<li>article, aside, nav, section</li>
-							</ul>
-							</div>
-							<li data-toggle="collapse" data-target="#emb" class="li-none"><b><a>Embedded</a></b></li>
-							<div id="emb" class="collapse">
-							 - content that imports another resource into the document.
-							<ul>
-								<li>audio, canvas, embed, iframe, img, math, object, svg, video</li>
-							</ul>
-							</div>
-							<li data-toggle="collapse" data-target="#phra" class="li-none"><b><a>Phrasing</a></b></li> 
-							<div id="phra" class="collapse">
-							- the text of the document aswell as the elements.
-							<ul>
-								<li>a, abbr, area, b, bdi, bdo, br, button, canvas, cite, code, command, dfn, em, embed, i, iframe, input, ins, kbd, label, map, mark, math, object, output, progress, q, ruby, s, samp, script, select, small, span , strong, sub, sup, svg, textarea, time, u, var, wbr</li>
-							</ul>
-							</div>
-			                <li data-toggle="collapse" data-target="#flow" class="li-none"><b><a>Flow</a></b></li> 
-							<div id="flow" class="collapse">
-							- elements that are mostly used in the body of the document.
-							<ul>
-								<li>a, abbr, address, area, article, aside, audio, b, bdi, bdo, blockquote, br, button, canvas, cite, code, command, datalist, del, details, dfn, div, dl, em, embed, fieldset, figure, footer, form, header, hgroup, hr, i , iframe, img, input, ins, kbd, keygen, label, map, mark, math, menu, meter, nav, noscript, object, ol, output, p, pre, progress, q, ruby, s, samp, script, section, select, small, span, strong, style, sub, sup, svg, table, textarea, time, u, ul, var, video, wbr</li>
-							</ul>
-							</div>
-			                <li data-toggle="collapse" data-target="#inter" class="li-none"><b><a>Interactive</a></b></li>
-							<div id="inter" class="collapse">
-							 - content that is intended for user interaction.
-							<ul>
-								<li>a, audio, button, details, embed, iframe, img, input, keygen, label, menu, object, select, textarea, video</li>
-							</ul>
-							</div>
-							<li data-toggle="collapse" data-target="#meta" class="li-none"><b><a>Metadata</a></b></li>
-							<div id="meta" class="collapse">
-							 - content that sets up the presentation of the content with other documents.
-							<ul>
-								<li>base, command, link, meta, noscript, script, style, title</li>
-							</ul>
-							</div>
-						</ul>
-			        </section>
-				</div>
-
-				<div class="row">
-					<div>
-						<button data-toggle="collapse" data-target="#content-attr" class="btn btn-primary col-md-12" style="font-size: 20px;margin: 10px;">Content Attributes</button>
-					</div>
-				</div>
-				<div id="content-attr" class="collapse">
-					<section>
-			            <ul>
-			                <li><b>Global Attributes</b></li>
-							<li><b>Element Specific Attributes</b></li>
-							<li><b>Data Attributes</b></li>
-							<li><b>Role, Aria Attributes</b></li>
-			            </ul>
-			        </section>
-			    </div>
-
-			    <div class="row">
-					<div>
-						<button data-toggle="collapse" data-target="#html-elements" class="btn btn-primary col-md-12" style="font-size: 20px;margin: 10px;">HTML Elements</button>
-					</div>
-				</div>
-				<div id="html-elements" class="collapse">
-			        <section>
-			        	<ul>
-			            <li>Head</li>
-						<ul>
-							<li data-toggle="collapse" data-target="#ti" class="li-none"><b><a>title</a></b></li>
-							<div id="ti" class="collapse">
-							 - title of the document.
-							</div>
-							<li data-toggle="collapse" data-target="#bas" class="li-none"><b><a>base</a></b></li>
-							<div id="bas" class="collapse">
-							 - allows you to specify relative (move).
-							</div>
-							<li data-toggle="collapse" data-target="#li" class="li-none"><b><a>link</a></b></li>
-							<div id="li" class="collapse">
-							 - link different resources to the document like stylesheets.
-							</div>
-							<li data-toggle="collapse" data-target="#me" class="li-none"><b><a>meta</a></b></li>
-							<div id="me" class="collapse">
-							 - define other meta.
-							</div>
-							<li data-toggle="collapse" data-target="#sty" class="li-none"><b><a>style</a></b></li>
-							<div id="sty" class="collapse">
-							 - is for embedding.
-							</div>
-							<li data-toggle="collapse" data-target="#scr" class="li-none"><b><a>script</a></b></li>
-							<div id="scr" class="collapse">
-							 - is for embedding.
-							</div>
-						</ul>
-			                <li>Body</li>
-						<ul>
-							<li data-toggle="collapse" data-target="#grp" class="li-none"><b><a>Grouping elements</a></b> </li>
-							<div id="grp" class="collapse">(div, span)</div>
-							<li data-toggle="collapse" data-target="#hd" class="li-none"><b><a>Headings</a></b> </li>
-							<div id="hd" class="collapse">(h1, h2, h3, h4, h5, h6)</div>
-							<li data-toggle="collapse" data-target="#list" class="li-none"><b><a>Lists</a></b> </li>
-							<div id="list" class="collapse">(ul, ol, li, dl, dt, dd, dir, menu)</div>
-							<li data-toggle="collapse" data-target="#tables" class="li-none"><b><a>Tables</a></b> </li>
-							<div id="tables" class="collapse">(table, th, tr, td, thead, tfoot, tbody, colgroup, col)</div>
-							<li data-toggle="collapse" data-target="#phrase" class="li-none"><b><a>Phrase elements</a></b> </li>
-							<div id="phrase" class="collapse">(em,strong, dfn, code, samp, kbd, var, cite, abbr, acronym)</div>					
-							<li data-toggle="collapse" data-target="#quot" class="li-none"><b><a>Quotations</a></b> </li>
-							<div id="quot" class="collapse">(blockquote, q)</div>
-							<li data-toggle="collapse" data-target="#subs" class="li-none"><b><a>Subscripts and Superscripts</a></b> </li>
-							<div id="subs" class="collapse">(sub, sup)</div>
-							<li data-toggle="collapse" data-target="#pert" class="li-none"><b><a>Preformatted texts</a></b> </li>
-							<div id="pert" class="collapse">(pre)</div>
-							<li data-toggle="collapse" data-target="#fsa" class="li-none"><b><a>Font styles and alignments</a></b> </li>
-							<div id="fsa" class="collapse">(tt, i, b, big, small, strike, s, u, font, basefont, center)</div>
-							<li data-toggle="collapse" data-target="#dc" class="li-none"><b><a>Document changes</a></b> </li>
-							<div id="dc" class="collapse">(ins, del)</div>
-							<li data-toggle="collapse" data-target="#la" class="li-none"><b><a>Links and anchors</a></b> </li>
-							<div id="la" class="collapse">(a)</div>
-							<li data-toggle="collapse" data-target="#oia" class="li-none"><b><a>Objects, images, applets</a></b> </li>
-							<div id="oia" class="collapse">(object, img, param, applet)</div>
-							<li data-toggle="collapse" data-target="#scri" class="li-none"><b><a>Scripts</a></b> </li>
-							<div id="scri" class="collapse">(script, noscript)</div>
-							<li data-toggle="collapse" data-target="#misc" class="li-none"><b><a>Miscellaneous</a></b> </li>
-							<div id="misc" class="collapse">(bdi, bdo)</div>
-							<li data-toggle="collapse" data-target="#fr" class="li-none"><b><a>Frames</a></b> </li>
-							<div id="fr" class="collapse">(frame, noframes, iframe)</div>
-							<li data-toggle="collapse" data-target="#frm" class="li-none"><b><a>Frameset</a></b> </li>
-							<div id="frm" class="collapse">(for frameset DTD)</div>
-							
-						</ul>
+		</div>
+        <article id="servlet" class="collapse">
+	        <section>
+	        <p>Java Servlets are programs that run on an Web Application server and act as a middle layer between a request coming from a Web browser or other HTTP client and databases or applications on the HTTP server.Servlets can be created using the javax.servlet and javax.servlet.http packages , which are a standard part of the Java's enterprise edition, an expanded version of the Java class library that supports large-scale development projects</p>
+	        </section>
+	        
+			<section>
+				<p data-toggle="collapse" data-target="#serv-pro"><b><a>Servlet Processing</a></b></p>
+	        	<div id="serv-pro" class="collapse">
+					<ul>
+						<li>Client sends a request to a web server URL that is mapped to a servlet. Web server passes on the request to the servlet container </li>
+						<li>Servlet container checks if servlet is already loaded </li>
+						<li>If it is not yet loaded, servlet container loads the servlet class and instantiates the servlet, and calls its init method. </li>
+						<li>Servlet container invokes the servlet's service method, passing request and response objects as arguments </li>
+						<li>Servlet processes the request using the response object to create the response, which is returned by the servlet container to the web server, which in turn sends the response to the client </li>
+						<li>Subsequent request to the servlet will not require servlet re-instantiation, unless the servlet has been unloaded; before a servlet is unloaded, the servlet container invokes its destroy method</li>
 					</ul>
-			        </section>
-			    </div>
-			</div>
-		<!--END OF HTML-->
-		<div class="row">
-			<div>
-				<button data-toggle="collapse" data-target="#CSS" class="btn btn-primary col-md-12" style="font-size: 35px;margin: 10px;">Cascading Style Sheets</button>
-			</div>
-		</div>
-		<div id="CSS" class="collapse">
-	       	<section>
-	            <p>Language used to specify the presentation aspects of structurally marked up document.</p>
-	            <p>Developed by <i>Hakon Wium Lie and Bert Boss</i></p>
-	            <img src="./images/hakonwiumlie.jpg" class="img-responsive" alt="hakon_wium_lie" style="height:280px;width:240px;">       
-			</section>	
+				</div>
+			</section>
+
+	        <section>
+	        	<p data-toggle="collapse" data-target="#serv-do"><b><a>What does Servlet do?</a></b></p>
+	        	<div id="serv-do" class="collapse">
+		        	<ul>
+		        	<li>Read the explicit data sent by the clients (browsers)</li>
+					<li>Read the implicit HTTP request data sent by the clients (browsers)</li>
+					<li>Process the data and generate the results</li>
+					<li>Send the explicit data (i.e., the document) to the clients (browsers)</li>
+					<li>Send the implicit HTTP response to the clients (browsers).</li>
+					</ul>
+				</div>
+			</section>
 		
-		<div class="row">
-			<div>
-				<button data-toggle="collapse" data-target="#css-ver" class="btn btn-primary col-md-12" style="font-size: 20px;margin: 10px;">Versions</button>
-			</div>
-		</div>	
-		<div id="css-ver" class="collapse">
+
 			<section>
-				<ul>
-					<li>CSS 1 - W3C recommendation December 1996</li>
-					<li>CSS 2 - W3C recommendation May 1998</li>
-					<li>CSS 3 - W3C recommendation June 1999</li>
-				</ul>
+				<p data-toggle="collapse" data-target="#javax"><b><a>javax.servlet</a></b></p>
+	        	<div id="javax" class="collapse">
+					<ul>
+					<li>Servlet, GenericServlet</li>
+					<li>ServletRequest, ServletResponse </li>
+					<li>ServletConfig, ServletContext </li>
+					<li>RequestDispatcher</li>
+					</ul>
+				</div>
 			</section>
-		</div>	
 
-		<div class="row">
-			<div>
-				<button data-toggle="collapse" data-target="#css-pages" class="btn btn-primary col-md-12" style="font-size: 20px;margin: 10px;">Associating CSS Stylesheets with Web Pages</button>
-			</div>
-		</div>
-		<div id="css-pages" class="collapse">
-			<section>	
-				<div class="well">
-					<h4>External Stylesheets</h4>
-					<img src="./images/externalstyle.png" class="img-responsive" alt="external_style">
-				</div>	
-				<div class="well">	
-					<h4>Embedded Stylesheets</h4>
-					<img src="./images/embeddedstyle.png" class="img-responsive" alt="embedded_style">
-				</div>	
-				<div class="well">	
-					<h4>Inline Stylesheets</h4>
-					<img src="./images/inlinestyle.png" class="img-responsive" alt="inline_style">
-				</div>	
-			</section>
-		</div>
-
-		<div class="row">
-			<div>
-				<button data-toggle="collapse" data-target="#css-statement" class="btn btn-primary col-md-12" style="font-size: 20px;margin: 10px;">CSS Statement</button>
-			</div>
-		</div>
-		<div id="css-statement" class="collapse">
 			<section>
-			<ul>
-	                <li>CSS Selectors</li>
-					<li data-toggle="collapse" data-target="#selector"><b><a>Selector Syntax</a></b></li>
-						<div id="selector" class="collapse">	
-						
-							<ul>
-							
-							<li data-toggle="collapse" data-target="#simple"><b><a>Simple Selector</a></b></li>
-								
-								<div class="collapse" id="simple">
-									<ul>
-										<li><b>Type Selector</b></li>
-										<li><b>Universal Selector</b></li>
-										<li><b>Attribute Selector</b></li>
-										<li><b>Class Selector</b></li>
-										<li><b>ID Selector</b></li>
-										
-										<li data-toggle="collapse" data-target="#pseudo"><b><a>Pseudo Class</a></b></li>
-										<div class="collapse" id="pseudo">
-										<ul>
-											<li><b>Dynamic Pseudo Class</b></li>
-											<li data-toggle="collapse" data-target="#link-pseudo"><b><a>Link Pseudo Class</a></b></li>
-												<div id="link-pseudo" class="collapse">
-													<ul>
-														<li class="li-none">:link</li>
-														<li class="li-none">:visited</li>
-													</ul>
-												</div>
-											
-											<li data-toggle="collapse" data-target="#useract-pseudo"><b><a>User Action Pseudo Class</a></b></li>
-												<div id="useract-pseudo" class="collapse">
-													<ul>
-														<li class="li-none">:hover</li>
-														<li class="li-none">:active</li>
-														<li class="li-none">:focus</li>
-													</ul>
-												</div>
-											
-											<li data-toggle="collapse" data-target="#target-pseudo"><b><a>Target Pseudo Class</a></b></li>
-												<div class="collapse" id="target-pseudo">
-													<ul>
-														<li class="li-none">:target</li>
-													</ul>
-												</div>
-
-											<li data-toggle="collapse" data-target="#lang"><b><a>Language</a></b></li>
-												<div id="lang" class="collapse">
-													<ul>
-														<li class="li-none">:lang()</li>
-													</ul>
-												</div>
-											
-											<li data-toggle="collapse" data-target="#uies"><b><a>UI Element State</a></b></li>
-												<div id="uies" class="collapse">
-													<ul>
-														<li class="li-none">:enabled</li>
-														<li class="li-none">:disabled</li>
-														<li class="li-none">:checked</li>
-														<li class="li-none">:indeterminate</li>
-													</ul>
-												</div>
-											
-											<li data-toggle="collapse" data-target="#struct-pseudo"><b><a>Structural Pseudo Class</a></b></li>
-												<div class="collapse" id="struct-pseudo">
-													<ul>
-														<li class="li-none">:root</li>
-														<li class="li-none">:first-child</li>
-														<li class="li-none">:last-child</li>
-														<li class="li-none">:only-child</li>
-														<li class="li-none">:nth-child ()</li>
-														<li class="li-none">:nth-last-child ()</li>
-														<li class="li-none">:first-of-type</li>
-														<li class="li-none">:last-of-type</li>
-														<li class="li-none">:only-of-type</li>
-														<li class="li-none">:nth-of-type ()</li>
-														<li class="li-none">:nth-last-of-type ()</li>
-														<li class="li-none">:empty</li>
-													</ul>
-												</div>
-												
-											<li><b>Negation Pseudo Class</b></li>
-										</ul>
-										</div>
-									</ul>
-								</div>
-							
-							</ul>
-						</div>
-							
-						
-					<li><b>Type Selector</b></li>
-					<li><b>Group Selector</b></li>
-					
-					<li data-toggle="collapse" data-target="#combi"><b><a>Combinators</a></b></li>
-					<div id="combi" class="collapse">
-						<ul>
-							<li>Decendant Combinator</li>
-							<li>Child Combinator</li>
-							<li data-toggle="collapse" data-target="#siblingcombi"><b><a>Combinators</a></b></li>
-								<div class="collapse" id="siblingcombi">
-									<ul>
-										<li class="li-none">Adjacent Sibling Combinator</li>
-										<li class="li-none">General Sibling Combinator</li>
-									</ul>
-								</div>
-								
-							<li data-toggle="collapse" data-target="#pseudo-elem"><b><a>Pseudo Elements</a></b></li>
-							<div id="pseudo-elem" class="collapse">
-								<ul>
-									<li class="li-none">::first-letter, :first-letter</li>
-									<li class="li-none">::first-line, :first-line</li>
-									<li class="li-none">::before, :before</li>
-									<li class="li-none">::after, :after</li>
-								</ul>
-							</div>
-							
-						</ul>
-					</div>
-				</ul>
-			</div>
+				<p data-toggle="collapse" data-target="#javaxs"><b><a>javax.servlet.http</a></b></p>
+	        	<div id="javaxs" class="collapse">
+					<ul>
+					<li>HttpServlet </li>
+					<li>HttpServletRequest </li>
+					<li>HttpServletResponse</li>
+					<li>HttpSession</li>
+					<li>Cookie</li>	
+					</ul>
+				</div>
 			</section>
-			<div class="row">
-			<div>
-				<button data-toggle="collapse" data-target="#rule-p" class="btn btn-primary col-md-12" style="font-size: 20px;margin: 10px;">CSS Rule Precedence</button>
-			</div>
-		</div>
-		<div id="rule-p" class="collapse">
+
 			<section>
-				<ul>
-					<li data-toggle="collapse" data-target="#css-rule"><b><a>By Origin and Importance</a></b></li>
-					<div id="css-rule" class="collapse">
-						<ul>
-							<li>User Agent Important Declarations</li>
-							<li>User Important Declarations</li>
-							<li>Author Important Declarations</li>
-							<li>Author Normal Declarations</li>
-							<li>User Normal Declarations</li>
-							<li>User Agent Normal Declarations</li>
-						</ul>
-					</div>
-
-					<li data-toggle="collapse" data-target="#css-rule-sec"><b><a>By Specificity</a></b></li>
-					<div id="css-rule-sec" class="collapse">
-						<ul>
-							<li>Inline-style</li>
-							<li>Number of ID Selectors</li>
-							<li>Number of Class Selectors, Attribute Selectors and Pseudo Classes</li>
-							<li>Number of Type Selectors and Pseudo Elements</li>
-						</ul>
-					</div>
-
-					<li data-toggle="collapse" data-target="#css-rule-th"><b><a>By Order</a></b></li>
-					<div id="css-rule-th" class="collapse">
-						<ul>
-							<li>the last is given the priority</li>
-						</ul>
-					</div>
-
-				</ul>
+				<p data-toggle="collapse" data-target="#servlet-req"><b><a>Servlet Request Processing (HttpServletRequest)</a></b></p>
+	        	<div id="servlet-req" class="collapse">
+					<ul>
+					<li>Retrieving user-supplied request parameters	 </li>
+					<li>Retrieving request header values</li>
+					</ul>
+				</div>
 			</section>
-		</div>
 
-
-		<div class="row">
-			<div>
-				<button data-toggle="collapse" data-target="#declaration" class="btn btn-primary col-md-12" style="font-size: 20px;margin: 10px;">Declaration Block</button>
-			</div>
-		</div>
-		<div id="declaration" class="collapse">
 			<section>
-				<ul>
-	                <li data-toggle="collapse" data-target="#properties"><b><a>Properties</a></b></li>
-	                <div class="collapse" id="properties">
-	                	<ul>
-							<li>Visual, aural, paged, interactive</li>
-							<li>Margins, borders, and paddings</li>
-							<li>Colors and background</li>
-							<li>Fonts</li>
-							<li>Text formatting</li>
-							<li>Lists and tables</li>
-							<li>Positioning and dimensions</li>
-							<li>Miscellaneous</li>
-						</ul>
-	                </div>
-					
-					<li data-toggle="collapse" data-target="#values"><b><a>Values</a></b></li>
-					<div id="values" class="collapse">
-						<ul>
-							<li>Keywords</li>
-							<li>Numbers</li>
-							<li data-toggle="collapse" data-target="#dimensions"><b><a>Dimensions</a></b></li>
-								<div id="dimensions" class="collapse">
-									<ul>
-										<li>Length, angle, duration, frequency, resolution</li>
-										
-										<li data-toggle="collapse" data-target="#lu"><b><a>Length units</a></b></li>
-										
-										<div class="collapse" id="lu">
-											<ul>
-												<li>Font-Relative - em, ex, px</li>
-												<li>Viewport-Percentage - vm, vh, vmin, vmax</li>
-												<li>Absolute Lenths - in, an, nm, pt, pc</li>
-											</ul>
-										</div>
-									</ul>
-								</div>
-								
-							<li><b>Percentages</b></li>
-							<li><b>Colors</b></li>
-							<li><b>Strings</b></li>
-							<li><b>URLs</b></li>
-							<li><b>Initial values, inherited values, !important rules</b></li>
-						</ul>
-					</div>
-					
-				</ul>
+				<p data-toggle="collapse" data-target="#servlet-res"><b><a>Servlet Response Processing (HttpServletResponse) </a></b></p>
+	        	<div id="servlet-res" class="collapse">
+					<ul>
+					<li>Setting response status code</li>
+					<li>Setting response headers</li>
+					<li>Obtaining output object for sending the response</li>
+					</ul>
+				</div>
 			</section>
-		</div>
 
-		
-		<div class="row">
-			<div>
-				<button data-toggle="collapse" data-target="#prep-frm" class="btn btn-primary col-md-12" style="font-size: 20px;margin: 10px;">CSS Preprocessor and CSS Framework</button>
-			</div>
-		</div>
-			<div id="prep-frm" class="collapse">	
-				<ul>
-					<li><b>Saas</b></li>
-					<li><b>Less</b></li>
-					<li><b>960 Grid System</b></li>
-					<li><b>Bootstrap</b></li>
-					<li><b>Foundation</b></li>
-					<li><b>Materialize</b></li>
-				</ul>		
-	       </div>
-	    
-	    <!--END OF CSS-->
+			<section>
+				<p data-toggle="collapse" data-target="#servlet-reqd"><b><a>Servlet Request Dispatching (RequestDispatcher)</a></b></p>
+	        	<div id="servlet-reqd" class="collapse">
+					<ul>	
+					<li>Obtain a RequestDispatcher to a resource (static or dynamic) from the request object </li>
+					<br>
+							<p>RequestDispatcher rqstDsp;</p>
+							<p>rqstDsp = request.getRequestDispatcher(res); </p>
+					<br>
+					<li>Include the dispatcher resource (or its output) in the current response; one or more resources can be included (e.g. use for banners, footers, etc.) </li>
+						<br>
+							<p>	rqstDsp.include(request, response); </p>
+								<br>
+					<li>Forwards the processing of the current request to the dispatcher resource; the servlet processing the current request must not generate a response ( e.g. use in MVC “controller” servlets) </li>
+						<br>
+							<p>	rqstDsp.forward(request, response);</p>
+					</ul>
+				</div>
+			</section>
 
 
-		</div>
+			<section>
+				<p data-toggle="collapse" data-target="#session"><b><a>Session Tracking(HttpSession)</a></b></p>
+	        	<div id="session" class="collapse">
+					<ul>	
+					<li>Session tracking support is implemented either cookies or URL-rewriting </li>
+					<br>
+							<p>HttpSession session; </p>
+							<p>session = request.getSession(createNew);  </p>
+					<br>
+					<li>Obtaining session information (HttpSession)</li>
+						<br>
+							<p>	getCreationTime(), getLastAccessedTime(), getMaxInactiveInternal(), getId(), isNew(), setMaxInactiveInterval(int val) </p>
+								<br>
+					<li>Destroying sessions  </li>
+						<br>
+							<p>	invalidate() </p>
+							<br>
+					<li>URL-rewriting(HttpServletResponse)   </li>
+						<br>
+							<p>	encodeURL(String url), encodeRedirectURL(String url) </p>
+					</ul>
+				</div>
+			</section>
+
+	    </article>
 
 	    <div class="row">
 			<div>
-				<button data-toggle="collapse" data-target="#javascript" class="btn btn-primary col-md-12" style="font-size: 35px;margin: 10px;">Javascript</button>
+				<button data-toggle="collapse" data-target="#java-pages" class="btn btn-primary col-md-12" style="font-size: 35px;margin: 10px;">Java Server Pages</button>
 			</div>
 		</div>
-	    <div id="javascript" class="collapse">
-	       	<section>
-	            <p>Developed by <i>Brendan Eich</i> at Netscape Communications as the scripting language for the Netscape Navigator Browser</p>
-				
-	            <img src="./images/brendaneich.jpg" class="img-responsive" alt="brendan_eich" style="height:280px;width:240px;">
-				
-				<p>Formerly called <i>Mocha</i> and <i>LiveScript</i></p>	
-	            <p>Standardized by ECMA International as ECMAScript</p>
-	                <li>JavaScript Frameworks</li>
-				<ul>
-					<li>script.aculo.us, JQuery, Mootools, Prototype, Dojo Toolkit, etc.</li>
-				</ul>
-	        <div class="row">
-				<div>
-					<button data-toggle="collapse" data-target="#js-placement" class="btn btn-primary col-md-12" style="font-size: 20px;margin: 10px;">Placement in HTML File</button>
-				</div>
-			</div>
-	        <div id="js-placement"class="collapse">
-				<div class="well">
-					<h4>Externally Linked Script</h4>
-					<img src="./images/externalscript.png" class="img-responsive" alt="external_script">
-				</div>	
-				<div class="well">
-					<h4>Embedded Script</h4>
-					<img src="./images/embeddedscript.png" class="img-responsive" alt="embedded_script">
-				</div>
-				<div class="well">
-					<h4>Inline Script</h4>
-					<img src="./images/inlinescript.png" class="img-responsive" alt="inline_script">
-				</div>
-			</div>
-			</section>	
 
-			<div class="row">
-				<div>
-					<button data-toggle="collapse" data-target="#js-statement" class="btn btn-primary col-md-12" style="font-size: 20px;margin: 10px;">Javascript Statement</button>
-				</div>
-			</div>
-			<div id="js-statement" class="collapse">
-			<section>	
-				<ul>
-					<li >Control flow</li>
-				<ul>
-					<!--<li>break</li>-->
-					<li data-toggle="collapse" data-target="#br" class="li-none"><b><a>break</a></b></li>
-					<div id="br" class="collapse">
-						- exit a loop or switch 
-					</div>
-					<!--<li>continue</li>-->
-					<li data-toggle="collapse" data-target="#con" class="li-none"><b><a>continue</a></b></li>
-					<div id="con" class="collapse">
-						- break the iteration of the loop when it meets a specified condition and continues to the next iteration of the loop 
-					</div>
-					<!--<li>if...else</li>-->
-					<li data-toggle="collapse" data-target="#if-else" class="li-none"><b><a>if...else</a></b></li>
-					<div id="if-else" class="collapse">
-						- the statements inside the if-else block will be executed when the specified condition is true
-					</div>
-					<!--<li>switch</li>-->
-					<li data-toggle="collapse" data-target="#swt" class="li-none"><b><a>switch</a></b></li>
-					<div id="swt" class="collapse">
-						- the statement will be executed if the specified case is true
-					</div>
-					<!--<li>throw</li>-->
-					<li data-toggle="collapse" data-target="#thr" class="li-none"><b><a>throw</a></b></li>
-					<div id="thr" class="collapse">
-						- throws an error
-					</div>
-					<!--<li>try...catch</li>-->
-					<li data-toggle="collapse" data-target="#tryc" class="li-none"><b><a>try...catch</a></b></li>
-					<div id="tryc" class="collapse">
-						- when an error or exception occurs in the try block the statements in the catch block will be executed to implement error handling 
-					</div>
+        <article id="java-pages" class="collapse">
+	        <section>
+	        <p>Simply an HTML web page that contains additional bits of code that execute application logic to generate dynamic content. </p>
+	        </section>
 
-					</ul>
-					<li>Declarations</li>
-				<ul>
-					<!--<li>var</li>-->
-					<li data-toggle="collapse" data-target="#var" class="li-none"><b><a>var</a></b></li>
-					<div id="var" class="collapse">
-						- declare a variable 
-					</div>
-					<!--<li>let</li>-->
-					<li data-toggle="collapse" data-target="#let" class="li-none"><b><a>let</a></b></li>
-					<div id="let" class="collapse">
-						- declare a variable that is limited to the block or statement where it will be used
-					</div>
-					<!--<li>const</li>-->
-					<li data-toggle="collapse" data-target="#const" class="li-none"><b><a>const</a></b></li>
-					<div id="const" class="collapse">
-						- create a variable that can be used in the block where it was declared but it cannot be redeclared and the value cannot be reassigned 
-					</div>
-				</ul>
-					<li>Function and classes</li>
-				<ul>
-					<!--<li>function</li>-->
-					<li data-toggle="collapse" data-target="#func" class="li-none"><b><a>function</a></b></li>
-					<div id="func" class="collapse">
-						- declare a function 
-					</div>
-					<!--<li>async fuction</li>-->
-					<li data-toggle="collapse" data-target="#asy" class="li-none"><b><a>async function</a></b></li>
-					<div id="asy" class="collapse">
-						- declares an asynchronus function
-					</div>
-					<!--<li>return</li>-->
-					<li data-toggle="collapse" data-target="#ret" class="li-none"><b><a>return</a></b></li>
-					<div id="ret" class="collapse">
-						- returns the value of the function
-					</div>
-					<!--<li>class</li>-->
-					<li data-toggle="collapse" data-target="#colp" class="li-none"><b><a>class</a></b></li>
-					<div id="colp" class="collapse">
-						- creates a new class
-					</div>
-				</ul>
-
-					<li>Iterations</li>
-				<ul>
-					<!--<li>do...while</li>-->
-					<li data-toggle="collapse" data-target="#do-w" class="li-none"><b><a>do...while</a></b></li>
-					<div id="do-w" class="collapse">
-						- execute the statements in the do block and repeat it if the condition specified is true
-					</div>
-					<!--<li>for</li>-->
-					<li data-toggle="collapse" data-target="#for" class="li-none"><b><a>for</a></b></li>
-					<div id="for" class="collapse">
-						- execute the statements inside the for block as long as the specified condition is true
-					</div>
-					<!--<li>for...in</li>-->
-					<li data-toggle="collapse" data-target="#forn" class="li-none"><b><a>for...in</a></b></li>
-					<div id="forn" class="collapse">
-						- loops through the properties of an object
-					</div>
-					<!--<li>for...of</li>-->
-					<li data-toggle="collapse" data-target="#foro" class="li-none"><b><a>for...of</a></b></li>
-					<div id="foro" class="collapse">
-						- iterates over the values of elements in a collection like arrays, set, list, etc.
-					</div>
-					<!--<li>while</li>-->
-					<li data-toggle="collapse" data-target="#whi" class="li-none"><b><a>while</a></b></li>
-					<div id="whi" class="collapse">
-						- statements inside the block will be executed as long as the condition is true
-					</div>
-
-				</ul>	
-
-				</ul>
-
-				</ul>
-			</section>
-		</div>
-
-		<div class="row">
-			<div>
-				<button data-toggle="collapse" data-target="#js-expr-opr" class="btn btn-primary col-md-12" style="font-size: 20px;margin: 10px;">Expressions and operators</button>
-			</div>
-		</div>
-		<div id="js-expr-opr" class="collapse">
-			<section>
-				<p>Expressions are valid codes that resolves to a value. Operators are used tot assign values, compare values, perform arithmetic operations, etc.</p>
-				<ul>				
-					<li data-toggle="collapse" data-target="#pe"><b><a>Primary expressions</a></b></li>
-					<div class="collapse" id="pe">
-						<p>Basic keywords and general expressions</p>
-						<ul>
-							<li>this</li>
-							<li>function</li>
-							<li>class</li>
-							<li>yield</li>
-							<li>{}</li>
-							<li>/ab+c/i</li>
-							<li>()</li>
-						</ul>
-					</div>
-					<li data-toggle="collapse" data-target="#lhse"><b><a>Left-handside expressions</a></b></li>
-					<div class="collapse" id="lhse">
-						<p>The values on the left side of the statement are the target destination of an assignment</p>
-						<ul>
-							<li>Property accessors</li>
-							<li>new</li>
-							<li>new.target</li>
-							<li>super</li>
-							<li>...obj</li>
-						</ul>
-					</div>
-				</ul>	
-
-					<li>Operators</li>
-				<ul>
-						<li data-toggle="collapse" data-target="#a-ope"><b><a>Assignment operators</a></b></li>
-						<div id="a-ope" class="collapse">
-							- assigns a value to the eft operand based on the value of the right operand. Examples are:
-							<ul>
-								<li>=</li>
-								<li>+=</li>
-								<li>-=</li>
-								<li>*=</li>
-								<li>/=</li>
-								<li>%=</li>
-							</ul>
-						</div>
-						<li data-toggle="collapse" data-target="#c-ope"><b><a>Comparison operators</a></b></li>
-						<div id="c-ope" class="collapse">
-							- compares the operands and return a logical value whether it results to true or false. Examples are:
-							<ul>
-								<li>==</li>
-								<li>!=</li>
-								<li>===</li>
-								<li>!==</li>
-								<li><</li>
-								<li>></li>
-								<li><=</li>
-								<li>>=</li>
-							</ul>
-						</div>
-						<li data-toggle="collapse" data-target="#ar-ope"><b><a>Arithmetic operators</a></b></li>
-						<div id="ar-ope" class="collapse">
-							- takes numbers as its operands and return a single numerical value. Examples are:
-							<ul>
-								<li>%</li>
-								<li>+</li>
-								<li>-</li>
-								<li>++</li>
-								<li>--</li>
-								<li>*</li>
-								<li>/</li>
-							</ul>
-						</div>
-						<li data-toggle="collapse" data-target="#bit-ope"><b><a>Bitwise operators</a></b></li>
-						<div id="bit-ope" class="collapse">
-							- they perform operations on the binary representations of its operands. Examples are:
-							<ul>
-								<li>&</li>
-								<li>|</li>
-								<li>^</li>
-								<li>~</li>
-							</ul>
-						</div>
-						<li data-toggle="collapse" data-target="#lo-ope"><b><a>Logical operators</a></b></li>
-						<div id="lo-ope" class="collapse">
-							- determines the logic between its operands. Examples are:
-							<ul>
-								<li>&&</li>
-								<li>||</li>
-								<li>!</li>
-							</ul>
-						</div>
-						<li data-toggle="collapse" data-target="#str-ope"><b><a>String operators</a></b></li>
-						<div id="str-ope" class="collapse">
-							- these operators can be used to concatenate strings. Examples are
-							<ul>
-								<li>+</li>
-								<li>+=</li>
-							</ul>
-						</div>
-						<li data-toggle="collapse" data-target="#con-ope"><b><a>Conditional operators</a></b></li>
-						<div id="con-ope" class="collapse">
-							- also known as ternary operator, it takes three operands and assigns the result of a condition to a variable. The syntax is:
-							<b><i>variable = (condition) ? value1:value2</i></b>
-						</div>
-						<li data-toggle="collapse" data-target="#un-ope"><b><a>Unary operators</a></b></li>
-						<div id="un-ope" class="collapse">
-							- has only one operator. Examples are:
-							<ul>
-								<li>delete</li>
-								<li>typeOf</li>
-								<li>void</li>
-							</ul>
-						</div>
-						<li data-toggle="collapse" data-target="#bi-ope"><b><a>Binary operators</a></b></li>
-						<div id="bi-ope" class="collapse">
-							- has two operands, one before the oparator and one after the operator.
-						</div>
-						<li data-toggle="collapse" data-target="#re-ope"><b><a>Relational operators</a></b></li>
-						<div id="re-ope" class="collapse">
-							- compares the operands and returns a boolean value whether it results to true or false. Examples are:
-							<ul>
-								<li>in</li>
-								<li>instanceof</li>
-							</ul>
-						</div>
-				</ul>			
-				</ul>
-				</ul>
-			</section>
-		</div>	
-
-		<div class="row">
-			<div>
-				<button data-toggle="collapse" data-target="#standard-obj" class="btn btn-primary col-md-12" style="font-size: 20px;margin: 10px;">Standard Objects</button>
-			</div>
-		</div>
-		<div id="standard-obj" class="collapse">
-			<section>
-					<p>Standard, built-in objects of JavaScript</p>
-
+	      	<section>
+				<p data-toggle="collapse" data-target="#feat"><b><a>Features</a></b></p>
+	        	<div id="feat" class="collapse">
 					<ul>
-						<li>Array - list-like objects</li>
-						<li>Boolean - an object for a boolean value</li>
-						<li>Date - objects based on a time value</li>
-						<li>Error - error objects are thrown when runtime errors occur</li>
-						<li>Function - every function is a Function object in JavaScript</li>
-						<li>JSON - contains methods for parsing JavaScript Object Notation and converting values to JSON</li>
-						<li>Math - has properties and methods that can be used for mathematical constants and functions</li>
-						<li>Number - an object that allows working with numerical values</li>
-						<li>Object - creates an object</li>
-						<li>RegExp - creates a regular expression that can be used to match string values to a pattern</li>
-						<li>String - constructor for strings</li>
-						<li>Map - a key/value map</li>
-						<li>Set - values of different types whether a primitive value or an object can be stored</li>
-						<li>WeakMap - same as Map but is not iterable and can only contain objects as its keys</li>
-						<li>WeakSet - same as Set but is not iterable and the values must be unique object references. Primitive types cannot be used</li>
+					<li>Text-based document capable of generating both static and dynamic content (typically intermixed) </li>
+					<li>Mark-up based document syntax (JSP-style or XML-style), combining (X) HTML elements as well as standard and custom JSP elements; thus, web page authors can feel right "at home" with the mark-up syntax.</li>
+					<li>Embedded Java Coding support via “scriptlets</li>
+					<li>Template text are converted into JSPWriter</li>
 					</ul>
+				</div>
 			</section>
-		</div>
 
-		<div class="row">
-			<div>
-				<button data-toggle="collapse" data-target="#async-js-xml" class="btn btn-primary col-md-12" style="font-size: 20px;margin: 10px;">Asynchronous JavaScript and XML</button>
-			</div>
-		</div>
-		<div id="async-js-xml" class="collapse">
-			<section>
-				<p>Synchronous Request – recommended for few small requests. JavaScript will not continue to execute until the server response is ready. If the server is busy or slow the application will stop or terminate. </p>
-				<p>Asynchronous Request – JavaScript does not have to wait for the server response. It can execute other scripts while waiting for the server response and deal with the response when the response is ready.</p>
-			</section>
-		</div>
+	   		<section>
+				<p data-toggle="collapse" data-target="#comp"><b><a>Components </a></b></p>
+	        	<div id="comp" class="collapse">
+					<ul>
+					<li>Template (i.e. static) text</li>
+					<li>JSP elements </li>
+						<ul>
+							<li>Directives </li>
+						
+						<ul>
+							<li><%@ page ContentType=”text/html” pageEncoding=”UTF-8” %> </li>
+							<li><p data-toggle="collapse" data-target="#comp1"><b><a><%@ page import=”java.util.Random” %> </a></b></p></li><div id="comp1" class="collapse">
+						
+						<ul>
+							<li>autoFlush </li>
+							<li>buffer </li>
+							<li>contentType  </li>
+							<li>errorPage </li>
+							<li> extends </li>
+							<li>import  </li>
+							<li>info </li>
+							<li>isELIgnored </li>
+							<li>isErrorPage </li>
+							<li>isThreadSafe </li>
+							<li>language </li>
+							<li>pageEncoding </li>
+							<li>session </li>
 
-		<div class="row">
-			<div>
-				<button data-toggle="collapse" data-target="#xhtml-req-obj" class="btn btn-primary col-md-12" style="font-size: 20px;margin: 10px;">Three important properties of XHTMLRequest Object</button>
-			</div>
-		</div>
-		<div id="xhtml-req-obj" class="collapse">
-			<section>
-				<ul>
-					<li><b>onReadyStateChange</b> – stores a function to be called automatically each tie readyState changes</li>
-					<br>
-					
-					<li data-toggle="collapse" data-target="#rs"><b><a>readyState</a></b></li>
-						<div class="collapse" id="rs">
+						</ul>
+						</ul>
+
+						<ul>
+							
+							<li><p data-toggle="collapse" data-target="#comp2"><b><a><%@ taglib uri=”http://java.sun.com/jsp/jstl/core” prefix=”c” %> </a></b></p></li><div id="comp2" class="collapse">
+
 							<ul>
-								<li class="li-none">0: request not initialized</li>
-								<li class="li-none">1: server connection established</li>
-								<li class="li-none">2: request received</li>
-								<li class="li-none">3: processing request</li>
-								<li class="li-none">4: request finished and response is ready</li>
-							</ul>
-						</div>
-					
-					<br>
-					<li><b>status</b> – stores a function to be called automatically each tie readyState changes</li>
-					<br>
-					
-					<li data-toggle="collapse" data-target="#rs2"><b><a>readyState</a></b></li>
-						<div class="collapse" id="rs2">
-							<ul>
-								<li class="li-none">200: OK</li>
-								<li class="li-none">404: Not Found</li>
-							</ul>
-						</div>
-					
-				</ul>
-			</section>
-		</div>
+							<li>prefix</li>
+							<li>taglib</li>
+							<li>uri</li>
+							
 
+							</ul>
+
+						</ul>
+
+
+					<li>Scripting Elements </li>
+
+						<ul>
+							
+							<li><p data-toggle="collapse" data-target="#dec"><b><a>Declarations </a></b></p></li>
+							<div id="dec" class="collapse">
+
+							<ul>
+								<li><%! int a = 100; %></li>
+								<li><%! int square(int n) { return n*n ; } %></li>
+							</ul>
+						</ul>
+
+						<ul>
+							<li><p data-toggle="collapse" data-target="#ex"><b><a>Expressions  </a></b></p></li>
+							<div id="ex" class="collapse">
+
+							<ul>
+								<li><% String s = new java.util.Date().toString(); %> </li>
+							</ul>
+						</ul>
+
+						<ul>
+							<li><p data-toggle="collapse" data-target="#sc"><b><a>Scriptlets </a></b></p></li>
+							<div id="sc" class="collapse">
+
+							<ul>
+								<li> <% for(int i = 0; i < 10 ; i++) { out.println(i); } %> </li>
+							</ul>
+						</ul>
+				</div>
+			</section>
+		</article>
 		
 		<div class="row">
 			<div>
-				<button data-toggle="collapse" data-target="#method-catg" class="btn btn-primary col-md-12" style="font-size: 20px;margin: 10px;">Three Categories of Method</button>
+					<button data-toggle="collapse" data-target="#php" class="btn btn-primary col-md-12" style="font-size: 35px;margin: 10px;">PHP</button>
 			</div>
 		</div>
-		<div id="method-catg" class="collapse">	
-			<section>
-				<li data-toggle="collapse" data-target="#mu"><b><a>Mutator Method</a></b></li>
-						<div id="mu" class="collapse">
-
-				<p>Methods that can modify the target array</p>  
-
-				<section>
-					<ul>
-					<li data-toggle="collapse" data-target="#a-cop"><b><a>Array.prototype.copyWithin()</a></b></li>
-						<div id="a-cop" class="collapse">
-							<p>- The copyWithin works like C and C++'s memmove, and is a high-performance method to shift the data of an Array. This especially applies to the Typed Array method of the same name. The sequence is copied and pasted as one operation; pasted sequence will have the copied values even when the copy and paste region overlap.
-								The copyWithin function is intentionally generic, it does not require that its this value be an Array object.</p>
-						<img src="./images/copywithin.png" class="img-responsive" alt="copy_within">
-						</div>
-					</ul>
-					</section>
-
-				</div>
-				</section>
-				
-					<section>
-						<li data-toggle="collapse" data-target="#acc"><b><a>Accessor Method</a></b></li>
-						<div id="acc" class="collapse">
-				
+		<article id="php" class="collapse">
+		<section>
+		<p> PHP is a server scripting language, and a powerful tool for making dynamic and interactive Web pages.PHP is a widely-used, free, and efficient alternative to competitors such as Microsoft's ASP.</p>
+			<li data-toggle="collapse" data-target="#supglo"><b><a>Superglobals</a></b></li>	
+			<div id="supglo" class="collapse">
+			<p> Superglobals are available in all scopes throughout a script. There is no need to do global $variable; to access them within functions or methods.</p>
 				<ul>
-				<p>Methods that does not modify the array but returns a value when invoked</p>
-					<li data-toggle="collapse" data-target="#a-con"><b><a>Array.prototype.concat()</a></b></li>
-						<div id="a-con" class="collapse">
-							<p>- filter() calls a provided callback function once for each element in an array, and constructs a new array of all the values for which callback returns a value that coerces to true. callback is invoked only for indexes of the array which have assigned values; it is not invoked for indexes which have been deleted or which have never been assigned values. Array elements which do not pass the callback test are simply skipped, and are not included in the new array.</p>
-						<img src="./images/concat.png" class="img-responsive" alt="concat">
-						</div>
-					<li data-toggle="collapse" data-target="#a-pro"><b><a>Array.prototype.indexOf()</a></b></li>
-						<div id="a-pro" class="collapse">
-							<p>- indexOf() compares searchElement to elements of the Array using strict equality (the same method used by the === or triple-equals operator).</p>
-						<img src="./images/indexof.png" class="img-responsive" alt="index_of">
-						</div>
-					<li data-toggle="collapse" data-target="#a-jo"><b><a>Array.prototype.join()</a></b></li>
-						<div id="a-jo" class="collapse">
-							<p>- The string conversions of all array elements are joined into one string. If an element is undefined or null, it is converted to the empty string.</p>
-						<img src="./images/join.png" class="img-responsive" alt="join">
-						</div>
-					<li data-toggle="collapse" data-target="#a-la"><b><a>Array.prototype.lastIndexOf()</a></b></li>
-						<div id="a-la" class="collapse">
-							<p>- lastIndexOf compares searchElement to elements of the Array using strict equality (the same method used by the ===, or triple-equals, operator).</p>
-						<img src="./images/lastindex.png" class="img-responsive" alt="last_index">
-						</div>
-					<li data-toggle="collapse" data-target="#a-sl"><b><a>Array.prototype.slice()</a></b></li>
-						<div id="a-sl" class="collapse">
-							-slice does not alter. It returns a shallow copy of elements from the original array. Elements of the original array are copied into the returned array as follows:
-							<ul>
-							<li>For object references (and not the actual object), slice copies object references into the new array. Both the original and new array refer to the same object. If a referenced object changes, the changes are visible to both the new and original arrays.</li>
-							<li>For strings, numbers and booleans (not String, Number and Boolean objects), slice copies the values into the new array. Changes to the string, number or boolean in one array do not affect the other array.</li>
-							</ul>
-						<img src="./images/slice.png" class="img-responsive" alt="slice">
-						</div>
-					<li data-toggle="collapse" data-target="#a-st"><b><a>Array.prototype.toString()</a></b></li>
-						<div id="a-st" class="collapse">
-							<p>- The Array object overrides the toString method of Object. For Array objects, the toString method joins the array and returns one string containing each array element separated by commas.</p>
-						</div>
-					</ul>
-
-					</section>
-
-
-
-
-
-
-					<li data-toggle="collapse" data-target="#iter"><b><a>Iteration or Iterator Method</a></b></li>
-						<div id="iter" class="collapse">
 				
-				<p>When these methods are called, functions that take three arguments (array item value, position of the item in the array, the array object) are taken as the argument of the method and does not modify the values in the array</p>
-					<ul>
-					<li data-toggle="collapse" data-target="#a-fi"><b><a>Array.prototype.filter()</a></b></li>
-						<div id="a-fi" class="collapse">
-							<p>- filter() calls a provided callback function once for each element in an array, and constructs a new array of all the values for which callback returns a value that coerces to true. callback is invoked only for indexes of the array which have assigned values; it is not invoked for indexes which have been deleted or which have never been assigned values. Array elements which do not pass the callback test are simply skipped, and are not included in the new array.
-							callback is invoked with three arguments:
-							<ul>
-							<li>the value of the element</li>
-							<li>the index of the element</li>
-							<li>the Array object being traversed</li>
-							</ul>
-						<img src="./images/filter.png" class="img-responsive" alt="filter">
-						</div>
-					<li data-toggle="collapse" data-target="#a-ev"><b><a>Array.prototype.every()</a></b></li>
-						<div id="a-ev" class="collapse">
-							<p>-The every method executes the provided callback function once for each element present in the array until it finds one where callback returns a falsy value. If such an element is found, the every method immediately returns false. Otherwise, if callback returns a truthy value for all elements, every returns true. callback is invoked only for indexes of the array which have assigned values; it is not invoked for indexes which have been deleted or which have never been assigned values.</p>
-						<img src="./images/every.png" class="img-responsive" alt="every ">
-						</div>
-					<li data-toggle="collapse" data-target="#a-fd"><b><a>Array.prototype.find()</a></b></li>
-						<div id="a-fd" class="collapse">
-							<p>-The find method executes the callback function once for each index of the array until it finds one where callback returns a true value. If such an element is found, find immediately returns the value of that element. Otherwise, find returns undefined. callback is invoked for every index of the array from 0 to length - 1 and is invoked for all indexes, not just those that have been assigned values. This may mean that it's less efficient for sparse arrays than other methods that only visit indexes that have been assigned a value.</p>
-						<img src="./images/find.png" class="img-responsive" alt="find ">
-						</div>
-					<li data-toggle="collapse" data-target="#a-fc"><b><a>Array.prototype.forEach()</a></b></li>
-						<div id="a-fc" class="collapse">
-							forEach() executes the provided callback once for each element present in the array in ascending order. It is not invoked for index properties that have been deleted or are uninitialized (i.e. on sparse arrays). callback is invoked with three arguments:
-							<ul>
-							<li>the element value</li>
-							<li>the element index</li>
-							<li>the array being traversed</li>
-							</ul>
-						<img src="./images/foreach.png" class="img-responsive" alt="for_each ">
-						</div>
-					<li data-toggle="collapse" data-target="#a-en"><b><a>Array.prototype.entries()</a></b></li>
-						<div id="a-en" class="collapse">
-							<p>-The entries() method returns a new Array Iterator object that contains the key/value pairs for each index in the array.</p>
-						<img src="./images/values.png" class="img-responsive" alt="values ">
-						</div>
-					<li data-toggle="collapse" data-target="#a-va"><b><a>Array.prototype.values()</a></b></li>
-						<div id="a-va" class="collapse">
-							<p>-The values() method returns a new Array Iterator object that contains the values for each index in the array.</p>
-						<img src="./images/entries.png" class="img-responsive" alt="entries ">
-						</div>
-					<li data-toggle="collapse" data-target="#a-re"><b><a>Array.prototype.reduce()</a></b></li>
-						<div id="a-re" class="collapse">
-							<p>-The reduce() method applies a function against an accumulator and each element in the array (from left to right) to reduce it to a single value.</p>
-						<img src="./images/reduce.png" class="img-responsive" alt="reduce ">
-						</div>
-					<li data-toggle="collapse" data-target="#a-it"><b><a>Array.prototype.[@@iterator]()</a></b></li>
-						<div id="a-it" class="collapse">
-							<p>-The initial value of the @@iterator property is the same function object as the initial value of the values() property.</p>
-						<img src="./images/iterator.png" class="img-responsive" alt="iterator">
-						</div>
+					<li data-toggle="collapse" data-target="#global" class="li"><b><a>$GLOBALS</a></b></li>
+					<div id="global" class="collapse">
+						References all variables available in global scope
+					</div>
+					
+					<li data-toggle="collapse" data-target="#server" class="li"><b><a>$_SERVER</a></b></li>
+					<div id="server" class="collapse">
+						Server and execution environment information
+					</div>
+					
+					<li data-toggle="collapse" data-target="#get" class="li"><b><a>$_GET</a></b></li>
+					<div id="get" class="collapse">
+						HTTP GET variables
+					</div>
+					
+					<li data-toggle="collapse" data-target="#posts" class="li"><b><a>$_POST</a></b></li>
+					<div id="posts" class="collapse">
+						HTTP POST variables
+					</div>
+					
+					<li data-toggle="collapse" data-target="#filu" class="li"><b><a>$_FILES</a></b></li>
+					<div id="filu" class="collapse">
+						HTTP File Upload variables
+					</div>
+					
+					<li data-toggle="collapse" data-target="#cookies" class="li"><b><a>$_COOKIE</a></b></li>
+					<div id="cookies" class="collapse">
+						HTTP Cookies
+					</div>
+				
+					<li data-toggle="collapse" data-target="#sessions" class="li"><b><a>$_SESSION</a></b></li>
+					<div id="sessions" class="collapse">
+						Session variables
+					</div>
+
+					<li data-toggle="collapse" data-target="#request" class="li"><b><a>$_REQUEST</a></b></li>
+					<div id="request" class="collapse">
+						HTTP Request variables
+					</div>
+					
+					<li data-toggle="collapse" data-target="#env" class="li"><b><a>$_ENV</a></b></li>
+					<div id="env" class="collapse">
+						Environment variables
+					</div>
+					
 				</ul>
-			</section>
-		</div>
-	</div>
+			</div>
+			<li data-toggle="collapse" data-target="#sesrlf"><b><a>Session-Related Functions</a></b></li>	
+			<div id="sesrlf" class="collapse">
+				<ul>
+					<li data-toggle="collapse" data-target="#sesab" class="li"><b><a>session_abort</a></b></li>
+					<div id="sesab" class="collapse">
+						Discard session array changes and finish session
+					</div>
+					
+					<li data-toggle="collapse" data-target="#secom" class="li"><b><a>session_commit</a></b></li>
+					<div id="secom" class="collapse">
+						Alias of session_write_close
+					</div>
+					
+					<li data-toggle="collapse" data-target="#sedes" class="li"><b><a>session_destroy</a></b></li>
+					<div id="sedes" class="collapse">
+						Destroys all data registered to a session
+					</div>
+					
+					<li data-toggle="collapse" data-target="#sestr" class="li"><b><a>session_start</a></b></li>
+					<div id="sestr" class="collapse">
+						Start new or resume existing session
+					</div>
+					
+					<li data-toggle="collapse" data-target="#sesta" class="li"><b><a>session_status</a></b></li>
+					<div id="sesta" class="collapse">
+						Returns the current session status
+					</div>
+					
+					<li data-toggle="collapse" data-target="#seres" class="li"><b><a>session_reset</a></b></li>
+					<div id="seres" class="collapse">
+						Re-initialize session array with original values
+					</div>
+										
+					<li data-toggle="collapse" data-target="#seuns" class="li"><b><a>session_unset</a></b></li>
+					<div id="seuns" class="collapse">
+						Free all session variables
+					</div>
+					
+					<li data-toggle="collapse" data-target="#seid" class="li"><b><a>session_id</a></b></li>
+					<div id="seid" class="collapse">
+						Get and/or set the current session id
+					</div>
+					
+					<li data-toggle="collapse" data-target="#sename" class="li"><b><a>session_name</a></b></li>
+					<div id="sename" class="collapse">
+						Get and/or set the current session name
+					</div>
+					
+				</ul>		
+		</section>		
+		</article>
 
-		</div>
-	<div class="row">
+
+
+
+		<div class="row">
 			<div>
-
-				<button data-toggle="collapse" data-target="#dom" class="btn btn-primary col-md-12" style="font-size: 35px;margin: 10px;">Document Object Model or DOM</button>
-				
+					<button data-toggle="collapse" data-target="#nodes" class="btn btn-primary col-md-12" style="font-size: 35px;margin: 10px;">Node.js</button>
 			</div>
 		</div>
-
-		<div id="dom" class="collapse">
+		<article id="nodes" class="collapse">
 			<section>
-				<p>A programming interface for HTML and XML documents. It provides a representation of the document and defines a way that the structure can be accessed from programs so that they can change the document structure, style and content. It's presented as a structured group of nodes and objects that have properties and methods.</p>
+				<p>Node.js is an open-source, cross-platform JavaScript run-time environment for executing JavaScript code server-side.Node is similar in design to, and influenced by, systems like Ruby's Event Machine or Python's Twisted. Node takes the event model a bit further. It presents an event loop as a runtime construct instead of as a library. In other systems there is always a blocking call to start the event-loop.</p>
 
-				<p><strong>Document Methods</strong></p>
 
-				<ol class="li-none">
-					<li data-toggle="collapse" data-target="#d-ca"><b><a>document.createAttribute('name')</a></b></li>
-						<div id="d-ca" class="collapse">
-							<p>-The Document.createAttribute() method creates a new attribute node, and returns it. The object created a node implementing the Attr interface. The DOM does not enforce what sort of attributes can be added to a particular element in this manner.</p>
-						<img src="./images/attribute.png" class="img-responsive" alt="attribute">
-						</div>
+			<li data-toggle="collapse" data-target="#nodemod"><b><a>Modules</a></b></li>	
+			<div id="nodemod" class="collapse">
+				<ul>
+				
+					<li data-toggle="collapse" data-target="#modulen" class="li"><b><a>Async</a></b></li>
+					<div id="modulen" class="collapse">
+						Async is a utility module which provides straight-forward, powerful functions for working with asynchronous JavaScript.
+					</div>
 
-					<li data-toggle="collapse" data-target="#d-cc"><b><a>document.createComment('text')</a></b></li>
-						<div id="d-cc" class="collapse">
-							<p>-createComment() creates a new comment node, and returns it.</p>
-						<img src="./images/comment.png" class="img-responsive" alt="comment">
-						</div>
+					<li data-toggle="collapse" data-target="#browserify" class="li"><b><a>Browserify</a></b></li>
+					<div id="browserify" class="collapse"><p>
+						Browserify will recursively analyze all the require() calls in your app in order to build a bundle you can serve up to the browser in a single (script) tag.
+					</div>
 
-					<li data-toggle="collapse" data-target="#d-cd"><b><a>document.createDocumentFragment()</a></b></li>
-						<div id="d-cd" class="collapse">
-							<p>-DocumentFragments are DOM Nodes. They are never part of the main DOM tree. The usual use case is to create the document fragment, append elements to the document fragment and then append the document fragment to the DOM tree. In the DOM tree, the document fragment is replaced by all its children.</p>
-						<img src="./images/fragment.png" class="img-responsive" alt="fragment">
-						</div>
-					<li data-toggle="collapse" data-target="#d-tn"><b><a>document.createElement('tagName')</a></b></li>
-						<div id="d-tn" class="collapse">
-							<p>-In an HTML document, the Document.createElement() method creates the HTML element specified by tagName, or an HTMLUnknownElement if tagName isn't recognized. In a XUL document, it creates the specified XUL element. In other documents, it creates an element with a null namespace URI.</p>
-						<img src="./images/element.png" class="img-responsive" alt="element">
-						</div>
-					<li data-toggle="collapse" data-target="#d-ct"><b><a>document.createTextNode('text')</a></b></li>
-						<div id="d-ct" class="collapse">
-							<p>-The createTextNode() method creates a Text Node with the specified text.</p>
-						<img src="./images/text.png" class="img-responsive" alt="text">
-						</div>
-					<li data-toggle="collapse" data-target="#d-id"><b><a>document.getElementById('id')</a></b></li>
-						<div id="d-id" class="collapse">
-							<p>-Returns a reference to the element by its ID; the ID is a string which can be used to uniquely identify the element, found in the HTML id attribute.</p>
-						<img src="./images/id.png" class="img-responsive" alt="id">
-						</div>
-					<li data-toggle="collapse" data-target="#d-na"><b><a>document.getElementByName('name')</a></b></li>
-						<div id="d-na" class="collapse">
-							<p>-Get all elements in the document with the specified tag name</p>
-						<img src="./images/name.png" class="img-responsive" alt="name">
-						</div>
-					<li data-toggle="collapse" data-target="#d-bt"><b><a>document.getElementByTagName('tagname')</a></b></li>
-						<div id="d-bt" class="collapse">
-							<p>-Returns an HTMLCollection of elements with the given tag name. The complete document is searched, including the root node. The returned HTMLCollection is live, meaning that it updates itself automatically to stay in sync with the DOM tree without having to call document.getElementsByTagName() again.</p>
-						<img src="./images/tagname.png" class="img-responsive" alt="tag_name">
-						</div>
-						<div id="d-im" class="collapse">
-					<li data-toggle="collapse" data-target="#d-im"><b><a>document.importNode(importedNode, deep)</a></b></li>
-						<div id="d-bt" class="collapse">
-							<p>-Creates a copy of a node from an external document that can be inserted into the current document.</p>
-						<img src="./images/import.png" class="img-responsive" alt="import">
-						</div>
-				</ul>
-				</ol>
+					<li data-toggle="collapse" data-target="#bower" class="li"><b><a>Bower</a></b></li>
+					<div id="bower" class="collapse"><p>
+						Bower is a package manager for the web. It works by fetching and installing packages from all over, taking care of hunting, finding, downloading, and saving the stuff you’re looking for.
+					</div>
 
-			</section>
+					<li data-toggle="collapse" data-target="#backbone" class="li"><b><a>Backbone</a></b></li>
+					<div id="backbone" class="collapse"><p>
+						 Backbone.js gives structure to web applications by providing models with key-value binding and custom events, collections with a rich API of enumerable functions, views with declarative event handling, and connects it all to your existing API over a RESTful JSON interface.
+					</div>
 
+					<li data-toggle="collapse" data-target="#csv" class="li"><b><a>CSV</a></b></li>
+					<div id="csv" class="collapse"><p>
+						CSV module has four sub modules which provides CSV generation, parsing, transformation and serialization for Node.js.
+					</div>
+
+					<li data-toggle="collapse" data-target="#debug" class="li"><b><a>Debug</a></b></li>
+					<div id="debug" class="collapse"><p>
+						Debug is a tiny node.js debugging utility modelled after node core's debugging technique.
+					</div>
+
+					<li data-toggle="collapse" data-target="#express" class="li"><b><a>Express</a></b></li>
+					<div id="express" class="collapse"><p>
+						Express is a fast, un-opinionated, minimalist web framework. It provides small, robust tooling for HTTP servers, making it a great solution for single page applications, web sites, hybrids, or public HTTP APIs.
+					</div>
+
+					<li data-toggle="collapse" data-target="#forever" class="li"><b><a>Forever</a></b></li>
+					<div id="forever" class="collapse"><p>
+						A simple CLI tool for ensuring that a given node script runs continuously (i.e. forever).
+					</div>
+
+					<li data-toggle="collapse" data-target="#grunt" class="li"><b><a>Grunt</a></b></li>
+					<div id="grunt" class="collapse"><p>
+						Grunt is a JavaScript Task Runner that facilitates creating new projects and makes performing repetitive but necessary tasks such as linting, unit testing, concatenating and minifying files (among other things) trivial.
+					</div>
+
+					<li data-toggle="collapse" data-target="#httpser" class="li"><b><a>Http-server</a></b></li>
+					<div id="httpser" class="collapse"><p>
+						Http-server is a simple, zero-configuration command-line http server. It is powerful enough for production usage, but it's simple and hackable enough to be used for testing, local development, and learning.
+					</div>
+
+					<li data-toggle="collapse" data-target="#inquirer" class="li"><b><a>Inquirer</a></b></li>
+					<div id="inquirer" class="collapse"><p>
+						A collection of common interactive command line user interfaces.
+					</div>
+
+					<li data-toggle="collapse" data-target="#jquery" class="li"><b><a>JQuery</a></b></li>
+					<div id="jquery" class="collapse"><p>
+						 JQuery is a fast, small, and feature-rich JavaScript library.
+					</div>
+
+					<li data-toggle="collapse" data-target="#jshint" class="li"><b><a>Jshint</a></b></li>
+					<div id="jshint" class="collapse"><p>
+						 Static analysis tool to detect errors and potential problems in JavaScript code and to enforce your team's coding conventions.
+					</div>
+
+					<li data-toggle="collapse" data-target="#koa" class="li"><b><a>Koa</a></b></li>
+					<div id="koa" class="collapse"><p>
+						 Koa is web app framework. It is an expressive HTTP middleware for node.js to make web applications and APIs more enjoyable to write.
+					</div>
+
+					<li data-toggle="collapse" data-target="#lodash" class="li"><b><a>Lodash</a></b></li>
+					<div id="lodash" class="collapse"><p>
+						 The lodash library exported as a node module. Lodash is a modern JavaScript utility library delivering modularity, performance, & extras.
+					</div>
+
+					<li data-toggle="collapse" data-target="#less" class="li"><b><a>Less</a></b></li>
+					<div id="less" class="collapse"><p>
+						 The less library exported as a node module.
+					</div>
+
+					<li data-toggle="collapse" data-target="#moment" class="li"><b><a>Moment</a></b></li>
+					<div id="moment" class="collapse"><p>
+						 A lightweight JavaScript date library for parsing, validating, manipulating, and formatting dates.
+					</div>
+
+					<li data-toggle="collapse" data-target="#mongoose" class="li"><b><a>Mongoose</a></b></li>
+					<div id="mongoose" class="collapse"><p>
+						 It is a MongoDB object modeling tool designed to work in an asynchronous environment.
+					</div>
+
+					<li data-toggle="collapse" data-target="#mongodb" class="li"><b><a>MongoDB</a></b></li>
+					<div id="mongodb" class="collapse"><p>
+						 The official MongoDB driver for Node.js. It provides a high-level API on top of mongodb-core that is meant for end users.It is a MongoDB object modeling tool designed to work in an asynchronous environment.
+					</div>
+
+					<li data-toggle="collapse" data-target="#npm" class="li"><b><a>NPM</a></b></li>
+					<div id="npm" class="collapse"><p>
+						 Npm is package manager for javascript.</p>
+					</div>
+
+					<li data-toggle="collapse" data-target="#nodemonno" class="li"><b><a>Nodemon</a></b></li>
+					<div id="nodemonno" class="collapse"><p>
+						 It is a simple monitor script for use during development of a node.js app, It will watch the files in the directory in which nodemon was started, and if any files change, nodemon will automatically restart your node application.</p>
+					</div>
+
+					<li data-toggle="collapse" data-target="#nodemailer" class="li"><b><a>Nodemailer</a></b></li>
+					<div id="nodemailer" class="collapse"><p>
+						 This module enables e-mail sending from a Node.js applications.</p>
+					</div>
+
+					<li data-toggle="collapse" data-target="#optimist" class="li"><b><a>Optimist</a></b></li>
+					<div id="optimist" class="collapse"><p>
+						 Optimist is a node.js library for option parsing with an argv hash.</p>
+					</div>
+
+					<li data-toggle="collapse" data-target="#Phantomjs" class="li"><b><a>Phantomjs</a></b></li>
+					<div id="Phantomjs" class="collapse"><p>
+						  An NPM installer for PhantomJS, headless webkit with JS API. It has fast and native support for various web standards: DOM handling, CSS selector, JSON, Canvas, and SVG.</p>
+					</div>
+
+					<li data-toggle="collapse" data-target="#Passport" class="li"><b><a>Passport</a></b></li>
+					<div id="Passport" class="collapse"><p>
+						  A simple, unobtrusive authentication middleware for Node.js. Passport uses the strategies to authenticate requests. Strategies can range from verifying username and password credentials or authentication using OAuth or OpenID.</p>
+					</div>
+
+					<li data-toggle="collapse" data-target="#Q" class="li"><b><a>Q</a></b></li>
+					<div id="Q" class="collapse"><p>
+						Q is a library for promises. A promise is an object that represents the return value or the thrown exception that the function may eventually provide.</p>
+					</div>
+
+					<li data-toggle="collapse" data-target="#Request" class="li"><b><a>Request</a></b></li>
+					<div id="Request" class="collapse"><p>
+						Request is Simplified HTTP request client make it possible to make http calls. It supports HTTPS and follows redirects by default.</p>
+					</div>
+
+					<li data-toggle="collapse" data-target="#Socket.io" class="li"><b><a>Socket.io</a></b></li>
+					<div id="Socket.io" class="collapse"><p>
+						 Its a node.js realtime framework server.</p>
+					</div>
+
+					<li data-toggle="collapse" data-target="#Sails" class="li"><b><a>Sails</a></b></li>
+					<div id="Sails" class="collapse"><p>
+						 Sails is API-driven framework for building realtime apps, using MVC conventions (based on Express and Socket.io)</p>
+					</div>
+
+					<li data-toggle="collapse" data-target="#Through" class="li"><b><a>Through</a></b></li>
+					<div id="Through" class="collapse"><p>
+						 It enables simplified stream construction. It is easy way to create a stream that is both readable and writable.</p>
+					</div>
+
+					<li data-toggle="collapse" data-target="#Underscore" class="li"><b><a>Underscore</a></b></li>
+					<div id="Underscore" class="collapse"><p>
+						  Underscore.js is a utility-belt library for JavaScript that provides support for the usual functional suspects (each, map, reduce, filter...) without extending any core JavaScript objects.</p>
+					</div>
+
+					<li data-toggle="collapse" data-target="#Validator" class="li"><b><a>Validator</a></b></li>
+					<div id="Validator" class="collapse"><p>
+						  A nodejs module for a library of string validators and sanitizers.</p>
+					</div>
+
+					<li data-toggle="collapse" data-target="#Winston" class="li"><b><a>Winston</a></b></li>
+					<div id="Winston" class="collapse"><p>
+						  A multi-transport async logging library for Node.js</p>
+					</div>
+
+					<li data-toggle="collapse" data-target="#Ws" class="li"><b><a>Ws</a></b></li>
+					<div id="Ws" class="collapse"><p>
+						  A simple to use, blazing fast and thoroughly tested websocket client, server and console for node.js
+						  </p>
+					</div>
+
+					<li data-toggle="collapse" data-target="#Xml2js" class="li"><b><a>Xml2js</a></b></li>
+					<div id="Xml2js" class="collapse"><p>
+						  A Simple XML to JavaScript object converter.
+						  </p>
+					</div>
+
+					<li data-toggle="collapse" data-target="#Yo" class="li"><b><a>Yo</a></b></li>
+					<div id="Yo" class="collapse"><p>
+						  A CLI tool for running Yeoman generators
+						  </p>
+					</div>
+
+					<li data-toggle="collapse" data-target="#Zmq" class="li"><b><a>Zmq</a></b></li>
+					<div id="Zmq" class="collapse"><p>
+						   Bindings for node.js and io.js to ZeroMQ .It is a high-performance asynchronous messaging library, aimed at use in distributed or concurrent applications.
+						  </p>
+					</div>
+
+		</article>
+	
+		<div class="row">
+			<div>
+					<button data-toggle="collapse" data-target="#web-sec" class="btn btn-primary col-md-12" style="font-size: 35px;margin: 10px;">Web Security</button>
+			</div>
+		</div>
+		<article id="web-sec" class="collapse">
 			<section>
-					<br>
-					<p><strong>	Document Object Collections </strong></p>
-					
-					<ol class="li-none">
-					<!--<li>break</li>-->
-					<li data-toggle="collapse" data-target="#anchors"><b><a>anchors[]</a></b></li>
-					<div id="anchors" class="collapse">
-						- insert some desc 
-					</div>
-					<!--<li>continue</li>-->
-					<li data-toggle="collapse" data-target="#forms"><b><a>forms[]</a></b></li>
-					<div id="forms" class="collapse">
-						- insert some desc 
-					</div>
-					<!--<li>if...else</li>-->
-					<li data-toggle="collapse" data-target="#images"><b><a>images[]</a></b></li>
-					<div id="images" class="collapse">
-						- insert some desc 
-					</div>
-					<!--<li>switch</li>-->
-					<li data-toggle="collapse" data-target="#links"><b><a>links[]</a></b></li>
-					<div id="links" class="collapse">
-						- insert some desc 
-					</div>
-					</ol>
+				<p>Web Security, also known as "Cyber security" involves protecting information by preventing, detecting, and responding to attacks. </p>
 
+			<div class="well" >
+				<h4>Graphical Presentation</h4>
+				<img src="./images/websec.gif" class="img-responsive" alt="html_start">
+			</div>
 
-					<br>
-					<p><strong>	Document Object Properties and Methods </strong></p>
+			<li data-toggle="collapse" data-target="#ps"><b><a>Packet Sniffer</a></b></li>
+				<div id="ps" class="collapse">
+					Also known as a Network Analyzer is a computer program that can itercept security, privacy and log traffic that passes a network.
+				</div>
+			<li data-toggle="collapse" data-target="#le"><b><a>Let's Encrypt</a></b></li>
+				<div id="le" class="collapse">
+					Let's Encrypt provides free certificate for Transport Layer Security(TLS) encryption to serve HTTPS traffic.
+				</div>
 
-					<!--<li>var</li>-->
-					<ol class="li-none">
-					<li data-toggle="collapse" data-target="#cookie"><b><a>document.cookie</a></b></li>
-					<div id="cookie" class="collapse">
-						- Returns all name/value pairs of cookies in the document
-					</div>
-					<!--<li>let</li>-->
-					<li data-toggle="collapse" data-target="#documentMode"><b><a>document.documentMode</a></b></li>
-					<div id="documentMode" class="collapse">
-						- Returns the mode used by the browser to render the document
-					</div>
-					<!--<li>const</li>-->
-					<li data-toggle="collapse" data-target="#domain"><b><a>document.domain</a></b></li>
-					<div id="domain" class="collapse">
-						- Returns the domain name of the server that loaded the document
-					</div>
-					<li data-toggle="collapse" data-target="#lastMod"><b><a>document.lastModified</a></b></li>
-					<div id="lastMod" class="collapse">
-						- Returns the domain name of the server that loaded the document
-					</div>
-					<li data-toggle="collapse" data-target="#readyState"><b><a>readyState</a></b></li>
-					<div id="readyState" class="collapse">
-						- insert some desc 
-					</div>
-					<li data-toggle="collapse" data-target="#referer"><b><a>document.referer</a></b></li>
-					<div id="referer" class="collapse">
-						- Returns the URL of the document that loaded the current document
-					</div>
-					<li data-toggle="collapse" data-target="#title"><b><a>document.title</a></b></li>
-					<div id="title" class="collapse">
-						- Sets or returns the title of the document
-					</div>
-					<li data-toggle="collapse" data-target="#url"><b><a>document.URL</a></b></li>
-					<div id="url" class="collapse">
-						- Returns the full URL of the HTML document
-					</div>
-				</ol>
+		<div class="row">
+			<div>
+					<button data-toggle="collapse" data-target="#owasp" class="btn btn-primary col-md-12" style="font-size: 35px;margin: 10px;">Top 10 Application Security Risks </button>
+			</div>
 
+			<li data-toggle="collapse" data-target="#in"><b><a>Injection</a></b></li>
+				<div id="in" class="collapse">
+				<p>Injection flaws, such as SQL, OS, XXE, and LDAP injection occur when untrusted data is sent to an interpreter as part of a command or query. The attacker’s hostile data can trick the interpreter into executing unintended commands or accessing data without proper authorization.</p>
+				<img src="./images/injection.png" class="img-responsive" alt="attribute">
+				</div>
+			<li data-toggle="collapse" data-target="#au"><b><a>Broken Authentication and Session Management</a></b></li>
+				<div id="au" class="collapse">
+				<p>Application functions related to authentication and session management are often implemented incorrectly, allowing attackers to compromise passwords, keys, or session tokens, or to exploit other implementation flaws to assume other users’ identities (temporarily or permanently).</p>
+				<img src="./images/brokenauthentication.png" class="img-responsive" alt="attribute">
+				</div>
+			<li data-toggle="collapse" data-target="#xss"><b><a>Cross-Site Scripting (XSS)</a></b></li>
+				<div id="xss" class="collapse">
+				<p>XSS flaws occur whenever an application includes untrusted data in a new web page without proper validation or escaping, or updates an existing web page with user supplied data using a browser API that can create JavaScript. XSS allows attackers to execute scripts in the victim’s browser which can hijack user sessions, deface web sites, or redirect the user to malicious sites.</p>
+				<img src="./images/scripting.png" class="img-responsive" alt="attribute">
+				</div>			
+			<li data-toggle="collapse" data-target="#bro"><b><a>Broken Access Control</a></b></li>
+				<div id="bro" class="collapse">
+				<p>Restrictions on what authenticated users are allowed to do are not properly enforced. Attackers can exploit these flaws to access unauthorized functionality and/or data, such as access other users' accounts, view sensitive files, modify other users’ data, change access rights, etc.</p>
+				<img src="./images/brokenaccess.png" class="img-responsive" alt="attribute">
+				</div>
+			<li data-toggle="collapse" data-target="#sec"><b><a>Security Misconfiguration</a></b></li>
+				<div id="sec" class="collapse">
+				<p>Good security requires having a secure configuration defined and deployed for the application, frameworks, application server, web server, database server, platform, etc. Secure settings should be defined, implemented, and maintained, as defaults are often insecure. Additionally, software should be kept up to date.</p>
+				</div>
+			<li data-toggle="collapse" data-target="#sen"><b><a>Sensitive Data Exposure</a></b></li>
+				<div id="sen" class="collapse">
+				<p>Many web applications and APIs do not properly protect sensitive data, such as financial, healthcare, and PII. Attackers may steal or modify such weakly protected data to conduct credit card fraud, identity theft, or other crimes. Sensitive data deserves extra protection such as encryption at rest or in transit, as well as special precautions when exchanged with the browser.</p>
+				</div>
+			<li data-toggle="collapse" data-target="#att"><b><a>Insufficient Attack Protection</a></b></li>
+				<div id="att" class="collapse">
+				<p>The majority of applications and APIs lack the basic ability to detect, prevent, and respond to both manual and automated attacks. Attack protection goes far beyond basic input validation and involves automatically detecting, logging, responding, and even blocking exploit attempts. Application owners also need to be able to deploy patches quickly to protect against attacks.</p>
+				</div>
+			<li data-toggle="collapse" data-target="#for"><b><a>Cross-Site Request Forgery (CSRF)</a></b></li>
+				<div id="for" class="collapse">
+				<p>A CSRF attack forces a logged-on victim’s browser to send a forged HTTP request, including the victim’s session cookie and any other automatically included authentication information, to a vulnerable web application. Such an attack allows the attacker to force a victim’s browser to generate requests the vulnerable application thinks are legitimate requests from the victim.</p>
+				<img src="./images/forgery.png" class="img-responsive" alt="attribute">
+				</div>
+			<li data-toggle="collapse" data-target="#comp"><b><a>Using Components with Known Vulnerabilities</a></b></li>
+				<div id="comp" class="collapse">
+				<p>Components, such as libraries, frameworks, and other software modules, run with the same privileges as the application. If a vulnerable component is exploited, such an attack can facilitate serious data loss or server takeover. Applications and APIs using components with known vulnerabilities may undermine application defenses and enable various attacks and impacts.</p>
+				</div>
+			<li data-toggle="collapse" data-target="#und"><b><a>Underprotected APIs</a></b></li>
+				<div id="und" class="collapse">
+				<p>Modern applications often involve rich client applications and APIs, such as JavaScript in the browser and mobile apps, that connect to an API of some kind (SOAP/XML, REST/JSON, RPC, GWT, etc.). These APIs are often unprotected and contain numerous vulnerabilities.</p>
+				</div>
 			</section>
+		</article>
+		
+		
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
 
-
-	 <button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
-
-        
 		<script >
 				window.onscroll = function() {scrollFunction()};
 
@@ -1288,13 +715,11 @@
     					document.documentElement.scrollTop = 0; // For IE and Firefox
 					}
 		</script>
-	<!--END OF JAVASCRIPT-->
-	<br>
-	<br>
-	<br>
 
 	<!-- Footer -->
- <footer>   
+    <br>
+	<br>
+	<br>	
     <div class="footer-bottom">
         <div class="container">
             <p class="pull-left"> Copyright © Web Technology Lessons 2017. All right reserved. </p>
