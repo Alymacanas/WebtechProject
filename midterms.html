@@ -740,6 +740,7 @@
 						- creates a new class
 					</div>
 				</ul>
+
 					<li>Iterations</li>
 				<ul>
 					<!--<li>do...while</li>-->
@@ -998,8 +999,12 @@
 		</div>
 		<div id="method-catg" class="collapse">	
 			<section>
-				<li>Mutator Method</li>
+				<li data-toggle="collapse" data-target="#mu"><b><a>Mutator Method</a></b></li>
+						<div id="mu" class="collapse">
+
 				<p>Methods that can modify the target array</p>  
+
+				<section>
 					<ul>
 					<li data-toggle="collapse" data-target="#a-cop"><b><a>Array.prototype.copyWithin()</a></b></li>
 						<div id="a-cop" class="collapse">
@@ -1008,7 +1013,15 @@
 						<img src="./images/copywithin.png" class="img-responsive" alt="copy_within">
 						</div>
 					</ul>
-				<li>Accessor Method</li>
+					</section>
+
+				</div>
+				</section>
+				
+					<section>
+						<li data-toggle="collapse" data-target="#acc"><b><a>Accessor Method</a></b></li>
+						<div id="acc" class="collapse">
+				
 				<ul>
 				<p>Methods that does not modify the array but returns a value when invoked</p>
 					<li data-toggle="collapse" data-target="#a-con"><b><a>Array.prototype.concat()</a></b></li>
@@ -1045,7 +1058,17 @@
 							<p>- The Array object overrides the toString method of Object. For Array objects, the toString method joins the array and returns one string containing each array element separated by commas.</p>
 						</div>
 					</ul>
-				<li>Iteration or Iterator Method</li>
+
+					</section>
+
+
+
+
+
+
+					<li data-toggle="collapse" data-target="#iter"><b><a>Iteration or Iterator Method</a></b></li>
+						<div id="iter" class="collapse">
+				
 				<p>When these methods are called, functions that take three arguments (array item value, position of the item in the array, the array object) are taken as the argument of the method and does not modify the values in the array</p>
 					<ul>
 					<li data-toggle="collapse" data-target="#a-fi"><b><a>Array.prototype.filter()</a></b></li>
@@ -1104,6 +1127,7 @@
 		</div>
 	</div>
 
+		</div>
 	<div class="row">
 			<div>
 
@@ -1242,7 +1266,6 @@
 				</ol>
 
 			</section>
-		</div>
 
 
 	 <button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
